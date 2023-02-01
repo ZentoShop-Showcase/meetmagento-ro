@@ -1,0 +1,14 @@
+---
+import Layout from '../layouts/Layout.astro';
+import MainBanner from '../components/Banner/Main.astro';
+import { Picture } from '@astrojs/image/components';
+import localImage from '../assets/hero.png';
+---
+
+<Layout title="Welcome to MMRO">
+	<main>
+		<MainBanner ctaBuyTicket={true}/>
+		<h1>Welcome to MMRO</h1>
+		<p class="text-lg">A modern static site generator.</p>
+	</main>
+</Layout>

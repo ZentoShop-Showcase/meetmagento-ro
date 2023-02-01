@@ -1,0 +1,29 @@
+---
+import { Picture } from '@astrojs/image/components';
+import localImage from '../../assets/hero.png';
+
+export interface Props {
+    ctaBuyTicket?: boolean;
+}
+const { ctaBuyTicket } = Astro.props;
+---
+
+<div>
+    <div class="relative h-64">
+        <Picture 
+            src={localImage} 
+            aspectRatio="2:1" 
+            fix="cover" 
+            widths={[200, 400, 800]} 
+            sizes="(max-width: 800px) 100vw, 800px" 
+            formats={['png', 'webp']} 
+            alt="Test image" 
+            class={"w-full h-full object-cover"}
+        />
+        <div class="absolute inset-0 flex flex-col items-center justify-center p-4">
+            <h2 class="text-white text-xl font-medium">Meet Magento Romania 2023</h2>
+            <h1 class="text-white text-3xl font-medium">May 8th, Cluj-Napoca</h1>
+            {ctaBuyTicket === true && <a href="#" class="bg-white text-blue-600 font-medium py-2 px-4 rounded-lg hover:bg-blue-600 hover:text-white">Book Your Ticket Now</a>}
+        </div>
+    </div>
+</div>
