@@ -1,0 +1,11 @@
+.hide-menu {
+    transform: translateX(100%);
+}
+
+.show-menu {
+    transform: translateX(0%);
+}
+
+.newsletter-btn-wrapper > button {
+    max-width: 100%;
+}

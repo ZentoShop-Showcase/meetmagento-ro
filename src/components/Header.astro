@@ -1,0 +1,96 @@
+---
+// export interface Props {
+// }
+
+// const {  } = Astro.props;
+
+// TODO: create image component
+---
+<header id="header" class="absolute w-full bg-gradient-to-b from-black py-1 px-6 sm:py-5 sm:px-6 lg:py-3 lg:px-12 z-20">
+    <div class="flex items-center mx-auto">
+        <!-- Logo -->
+        <div id="logo" class="basis-1/2 w-full h-14 bg-logo bg-no-repeat bg-contain bg-center sm:bg-left lg:basis-1/6 lg:h-18" />
+
+        <!-- Main Nav - Mobile -->
+        <nav class="basis-1/2 flex justify-end md:hidden">
+            <button id="mobile-menu-open" class="w-6 h-6 bg-hamburger" />
+            <section
+                id="mobile-menu"
+                class="hide-menu fixed top-0 left-0 w-full h-full transition-transform bg-black/75 z-10">
+                <div class="w-9/12 h-full bg-black drop-shadow-2xl ml-auto">
+                    <button data-mobile-menu-close class="block w-6 h-6 bg-close bg-no-repeat bg-center p-6 mr-3 ml-auto" />
+                    <ul>
+                        <li class="text-right py-2 px-6">
+                            <a href="#contact" data-mobile-menu-close class="inline-block button-s text-white hover:underline">
+                                Contact
+                            </a>
+                        </li>
+                        <li class="text-right py-2 px-6">
+                            <a href="#call-for-papers" data-mobile-menu-close class="inline-block button-s text-white border
+                              border-white-opacity-400 rounded py-3 px-4 hover:bg-white-opacity-400">
+                                Call for Papers
+                            </a>
+                        </li>
+                        <li class="text-right py-2 px-6">
+                            <a href="#call-for-sponsors" data-mobile-menu-close class="inline-block button-s text-white border
+                              border-white-opacity-400 rounded py-3 px-4 hover:bg-white-opacity-400">
+                                Call for Sponsors
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </nav>
+
+        <!-- Main Nav - Desktop -->
+        <nav class="hidden md:flex md:basis-10/12 flex justify-end items-center">
+            <a href="#contact" class="button-s text-white hover:underline">Contact</a>
+            <a href="#call-for-papers" class="button-s text-white border border-white-opacity-400 rounded
+              py-3 px-4 mx-3 hover:bg-white-opacity-400">
+                Call for Papers
+            </a>
+            <a href="#call-for-sponsors" class="button-s text-white border border-white-opacity-400 rounded
+              py-3 px-4 hover:bg-white-opacity-400">
+                Call for Sponsors
+            </a>
+        </nav>
+    </div>
+</header>
+
+<script>
+    // @ts-nocheck
+    document.addEventListener('scroll', () => {
+        const headerElem = document.querySelector('#header');
+        const logoElem = document.querySelector('#logo');
+
+        if (window.pageYOffset > 200) {
+            headerElem.classList.add('fixed', 'top-0', 'bg-black-opacity-50');
+            headerElem.classList.remove('absolute', 'bg-gradient-to-b', 'from-black', 'sm:py-5', 'lg:py-3');
+            logoElem.classList.add('h-12', 'lg:h-12');
+            logoElem.classList.remove('h-14', 'lg:h-18');
+        } else {
+            headerElem.classList.add('absolute', 'bg-gradient-to-b', 'from-black', 'sm:py-5', 'lg:py-3');
+            headerElem.classList.remove('fixed', 'top-0', 'bg-black-opacity-50');
+            logoElem.classList.add('h-14', 'lg:h-18');
+            logoElem.classList.remove('h-12', 'lg:h-12');
+        }
+    });
+
+    document.querySelector('#mobile-menu-open').addEventListener('click', () => {
+        const menuElem = document.querySelector('#mobile-menu');
+        menuElem.classList.remove('hide-menu');
+        menuElem.classList.add('show-menu');
+        document.body.style.overflow = 'hidden';
+    });
+
+    const buttons = document.querySelectorAll('[data-mobile-menu-close]');
+
+    buttons.forEach((button) => {
+        button.addEventListener('click', () => {
+            const menuElem = document.querySelector('#mobile-menu');
+            menuElem.classList.remove('show-menu');
+            menuElem.classList.add('hide-menu');
+            document.body.style.overflow = 'auto';
+        });
+    });
+</script>

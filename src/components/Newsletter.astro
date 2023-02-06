@@ -1,0 +1,36 @@
+---
+import Button from './Button.astro';
+
+// export interface Props {
+// }
+
+// const {  } = Astro.props;
+---
+<div class="bg-newsletter bg-no-repeat bg-cover bg-center">
+    <div class="container flex items-center flex-wrap mx-auto py-12 sm:py-18 md:flex-nowrap">
+        <div class="basis-full md:basis-8/12 lg:basis-6/12">
+            <p class="text-xl font-semibold leading-tight tracking-normal text-gray-900 pb-2">
+                Don't miss valuable content
+            </p>
+            <h2 class="pb-6">Subscribe to our newsletter</h2>
+            <form action="">
+                <div class="flex flex-wrap gap-4 sm:flex-nowrap">
+                    <input
+                        type="email"
+                        value=""
+                        autocomplete="on"
+                        placeholder="Enter your email address..."
+                        id="newsletter-input"
+                        required
+                        class="block w-full bg-white border border-gray-300 text-black text-base font-normal
+                            leading-normal tracking-normal rounded py-3 px-4 hover:ring-gray-500
+                            hover:border-2 hover:border-gray-500 focus:border-2 focus:ring-gray-900 focus:border-gray-900
+                            focus:outline-none active:border-2 active:ring-gray-900 active:border-gray-900 sm:basis-9/12">
+                    <div class="newsletter-btn-wrapper basis-full sm:basis-3/12">
+                        <Button>Subscribe</Button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
