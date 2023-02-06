@@ -16,10 +16,12 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://ro.meet-magento.com',
   integrations: [
     tailwind(), 
     mdx(), 
     image({ serviceEntryPoint: '@astrojs/image/sharp'}),
     // astroI18next(),
-    sitemap()]
+    sitemap(),
+  ]
 });
