@@ -1,14 +1,18 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Banner from '../components/Banner.astro';
-import Info from '../components/Info.astro';
+import BannerPreEvent from '../components/Home/BannerPreEvent.astro';
+import CallForPapers from '../components/Home/CallForPapers.astro';
+import CallForSponsors from '../components/Home/CallForSponsors.astro';
 import Newsletter from '../components/Newsletter.astro';
 ---
 
 <Layout title="Welcome to MMRO">
 	<main>
-		<Banner />
-		<Info />
+		<BannerPreEvent />
+		<div class="container flex items-center flex-wrap mx-auto pb-20 sm:pb-26 md:flex-nowrap md:gap-6">
+			<CallForPapers />
+			<CallForSponsors />
+		</div>
 		<Newsletter />
 	</main>
 </Layout>
