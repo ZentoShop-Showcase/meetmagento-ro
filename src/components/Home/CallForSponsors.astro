@@ -1,7 +1,7 @@
 ---
-import { Picture } from '@astrojs/image/components';
+import { Image } from '@astrojs/image/components';
 
-import sponsors from '../../assets/banners/call-for-sponsors.png';
+import sponsors from '../../assets/banners/call-for-sponsors.svg';
 
 // export interface Props {
 // }
@@ -9,15 +9,12 @@ import sponsors from '../../assets/banners/call-for-sponsors.png';
 // const {  } = Astro.props;
 ---
 <div id="call-for-sponsors" class="basis-full md:basis-6/12">
-    <Picture
+    <Image
         src={sponsors}
         aspectRatio="16:9"
-        fix="cover"
-        widths={[400]}
+        width={600}
         sizes="(min-width: 320px) 100%"
-        formats={['webp', 'png']}
-        alt="Papers image"
-        class={"w-full h-full object-cover"}
+        alt="Call for sponsors"
     />
     <div class="flex flex-col pt-4">
         <h2 class="pb-2">Call for Sponsors</h2>
