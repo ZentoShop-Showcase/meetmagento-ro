@@ -1,9 +1,5 @@
 ---
-import { Picture } from '@astrojs/image/components';
-
-import sponsors from '../../assets/banners/call-for-sponsors.png';
-
-import Button from '../Button.astro';
+import sponsors from '../../assets/banners/call-for-sponsors.svg';
 
 // export interface Props {
 // }
@@ -11,15 +7,12 @@ import Button from '../Button.astro';
 // const {  } = Astro.props;
 ---
 <div id="call-for-sponsors" class="basis-full md:basis-6/12">
-    <Picture
+    <img
         src={sponsors}
-        aspectRatio="16:9"
-        fix="cover"
-        widths={[400]}
+        width={719}
+        height={404}
         sizes="(min-width: 320px) 100%"
-        formats={['webp', 'png']}
-        alt="Papers image"
-        class={"w-full h-full object-cover"}
+        alt="Call for sponsors"
     />
     <div class="flex flex-col pt-4">
         <h2 class="pb-2">Call for Sponsors</h2>
@@ -27,7 +20,7 @@ import Button from '../Button.astro';
         <a
             id="apply-for-sponsor"
             class="w-full max-w-48 bg-orange-600 button-m text-white rounded
-            py-4 px-4 hover:bg-orange-700 focus:outline-none"
+              py-4 px-4 text-center hover:bg-orange-700 focus:outline-none"
             href="/call-for-sponsors"
         >
             Become a sponsor

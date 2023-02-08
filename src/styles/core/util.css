@@ -9,3 +9,22 @@
 .newsletter-btn-wrapper > button {
     max-width: 100%;
 }
+
+.iframe-container {
+    padding-top: 56.25%;
+}
+
+.responsive-iframe {
+    @apply absolute top-0 right-0 bottom-0 left-0 w-full h-full;
+}
+
+.transform-top-50 {
+    @apply top-2/4;
+    transform: translate(0, -50%);
+}
+
+@screen lg {
+    .lg\:transform-top-50 {
+        @apply transform-top-50;
+    }
+}

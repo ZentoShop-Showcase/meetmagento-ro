@@ -1,11 +1,18 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import PageBanner from '../components/PageBanner.astro';
+import ContactForm from '../components/Contact/Form.astro';
+import ContactInfo from '../components/Contact/Info.astro';
 import Newsletter from '../components/Newsletter.astro';
 ---
 
 <Layout title="Contact Us - Meet Magento">
 	<main>
-        Contact
+        <PageBanner title="Contact" />
+		<div class="container flex flex-wrap mx-auto pb-20 sm:pb-26 md:flex-nowrap md:gap-6">
+			<ContactForm />
+			<ContactInfo />
+		</div>
 		<Newsletter />
 	</main>
 </Layout>

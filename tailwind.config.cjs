@@ -12,8 +12,8 @@ module.exports = {
                 // => @media (min-width: 1024px) { ... }
                 'lg': '1320px',
                 // => @media (min-width: 1320px) { ... }
-                'xl': '1920px',
-                // => @media (min-width: 1920px) { ... }
+                'xl': '1480px',
+                // => @media (min-width: 1480px) { ... }
                 '2xl': '1920px',
                 // => @media (min-width: 1920px) { ... }
             },
@@ -272,6 +272,9 @@ module.exports = {
                 'linkedin': "url('/src/assets/icons/linkedin.svg')",
                 'twitter': "url('/src/assets/icons/twitter.svg')",
                 'youtube': "url('/src/assets/icons/youtube.svg')",
+                'mail': "url('/src/assets/icons/mail.svg')",
+                'phone': "url('/src/assets/icons/phone.svg')",
+                'z-logo': "url('/src/assets/banners/z_logo.png')",
             },
 
             // Used as border-{object-key} or border-{object-key}-{object-key}
@@ -285,6 +288,7 @@ module.exports = {
             },
 
             maxWidth: {
+                32: spacing['32'],
                 48: spacing['48'],
             },
 		},

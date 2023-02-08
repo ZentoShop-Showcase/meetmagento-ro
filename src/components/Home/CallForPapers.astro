@@ -1,9 +1,7 @@
 ---
-import { Picture } from '@astrojs/image/components';
+// import { Image } from '@astrojs/image/components';
 
-import papers from '../../assets/banners/call-for-papers.png';
-
-import Button from '../Button.astro';
+import papers from '../../assets/banners/call-for-papers.svg';
 
 // export interface Props {
 // }
@@ -11,15 +9,12 @@ import Button from '../Button.astro';
 // const {  } = Astro.props;
 ---
 <div id="call-for-papers" class="basis-full mb-10 md:basis-6/12 md:mb-0">
-    <Picture
+    <img
         src={papers}
-        aspectRatio="16:9"
-        fix="cover"
-        widths={[400]}
+        width={719}
+        height={404}
         sizes="(min-width: 320px) 100%"
-        formats={['webp', 'png']}
-        alt="Papers image"
-        class={"w-full h-full object-cover"}
+        alt="Call for papers"
     />
     <div class="flex flex-col pt-4">
         <h2 class="pb-2">Call for Papers</h2>
@@ -27,7 +22,7 @@ import Button from '../Button.astro';
         <a
             id="apply-for-papers"
             class="w-full max-w-48 bg-orange-600 button-m text-white rounded
-            py-4 px-4 hover:bg-orange-700 focus:outline-none"
+              py-4 px-4 text-center hover:bg-orange-700 focus:outline-none"
             href="/call-for-papers"
         >
             Apply for a spot

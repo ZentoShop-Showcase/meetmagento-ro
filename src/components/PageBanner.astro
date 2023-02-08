@@ -1,0 +1,49 @@
+---
+import { Picture } from '@astrojs/image/components';
+
+import heroMobile from '../assets/banners/banner-mobile.png';
+import heroTablet from '../assets/banners/banner-tablet.png';
+import heroDesktop from '../assets/banners/banner-desktop.png';
+
+export interface Props {
+    title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<div class="relative mb-12">
+    <Picture
+        src={heroMobile}
+        aspectRatio="1:1"
+        fix="cover"
+        widths={[480]}
+        sizes=""
+        formats={['png', 'webp']}
+        alt="Test image"
+        class={"w-full h-auto max-h-44 object-cover sm:hidden"}
+    />
+    <Picture
+        src={heroTablet}
+        aspectRatio="1:1"
+        fix="cover"
+        widths={[768]}
+        sizes=""
+        formats={['png', 'webp']}
+        alt="Test image"
+        class={"w-full h-auto max-h-80 object-cover hidden sm:block lg:hidden"}
+    />
+    <Picture
+        src={heroDesktop}
+        aspectRatio="16:9"
+        fix="cover"
+        widths={[1320]}
+        sizes=""
+        formats={['png', 'webp']}
+        alt="Test image"
+        class={"w-full h-auto max-h-80 object-cover hidden lg:block"}
+    />
+    <div class="absolute bottom-0 py-4 px-6 flex flex-col justify-center lg:bottom-8 lg:left-56 lg:p-0">
+        <h1 class="heading-mobile-l sm:heading-desktop-l text-white">{title}</h1>
+    </div>
+</div>
