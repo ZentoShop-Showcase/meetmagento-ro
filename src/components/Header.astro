@@ -10,7 +10,7 @@
     <div class="flex items-center mx-auto">
         <!-- Logo -->
         <div id="logo" class="basis-1/2 w-full h-14 bg-logo bg-no-repeat bg-contain bg-center sm:bg-left lg:basis-1/6 lg:h-18">
-            <a href="/" class="block w-full h-full" />
+            <a href="/" class="block w-full h-full" aria-label="homepage" />
         </div>
 
         <!-- Main Nav - Mobile -->
@@ -20,21 +20,26 @@
                   py-4 px-4 mr-4 hover:bg-orange-700 focus:outline-none">
                 Buy Tickets
             </button> -->
-            <button id="mobile-menu-open" class="w-6 h-6 bg-hamburger" />
+            <button id="mobile-menu-open" class="w-6 h-6 bg-hamburger" aria-label="open menu" />
             <section
                 id="mobile-menu"
                 class="hide-menu fixed top-0 left-0 w-full h-full transition-transform bg-black/75 z-10">
                 <div class="w-9/12 h-full bg-black drop-shadow-2xl ml-auto">
-                    <button data-mobile-menu-close class="block w-6 h-6 bg-close bg-no-repeat bg-center p-6 mr-3 ml-auto" />
+                    <button data-mobile-menu-close class="block w-6 h-6 bg-close bg-no-repeat bg-center p-6 mr-3 ml-auto" aria-label="close menu" />
                     <ul>
                         <li class="text-right py-2 px-6">
                             <a href="/call-for-sponsors" data-mobile-menu-close class="inline-block button-s text-white hover:underline">
-                                Sponsors
+                                Call for Sponsors
                             </a>
                         </li>
                         <li class="text-right py-2 px-6">
                             <a href="/call-for-papers" data-mobile-menu-close class="inline-block button-s text-white hover:underline">
                                 Call for Papers
+                            </a>
+                        </li>
+                        <li class="text-right py-2 px-6">
+                            <a href="/venue" data-mobile-menu-close class="inline-block button-s text-white hover:underline">
+                                Venue
                             </a>
                         </li>
                         <li class="text-right py-2 px-6">
@@ -57,8 +62,9 @@
 
         <!-- Main Nav - Desktop -->
         <nav class="hidden md:flex md:basis-10/12 justify-end items-center gap-3">
-            <a href="/call-for-sponsors" class="button-s text-white hover:underline">Sponsors</a>
+            <a href="/call-for-sponsors" class="button-s text-white hover:underline">Call for Sponsors</a>
             <a href="/call-for-papers" class="button-s text-white hover:underline">Call for Papers</a>
+            <a href="/venue" class="button-s text-white hover:underline">Venue</a>
             <a href="/contact" class="button-s text-white hover:underline">Contact</a>
             <!-- <button
                 data-mobile-menu-close
