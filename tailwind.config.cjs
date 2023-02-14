@@ -10,10 +10,10 @@ module.exports = {
                 // => @media (min-width: 767px) { ... }
                 'md': '1024px',
                 // => @media (min-width: 1024px) { ... }
-                'lg': '1320px',
-                // => @media (min-width: 1320px) { ... }
-                'xl': '1480px',
-                // => @media (min-width: 1480px) { ... }
+                'lg': '1368px',
+                // => @media (min-width: 1368px) { ... }
+                'xl': '1368px',
+                // => @media (min-width: 1368px) { ... }
                 '2xl': '1920px',
                 // => @media (min-width: 1920px) { ... }
             },
@@ -274,6 +274,7 @@ module.exports = {
                 'youtube': "url('/src/assets/icons/youtube.svg')",
                 'mail': "url('/src/assets/icons/mail.svg')",
                 'phone': "url('/src/assets/icons/phone.svg')",
+                'location': "url('/src/assets/icons/location.svg')",
                 'z-logo': "url('/src/assets/banners/z_logo.png')",
             },
 
