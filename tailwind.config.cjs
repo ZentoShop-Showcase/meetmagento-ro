@@ -274,6 +274,7 @@ module.exports = {
                 'youtube': "url('/src/assets/icons/youtube.svg')",
                 'mail': "url('/src/assets/icons/mail.svg')",
                 'phone': "url('/src/assets/icons/phone.svg')",
+                'location': "url('/src/assets/icons/location.svg')",
                 'z-logo': "url('/src/assets/banners/z_logo.png')",
             },
 

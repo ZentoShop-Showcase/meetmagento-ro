@@ -1,0 +1,85 @@
+---
+import { Picture } from '@astrojs/image/components';
+
+import Layout from '../layouts/Layout.astro';
+import PageBanner from '../components/PageBanner.astro';
+import Newsletter from '../components/Newsletter.astro';
+
+import Banner from '../assets/banners/venue/banner_venue.png';
+import Map from '../assets/banners/venue/venuecitymap.png';
+---
+
+<Layout title="2023 Venue - Meet Magento">
+	<main>
+        <PageBanner title="Venue" />
+
+		<div class="container flex items-center flex-wrap mx-auto pb-20 sm:pb-26 md:flex-nowrap md:gap-6">
+            <div class="w-full sm:w-1/2 flex-col pt-4 sm:order-first order-last">
+                <h2 class="pb-3">Grand Hotel Italia</h2>
+                <p class="text-l font-normal text-gray-600 pb-3">Meet Magento Romania 2023 will be hosted at Grand Hotel Italia, the premium venue that hosted Meet Magento Romania in 2018, 2017 and 2015.</p>
+                <p class="text-l font-normal text-gray-600 pb-8">Grand Hotel Italia is a 5 star hotel and rooms are available for attendeed to book.</p>
+            </div>
+            <div class="w-full sm:w-1/2 flex-col pt-4">
+                <Picture
+                    src={Banner}
+                    aspectRatio="1:1"
+                    fix="cover"
+                    widths={[628, 1256]}
+                    sizes=""
+                    formats={['webp', 'png']}
+                    alt="Meet Magento Romania 2023 Venue"
+                    class={"w-full h-full object-cover"}
+                    loading={'lazy'}
+                />
+            </div>
+        </div>
+
+        <h3 class="container mx-auto pb-5 md:gap-6">How to get there</h3>
+		<div class="container flex flex-wrap mx-auto pb-20 sm:pb-26 md:flex-nowrap md:gap-6">
+            <div class="w-full sm:w-2/3 flex-col pt-4">
+                <Picture
+                    src={Map}
+                    aspectRatio="2:1"
+                    fix="cover"
+                    widths={[626, 1252]}
+                    sizes=""
+                    formats={['webp', 'png']}
+                    alt="Meet Magento Romania 2023 Venue City Map"
+                    class={"w-full h-full object-cover"}
+                    loading={'lazy'}
+                />
+            </div>
+            <div class="w-full sm:w-1/3 flex-col pt-4">
+                <h4 class="pb-3">Grand Hotel Italia</h4>
+                <p class="text-l font-normal text-gray-600 pb-3
+                    block relative text-base font-normal leading-normal tracking-normal pb-2 pl-8
+                    before:content before:absolute before:top-0 before:bottom-0 before:left-0 before:w-6 before:h-6
+                    before:bg-location before:bg-no-repeat before:bg-auto before:bg-center
+                ">Strada Trifoiului 2, Cluj-Napoca 400478</p>
+                <p class="text-l font-normal text-gray-600 pb-3
+                    block relative text-base font-normal leading-normal tracking-normal pb-2 pl-8
+                    before:content before:absolute before:top-0 before:bottom-0 before:left-0 before:w-6 before:h-6
+                    before:bg-mail before:bg-no-repeat before:bg-auto before:bg-center
+                ">
+                    <a href="mailto:grandhotelitalia@selecthotels.it">grandhotelitalia@selecthotels.it</a>
+                </p>
+                <p class="text-l font-normal text-gray-600 pb-8
+                    block relative text-base font-normal leading-normal tracking-normal pb-2 pl-8
+                    before:content before:absolute before:top-0 before:bottom-0 before:left-0 before:w-6 before:h-6
+                    before:bg-phone before:bg-no-repeat before:bg-auto before:bg-center
+                "><a href="tel:+40364111333">+40 364 111 333</a></p>
+                <a
+                    id="open-google-maps"
+                    class="w-full max-w-48 button-s text-orange-600 rounded border border-orange-600
+                      py-4 px-4 text-center"
+                    href="https://goo.gl/maps/huYLWmtbUts81JgA8"
+                    target="_blank"
+                >
+                    Open in Google Maps
+                </a>
+            </div>
+        </div>
+
+		<Newsletter />
+	</main>
+</Layout>
