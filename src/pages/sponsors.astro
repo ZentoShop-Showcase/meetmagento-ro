@@ -48,7 +48,6 @@ const organizerSponsors = sponsors.filter((sponsor) => sponsor.package === Spons
             </div>
         ))}
 
-
         <div class="container w-full text-l pb-3 text-gray-600">
             <h2 class="pb-2">Gold Sponsors</h2>
         </div>
@@ -99,13 +98,42 @@ const organizerSponsors = sponsors.filter((sponsor) => sponsor.package === Spons
             </div>))}
         </div>
 
+        <div class="container w-full text-l pb-3 text-gray-600">
+            <h2 class="pb-2">Organised By</h2>
+        </div>
+        {organizerSponsors.map((sponsor: Sponsor) => (
+            <div class="container flex items-center flex-wrap mx-auto pb-4 sm:pb-4 md:flex-nowrap md:gap-6">
+                <div class="flex items-center justify-center w-full h-228 md:w-1/2 border-solid border-gray-200 border-2 p-4">
+                    <img
+                        src={sponsor.logo}
+                        alt={sponsor.name}
+                        class="object-contain"
+                        width="80%"
+                        height="80%"
+                    />
+                </div>
+                <div class="w-full h-228 md:w-1/2 p-4">
+                    <h4 class="pb-3">{sponsor.name}</h4>
+                    <p class="text-l font-normal text-gray-600 pb-8">{sponsor.description}</p>
+                    {sponsor.url && 
+                        <a
+                            class="text-orange-600 no-underline hover:text-orange-700 hover:underline"
+                            href={sponsor.url}
+                            target="_blank"
+                            rel="nofollow noreferrer"
+                        >Visit sponsor &gt;</a>
+                    }
+                </div>
+            </div>
+        ))}
+
         <div class="container w-full text-l pt-3 pb-10 text-gray-600">
             <h2 class="pb-2">Become a sponsor</h2>
             <p class="text-l font-normal text-gray-600 pb-8">Interested in sponsoring this event? Go to the page bellow, fill the form and we'll get back to you.</p>
             <a
                 id="call-for-sponsors-link"
                 class="w-full max-w-48 bg-orange-600 button-m text-white rounded
-                  py-4 px-4 text-center hover:bg-orange-700 focus:outline-none"
+                py-4 px-4 text-center hover:bg-orange-700 focus:outline-none"
                 href="/call-for-sponsors"
             >
                 Become a sponsor
