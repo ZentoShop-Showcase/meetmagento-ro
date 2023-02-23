@@ -1,4 +1,6 @@
 ---
+import { Picture } from '@astrojs/image/components';
+
 import Layout from '../../layouts/Layout.astro';
 import PageBanner from '../../components/PageBanner.astro';
 import SubNavigation from '../../components/Past/SubNavigation.astro';
@@ -174,7 +176,24 @@ import Newsletter from '../../components/Newsletter.astro';
             />
         </div>
 
-        
+        <div class="container flex items-center flex-wrap mx-auto pb-20 sm:pb-26 md:flex-nowrap md:gap-6">
+            <div class="w-full sm:w-1/2 flex-col pt-4 sm:order-first order-last">
+                <h5>Organised by</h5>
+                <h2 class="pb-3">Zento</h2>
+                <p class="text-l font-normal text-gray-600 pb-8">Zento is a Software-as-a-Service (SaaS) solution built on top of Magento 2 and offers fully managed eCommerce solutions with state-of-the-art Cloud hosting to medium and large merchants.</p>
+                <a
+                    id="zento-link"
+                    class="text-orange-600 no-underline hover:text-orange-700 hover:underline"
+                    target="_blank"
+                    href="https://www.zentoshop.com"
+                >
+                    Visit Zento
+                </a>
+            </div>
+            <div class="w-full bg-gray-300 sm:w-1/2 flex-col pt-4">
+                <img src="/assets/sponsors/zentoshop.svg" alt="Zento" class="w-1/2 mx-auto" />
+            </div>
+        </div>
 
 		<Newsletter />
 	</main>
