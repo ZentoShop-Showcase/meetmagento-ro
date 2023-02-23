@@ -11,25 +11,166 @@ import Newsletter from '../../components/Newsletter.astro';
 		<PageBanner title="Meet Magento 2021" />
         <SubNavigation selected="mm21ro" />
 
-        <h2 class="pb-2">Presentations</h2>
-        <h4 class="pb-2">Business Track</h4>
+        <h2 class="container pb-2">Presentations</h2>
+        <h4 class="container pb-2">Keynote</h4>
+        <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-4 sm:pb-4 gap-6">
+            <Talk 
+                image='/assets/talks/mm21ro/ericerway.png' 
+                title="Magento Product Updates" 
+                language="en"
+                speaker="Eric Erway" 
+                speakerCompany="Adobe" 
+                video="https://youtu.be/z-WE1IDcwbQ"
+            />
+        </div>
+        <h4 class="container pb-2">Business Track</h4>
+        <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-4 sm:pb-4 gap-6">
+            <Talk 
+                image='/assets/talks/mm21ro/raduapreutesei.png' 
+                title="Importanța Strategiei de tip Funnel și Interpretarea Corectă a Rezultatelor în suita Google" 
+                language="ro"
+                speaker="Radu Apreutesei" 
+                speakerCompany="Zea" 
+                video="https://youtu.be/1Ae-2bAdns8"
+            />
+            <Talk 
+                image='/assets/talks/mm21ro/danagate.png' 
+                title="Returns. How to create and manage a smooth system" 
+                language="ro"
+                speaker="Dana Gațe" 
+                speakerCompany="Frisbo" 
+                video="https://youtu.be/ae-rDyRsdcA"
+            />
+            <Talk 
+                image='/assets/talks/mm21ro/alinamitrica.png' 
+                title="Marketing automation tools you must integrate with Magento" 
+                language="ro"
+                speaker="Alina Mitrică" 
+                speakerCompany="Retargeting" 
+                video="https://youtu.be/pLHzw3iyVZ8"
+            />
+            <Talk 
+                image='/assets/talks/mm21ro/silvianiculescu.png' 
+                title="Importanța Cunoașterii Comportamentului Consumatorului pentru un Business de Succes" 
+                language="ro"
+                speaker="Silvia Niculescu" 
+                speakerCompany="Zea" 
+                video="https://youtu.be/j5Moc0cUanw"
+            />
+            <Talk 
+                image='/assets/talks/mm21ro/mihaibocai.png' 
+                title="Enhance your Black Friday Strategy with User Generated Content" 
+                language="ro"
+                speaker="Mihai Bocai" 
+                speakerCompany="Product Lead" 
+                video="https://youtu.be/a6swHtNYBLo"
+            />
+            <Talk 
+                image='/assets/talks/mm21ro/iulianghisoiu.png' 
+                title="Cum faci SEO la o pagina de produs" 
+                language="ro"
+                speaker="Iulian Ghișoiu" 
+                speakerCompany="Target Web" 
+                video="https://youtu.be/ihX-FoZZYDI"
+            />
+            <Talk 
+                image='/assets/talks/mm21ro/ciprianborodescu.png' 
+                title="AI E-commerce Tenets" 
+                language="ro"
+                speaker="Ciprian Borodescu" 
+                speakerCompany="Algolia" 
+                video="https://youtu.be/ssJEWvAwPtE"
+            />
+            <Talk 
+                image='/assets/talks/mm21ro/danielamarin.png' 
+                title="BERD in sprijinul antreprenorilor locali" 
+                language="ro"
+                speaker="Daniela Marin" 
+                speakerCompany="BERD" 
+                video="https://youtu.be/Hm3j9bMyxCk"
+            />
+            <Talk 
+                image='/assets/talks/mm21ro/christianwilhelmroth.png' 
+                title="Livestreaming as a Sales Booster? " 
+                language="en"
+                speaker="Christian Wilhelm Roth" 
+                speakerCompany="StageMe.Live" 
+                video="https://youtu.be/8xjgdnntCBY"
+            />
+        </div>
+        <h4 class="container pb-2">Technical Track</h4>
         <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-4 sm:pb-4 gap-6">
             <Talk 
                 image='/assets/talks/mm21ro/vinaikopp.png' 
                 title="Howto Hyvä - Compatibility Modules" 
+                language="en"
                 speaker="Vinai Kopp" 
                 speakerCompany="Hyvä" 
                 video="https://youtu.be/D88NoVwEclU"
             />
-        </div>
-        <h4 class="pb-2">Technical Track</h4>
-        <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-4 sm:pb-4 gap-6">
             <Talk 
-                image='/assets/talks/mm21ro/vinaikopp.png' 
-                title="Howto Hyvä - Compatibility Modules" 
-                speaker="Vinai Kopp" 
-                speakerCompany="Hyvä" 
-                video="https://youtu.be/D88NoVwEclU"
+                image='/assets/talks/mm21ro/riccardotempesta.png' 
+                title="GraphQL in Magento2" 
+                language="en"
+                speaker="Riccardo Tempesta" 
+                speakerCompany="Skeeller" 
+                video="https://youtu.be/ci3kfbZX0Es"
+            />
+            <Talk 
+                image='/assets/talks/mm21ro/alinalexandru.png' 
+                title="Optimise the development process with simple tips and tricks" 
+                language="ro"
+                speaker="Alin Alexandru" 
+                speakerCompany="Innobyte" 
+                video="https://youtu.be/852750_zB_E"
+            />
+            <Talk 
+                image='/assets/talks/mm21ro/sergioveradanieldelcarmen.png' 
+                title="Upgrade Compatibility Tool" 
+                language="en"
+                speaker="Sergio Vera & Daniel Del Carmen" 
+                speakerCompany="Adobe" 
+                video="https://youtu.be/drdTbtw9Xqo"
+            />
+            <Talk 
+                image='/assets/talks/mm21ro/valentinsandu.png' 
+                title="Magento Indexers - Unlocked" 
+                language="en"
+                speaker="Valentin Sandu" 
+                speakerCompany="R7 Digital Commerce" 
+                video="https://youtu.be/smGIEuwR16c"
+            />
+            <Talk 
+                image='/assets/talks/mm21ro/heitorramonribeiro.png' 
+                title="Vue Storefront 2 & Magento 2 - The new best friends" 
+                language="en"
+                speaker="Heitor Ramon Ribeiro" 
+                speakerCompany="VueStoreFront" 
+                video="https://youtu.be/7E3dwRywLqQ"
+            />
+            <Talk 
+                image='/assets/talks/mm21ro/ivanchepurnyi.png' 
+                title="Optimizing Magento by Preloading Data" 
+                language="en"
+                speaker="Ivan Chepurnyi" 
+                speakerCompany="EcomDev" 
+                video="https://youtu.be/-AEq_-0DgVo"
+            />
+            <Talk 
+                image='/assets/talks/mm21ro/cristianpartica.png' 
+                title="Evolving Adobe Commerce through modern APIs" 
+                language="en"
+                speaker="Cristian Partica" 
+                speakerCompany="Adobe" 
+                video="https://youtu.be/urgp-EH7JB8"
+            />
+            <Talk 
+                image='/assets/talks/mm21ro/maxlesechko.png' 
+                title="Renovation: long-awaited and modern updates" 
+                language="en"
+                speaker="Max Lesechko" 
+                speakerCompany="Adobe" 
+                video="https://youtu.be/c5UErymdvbI"
             />
         </div>
 
