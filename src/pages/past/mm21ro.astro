@@ -1,0 +1,40 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import PageBanner from '../../components/PageBanner.astro';
+import SubNavigation from '../../components/Past/SubNavigation.astro';
+import Talk from '../../components/Past/Talk.astro';
+import Newsletter from '../../components/Newsletter.astro';
+---
+
+<Layout title="Meet Magento 2021">
+	<main>
+		<PageBanner title="Meet Magento 2021" />
+        <SubNavigation selected="mm21ro" />
+
+        <h2 class="pb-2">Presentations</h2>
+        <h4 class="pb-2">Business Track</h4>
+        <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-4 sm:pb-4 gap-6">
+            <Talk 
+                image='/assets/talks/mm21ro/vinaikopp.png' 
+                title="Howto Hyvä - Compatibility Modules" 
+                speaker="Vinai Kopp" 
+                speakerCompany="Hyvä" 
+                video="https://youtu.be/D88NoVwEclU"
+            />
+        </div>
+        <h4 class="pb-2">Technical Track</h4>
+        <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-4 sm:pb-4 gap-6">
+            <Talk 
+                image='/assets/talks/mm21ro/vinaikopp.png' 
+                title="Howto Hyvä - Compatibility Modules" 
+                speaker="Vinai Kopp" 
+                speakerCompany="Hyvä" 
+                video="https://youtu.be/D88NoVwEclU"
+            />
+        </div>
+
+        
+
+		<Newsletter />
+	</main>
+</Layout>
