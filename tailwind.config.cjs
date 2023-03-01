@@ -190,6 +190,7 @@ module.exports = {
                 transparent: '#00000000',
                 black: '#000',
                 white: '#fff',
+                grey: '#E0E0E0',
                 orange: {
                     50: '#fef4f2',
                     100: '#fde8e5',

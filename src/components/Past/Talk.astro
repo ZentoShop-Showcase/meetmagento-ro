@@ -4,23 +4,31 @@ import { Picture } from '@astrojs/image/components';
 const { image, title, speaker, speakerCompany, video, language } = Astro.props;
 ---
 
-<div class="flex flex-wrap mx-auto">
-    <div class="flex items-center justify-center basis-1/2 md:basis-1/3 p-4">
-        {image !== undefined ? 
+<div class="flex flex-wrap items-start justify-center mx-auto">
+    <div class="basis-full sm:basis-1/2 relative md:basis-1/3">
+        {image !== undefined ?
             <Picture
                 src={image}
                 aspectRatio="16:9"
                 fix="cover"
-                widths={[240, 480]}
+                widths={[216]}
                 sizes=""
                 formats={['webp', 'png']}
                 alt={title + ' - ' + speaker + ' - ' + speakerCompany}
                 class={"w-full h-full object-cover"}
                 loading={'lazy'}
             />
-        : null }
+        : null}
+
+        {video !== undefined ?
+            <div class="before:content before:absolute before:top-2/4 before:left-2/4 before:transform-50
+                before:w-16 before:h-16 before:lg:w-26 before:lg:h-26 before:bg-transparent before:border-4
+                before:rounded-full before:border-grey before:cursor-pointer after:content after:absolute
+                after:top-2/4 after:left-2/4 after:transform-50 after:w-0 after:h-0 after:arrow-right
+                after:cursor-pointer" />
+        : null}
     </div>
-    <div class="basis-1/2 md:basis-2/3 p-4">
+    <div class="basis-full p-4 sm:basis-1/2 sm:py-0 sm:px-4 md:basis-2/3">
         <h4 class="pb-3">{title}</h4>
         <p class="text-l font-normal text-gray-600 pb-8">
             {speaker} - {speakerCompany}
