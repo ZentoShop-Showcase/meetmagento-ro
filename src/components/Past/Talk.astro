@@ -23,9 +23,10 @@ const { image, title, speaker, speakerCompany, video, language } = Astro.props;
         {video !== undefined ?
             <div class="before:content before:absolute before:top-2/4 before:left-2/4 before:transform-50
                 before:w-16 before:h-16 before:lg:w-26 before:lg:h-26 before:bg-transparent before:border-4
-                before:rounded-full before:border-grey before:cursor-pointer after:content after:absolute
-                after:top-2/4 after:left-2/4 after:transform-50 after:w-0 after:h-0 after:arrow-right
-                after:cursor-pointer" />
+                before:rounded-full before:border-grey after:content after:absolute after:top-2/4
+                after:left-2/4 after:transform-50 after:w-0 after:h-0 after:arrow-right">
+                <a href={video} target="_blank" rel="noopener" class="absolute inset-0 z-20" />
+            </div>
         : null}
     </div>
     <div class="basis-full p-4 sm:basis-1/2 sm:py-0 sm:px-4 md:basis-2/3">
