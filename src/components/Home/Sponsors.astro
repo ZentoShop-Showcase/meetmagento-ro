@@ -46,13 +46,12 @@ const organizerSponsors = sponsors.filter((sponsor) => sponsor.package === Spons
 }
 <div class="container flex flex-wrap mx-auto pb-4 sm:pb-4 md:flex-nowrap md:gap-6">
     {goldSponsors.map((sponsor: Sponsor) => (
-        <div class="flex items-center justify-center w-full mb-3 md:mb-0 md:w-1/4 border-solid border-gray-200 border-2 p-4">
+        <div class="flex items-center justify-center w-full h-48 mb-3 md:mb-0 md:w-1/4 border-solid border-gray-200 border-2 p-4">
             <img
                 src={sponsor.logo}
                 alt={sponsor.name}
                 class="object-contain"
                 width="80%"
-                height="80%"
             />
         </div>
     ))}
@@ -65,7 +64,7 @@ const organizerSponsors = sponsors.filter((sponsor) => sponsor.package === Spons
 }
 <div class="container flex flex-wrap mx-auto pb-4 sm:pb-4 md:flex-nowrap md:gap-6">
     {silverSponsors.map((sponsor: Sponsor) => (
-        <div class="flex items-center justify-center w-1/2 md:w-1/6 border-solid border-gray-200 border-2 p-4">
+        <div class="flex items-center justify-center w-1/2 h-36 md:w-1/6 border-solid border-gray-200 border-2 p-4">
             <img
                 src={sponsor.logo}
                 alt={sponsor.name}
@@ -84,7 +83,7 @@ const organizerSponsors = sponsors.filter((sponsor) => sponsor.package === Spons
 }
 <div class="container flex flex-wrap mx-auto pb-4 sm:pb-10 md:flex-nowrap md:gap-6">
     {organizerSponsors.map((sponsor: Sponsor) => (
-        <div class="flex items-center justify-center w-full border-solid border-gray-100 border-2">
+        <div class="flex items-center justify-center w-full h-70 border-solid border-gray-100 border-2">
             <img
                 src={sponsor.logo}
                 alt={sponsor.name}
