@@ -1,0 +1,96 @@
+---
+import type { Sponsor } from '../Sponsors/sponsor';
+import { SponsorPackage } from '../Sponsors/sponsor';
+
+export interface Props {
+    sponsors: Sponsor[];
+}
+const { sponsors } = Astro.props;
+
+const platinumSponsors = sponsors.filter((sponsor) => sponsor.package === SponsorPackage.Platinum);
+const goldSponsors = sponsors.filter((sponsor) => sponsor.package === SponsorPackage.Gold);
+const silverSponsors = sponsors.filter((sponsor) => sponsor.package === SponsorPackage.Silver);
+const organizerSponsors = sponsors.filter((sponsor) => sponsor.package === SponsorPackage.Organizer);
+
+---
+<div class="container flex items-center flex-wrap mx-auto pb-20 sm:pb-2 md:flex-nowrap md:gap-6">
+    <div class="w-full">
+        <h5>2023 Edition</h5>
+        <h2 class="pb-3">Sponsored by</h2>
+    </div>
+</div>
+
+{platinumSponsors.length > 0 &&
+    <div class="container w-full text-l pb-3 text-gray-600">
+        <h4>Platinum Sponsors</h4>
+    </div>
+}
+<div class="container flex items-center flex-wrap mx-auto pb-4 sm:pb-4 md:flex-nowrap md:gap-6">
+    {platinumSponsors.map((sponsor: Sponsor) => (
+        <div class="flex items-center justify-center w-full md:w-1/2 border-solid border-gray-200 border-2 p-4">
+            <img
+                src={sponsor.logo}
+                alt={sponsor.name}
+                class="object-contain"
+                width="80%"
+                height="80%"
+            />
+        </div>
+    ))}
+</div>
+
+{goldSponsors.length > 0 &&
+    <div class="container w-full text-l pb-3 text-gray-600">
+        <h4>Gold Sponsors</h4>
+    </div>
+}
+<div class="container flex flex-wrap mx-auto pb-4 sm:pb-4 md:flex-nowrap md:gap-6">
+    {goldSponsors.map((sponsor: Sponsor) => (
+        <div class="flex items-center justify-center w-full h-48 mb-3 md:mb-0 md:w-1/4 border-solid border-gray-200 border-2 p-4">
+            <img
+                src={sponsor.logo}
+                alt={sponsor.name}
+                class="object-contain"
+                width="80%"
+            />
+        </div>
+    ))}
+</div>
+
+{silverSponsors.length > 0 &&
+    <div class="container w-full text-l pb-3 text-gray-600">
+        <h4>Silver Sponsors</h4>
+    </div>
+}
+<div class="container flex flex-wrap mx-auto pb-4 sm:pb-4 md:flex-nowrap md:gap-6">
+    {silverSponsors.map((sponsor: Sponsor) => (
+        <div class="flex items-center justify-center w-1/2 h-36 md:w-1/6 border-solid border-gray-200 border-2 p-4">
+            <img
+                src={sponsor.logo}
+                alt={sponsor.name}
+                class="object-contain"
+                width="80%"
+                height="80%"
+            />
+        </div>
+    ))}
+</div>
+
+{organizerSponsors.length > 0 &&
+    <div class="container w-full text-l pb-3 text-gray-600">
+        <h4>Organised by</h4>
+    </div>
+}
+<div class="container flex flex-wrap mx-auto pb-4 sm:pb-10 md:flex-nowrap md:gap-6">
+    {organizerSponsors.map((sponsor: Sponsor) => (
+        <div class="flex items-center justify-center w-full h-70 border-solid border-gray-100 border-2">
+            <img
+                src={sponsor.logo}
+                alt={sponsor.name}
+                class="object-contain"
+                width="30%"
+                height="30%"
+            />
+        </div>
+    ))}
+</div>

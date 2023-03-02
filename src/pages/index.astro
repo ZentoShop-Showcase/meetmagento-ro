@@ -3,8 +3,12 @@ import Layout from '../layouts/Layout.astro';
 import BannerPreEvent from '../components/Home/BannerPreEvent.astro';
 import CallForPapers from '../components/Home/CallForPapers.astro';
 import CallForSponsors from '../components/Home/CallForSponsors.astro';
+import Sponsors from '../components/Home/Sponsors.astro';
 import Venue from '../components/Home/Venue.astro';
 import Newsletter from '../components/Newsletter.astro';
+
+import { SponsorsData } from '../components/Sponsors/data-sponsors';
+
 ---
 
 <Layout title="Welcome to MMRO">
@@ -15,6 +19,7 @@ import Newsletter from '../components/Newsletter.astro';
 			<CallForSponsors />
 		</div>
 		<Venue />
+		<Sponsors sponsors={SponsorsData}/>
 		<Newsletter />
 	</main>
 </Layout>
