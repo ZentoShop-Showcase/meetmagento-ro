@@ -26,7 +26,7 @@ const organizerSponsors = sponsors.filter((sponsor) => sponsor.package === Spons
         }
         {platinumSponsors.map((sponsor: Sponsor) => (
             <div class="container flex items-center flex-wrap mx-auto pb-4 sm:pb-4 md:flex-nowrap md:gap-6">
-                <div class="flex items-center justify-center w-full h-228 md:w-1/2 border-solid border-gray-200 border-2 p-4">
+                <div class="flex items-center justify-center w-full md:w-1/2 border-solid border-gray-200 border-2 p-4">
                     <img
                         src={sponsor.logo}
                         alt={sponsor.name}
@@ -35,9 +35,9 @@ const organizerSponsors = sponsors.filter((sponsor) => sponsor.package === Spons
                         height="80%"
                     />
                 </div>
-                <div class="w-full h-228 md:w-1/2 p-4">
+                <div class="w-full md:w-1/2 p-4">
                     <h4 class="pb-3">{sponsor.name}</h4>
-                    <p class="text-l font-normal text-gray-600 pb-8">{sponsor.description}</p>
+                    <p class="text-l font-normal text-gray-600 pb-2">{sponsor.description}</p>
                     {sponsor.url && 
                         <a
                             class="text-orange-600 no-underline hover:text-orange-700 hover:underline"
@@ -56,8 +56,8 @@ const organizerSponsors = sponsors.filter((sponsor) => sponsor.package === Spons
             </div>
         }
         {goldSponsors.map((sponsor: Sponsor) => (
-            <div class="container flex items-center flex-wrap mx-auto pb-4 sm:pb-4 md:flex-nowrap md:gap-6">
-                <div class="flex items-center justify-center w-full h-full md:w-1/4 border-solid border-gray-200 border-2 p-4">
+            <div class="container flex flex-wrap mx-auto pb-4 sm:pb-6 md:flex-nowrap md:gap-6">
+                <div class="flex items-center justify-center basis-full md:basis-1/4 border-solid border-gray-200 border-2 p-4">
                     <img
                         src={sponsor.logo}
                         alt={sponsor.name}
@@ -66,9 +66,9 @@ const organizerSponsors = sponsors.filter((sponsor) => sponsor.package === Spons
                         height="80%"
                     />
                 </div>
-                <div class="w-full h-228 md:w-3/4 p-4">
+                <div class="basis-full md:basis-3/4 p-4">
                     <h4 class="pb-3">{sponsor.name}</h4>
-                    <p class="text-l font-normal text-gray-600 pb-8">{sponsor.description}</p>
+                    <p class="text-l font-normal text-gray-600 pb-2">{sponsor.description}</p>
                     {sponsor.url && 
                         <a
                             class="text-orange-600 no-underline hover:text-orange-700 hover:underline"
@@ -88,7 +88,7 @@ const organizerSponsors = sponsors.filter((sponsor) => sponsor.package === Spons
         }
         <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-4 sm:pb-4 gap-6">
             {silverSponsors.map((sponsor: Sponsor) => (<div class="flex flex-wrap mx-auto">
-                <div class="flex items-center justify-center basis-1/2 h-228 md:basis-1/3 border-solid border-gray-200 border-2 p-4">
+                <div class="flex items-center justify-center basis-1/2 md:basis-1/3 border-solid border-gray-200 border-2 p-4">
                     <img
                         src={sponsor.logo}
                         alt={sponsor.name}
@@ -97,10 +97,10 @@ const organizerSponsors = sponsors.filter((sponsor) => sponsor.package === Spons
                         height="80%"
                     />
                 </div>
-                <div class="basis-1/2 h-228 md:basis-2/3 p-4">
+                <div class="basis-1/2 md:basis-2/3 p-4">
                     <h4 class="pb-3">{sponsor.name}</h4>
-                    <p class="text-l font-normal text-gray-600 pb-8">{sponsor.description}</p>
-                    {sponsor.url && 
+                    <p class="text-l font-normal text-gray-600 pb-2">{sponsor.description}</p>
+                    {sponsor.url &&
                         <a
                             class="text-orange-600 no-underline hover:text-orange-700 hover:underline"
                             href={sponsor.url}
@@ -117,7 +117,7 @@ const organizerSponsors = sponsors.filter((sponsor) => sponsor.package === Spons
         </div>
         {organizerSponsors.map((sponsor: Sponsor) => (
             <div class="container flex items-center flex-wrap mx-auto pb-4 sm:pb-4 md:flex-nowrap md:gap-6">
-                <div class="flex items-center justify-center w-full h-228 md:w-1/2 border-solid border-gray-200 border-2 p-4">
+                <div class="flex items-center justify-center w-full md:w-1/2 border-solid border-gray-200 border-2 p-4">
                     <img
                         src={sponsor.logo}
                         alt={sponsor.name}
@@ -126,9 +126,9 @@ const organizerSponsors = sponsors.filter((sponsor) => sponsor.package === Spons
                         height="80%"
                     />
                 </div>
-                <div class="w-full h-228 md:w-1/2 p-4">
+                <div class="w-full md:w-1/2 p-4">
                     <h4 class="pb-3">{sponsor.name}</h4>
-                    <p class="text-l font-normal text-gray-600 pb-8">{sponsor.description}</p>
+                    <p class="text-l font-normal text-gray-600 pb-2">{sponsor.description}</p>
                     {sponsor.url && 
                         <a
                             class="text-orange-600 no-underline hover:text-orange-700 hover:underline"
@@ -143,7 +143,7 @@ const organizerSponsors = sponsors.filter((sponsor) => sponsor.package === Spons
 
         <div class="container w-full text-l pt-3 pb-10 text-gray-600">
             <h2 class="pb-2">Become a sponsor</h2>
-            <p class="text-l font-normal text-gray-600 pb-8">Interested in sponsoring this event? Go to the page bellow, fill the form and we'll get back to you.</p>
+            <p class="text-l font-normal text-gray-600 pb-2">Interested in sponsoring this event? Go to the page bellow, fill the form and we'll get back to you.</p>
             <a
                 id="call-for-sponsors-link"
                 class="w-full max-w-48 bg-orange-600 button-m text-white rounded
