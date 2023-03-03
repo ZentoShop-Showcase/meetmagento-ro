@@ -32,7 +32,7 @@ const { image, title, speaker, speakerCompany, video, language } = Astro.props;
     <div class="basis-full p-4 sm:basis-1/2 sm:py-0 sm:px-4 md:basis-2/3">
         <h4 class="pb-3">{title}</h4>
         <p class="text-l font-normal text-gray-600 pb-8">
-            {speaker} - {speakerCompany}
+            {speaker} {speakerCompany && ' - ' + speakerCompany}
         </p>
     </div>
 </div>
