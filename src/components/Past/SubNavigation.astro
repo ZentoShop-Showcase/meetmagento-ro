@@ -1,0 +1,44 @@
+---
+
+const { selected } = Astro.props;
+---
+
+<div class="container -mt-9 mb-8 sm:mb-12">
+    <ul class="flex border-b border-gray-200">
+        <li class={
+                selected === 'mm21ro'
+                    ? 'selected py-1 px-3 border-b-4 border-orange-600 -m-b-1'
+                    : 'py-1 px-3 border-b-4 border-transparent -m-b-1'
+        }>
+            <a href="/past/mm21ro" class="text-lg leading-tight font-semibold text-gray-600">2021</a>
+        </li>
+        <li class={
+                selected === 'mm19ro'
+                    ? 'selected py-1 px-3 border-b-4 border-orange-600 -m-b-1'
+                    : 'py-1 px-3 border-b-4  border-transparent -m-b-1'
+        }>
+            <a href="/past/mm19ro" class="text-lg leading-tight font-semibold text-gray-600">2019</a>
+        </li>
+        <li class={
+                selected === 'mm18ro'
+                    ? 'selected py-1 px-3 border-b-4 border-orange-600 -m-b-1'
+                    : 'py-1 px-3 border-b-4  border-transparent -m-b-1'
+        }>
+            <a href="/past/mm18ro" class="text-lg leading-tight font-semibold text-gray-600">2018</a>
+        </li>
+        <li class={
+                selected === 'mm17ro'
+                    ? 'selected py-1 px-3 border-b-4 border-orange-600 -m-b-1'
+                    : 'py-1 px-3 border-b-4  border-transparent -m-b-1'
+        }>
+            <a href="/past/mm17ro" class="text-lg leading-tight font-semibold text-gray-600">2017</a>
+        </li>
+        <li class={
+                selected === 'mm16ro'
+                    ? 'selected py-1 px-3 border-b-4 border-orange-600 -m-b-1'
+                    : 'py-1 px-3 border-b-4  border-transparent -m-b-1'
+        }>
+            <a href="/past/mm16ro" class="text-lg leading-tight font-semibold text-gray-600">2016</a>
+        </li>
+    </ul>
+</div>

@@ -23,6 +23,36 @@
     transform: translate(0, -50%);
 }
 
+.transform-50 {
+    transform: translate(-50%, -50%);
+}
+
+.before\:transform-50:before {
+    @apply transform-50;
+}
+
+.after\:transform-50:after {
+    @apply transform-50;
+}
+
+.-m-b-1 {
+    margin-bottom: -1px;
+}
+
+.selected > a {
+    @apply text-black;
+}
+
+.arrow-right {
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+    border-left: 26px solid #E0E0E0;
+}
+
+.after\:transform-50:after {
+    @apply arrow-right;
+}
+
 @screen lg {
     .lg\:transform-top-50 {
         @apply transform-top-50;

@@ -1,0 +1,226 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import PageBanner from '../../components/PageBanner.astro';
+import SubNavigation from '../../components/Past/SubNavigation.astro';
+import Talk from '../../components/Past/Talk.astro';
+import Newsletter from '../../components/Newsletter.astro';
+---
+
+<Layout title="Meet Magento 2016">
+	<main>
+		<PageBanner title="Meet Magento 2016" />
+        <SubNavigation selected="mm16ro" />
+
+        <h2 class="container pb-4 sm:pb-8">Presentations</h2>
+        <h4 class="container pb-4">Keynote</h4>
+        <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-4 sm:pb-4 gap-6">
+            <Talk 
+                image='/assets/talks/mm16ro/thomasgoletz.jpg' 
+                title="Quo vadis, Meet Magento? Where do we go?" 
+                language="en"
+                speaker="Thomas Goletz" 
+                speakerCompany="Meet Magento Association" 
+            />
+            <Talk 
+                image='/assets/talks/mm16ro/jasonwoosley.jpg' 
+                title="Open Source Community Engagement 2.0 - Rediscovering distributed contributions" 
+                language="en"
+                speaker="Jason Woosley" 
+                speakerCompany="Magento" 
+            />
+        </div>
+        <h4 class="container py-4">Business Track</h4>
+        <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-4 sm:pb-4 gap-6">
+            <Talk
+                image='/assets/talks/mm16ro/panel1.jpg' 
+                title="eCommerce Business Panel" 
+                language="ro"
+                speaker="Evozon, BT, Google, FanCurier" 
+                speakerCompany=""
+            />
+            <Talk
+                image='/assets/talks/mm16ro/ciprianpasca.jpg' 
+                title="IT ecosystem Cluj - case-studies" 
+                language="ro"
+                speaker="Ciprian Pașca" 
+                speakerCompany="Sprint Point"
+            />
+            <Talk
+                image='/assets/talks/mm16ro/iulianpadurariu.jpg' 
+                title="The Sharing Economy" 
+                language="en"
+                speaker="Iulian Padurariu" 
+                speakerCompany="GetPony"
+            />
+            <Talk
+                image='/assets/talks/mm16ro/deryckharlick.jpg' 
+                title="Flash points for Merchants and Agencies that can kill a beautiful friendship!" 
+                language="en"
+                speaker="Deryck Harlick" 
+                speakerCompany=""
+            />
+            <Talk
+                image='/assets/talks/mm16ro/calinpopa.jpg' 
+                title="The ABC of cloud and cloud solutions" 
+                language="en"
+                speaker="Călin Popa" 
+                speakerCompany="Microsoft"
+            />
+            <Talk
+                image='/assets/talks/mm16ro/paulbrie.jpg' 
+                title="Mobile usage is increasing worldwide: why should you care?" 
+                language="ro"
+                speaker="Paul Brie" 
+                speakerCompany="Evozon"
+            />
+            <Talk
+                image='/assets/talks/mm16ro/lauravoica.jpg' 
+                title="Thinking ahead and meeting brand objectives with Magento" 
+                language="ro"
+                speaker="Laura Voica" 
+                speakerCompany="Arctic"
+            />
+            <Talk
+                image='/assets/talks/mm16ro/kubazwolinski.jpg' 
+                title="Internet of Things in Omnichannel Commerce with Magento" 
+                language="en"
+                speaker="Kuba Zwolinski" 
+                speakerCompany="Snowdog"
+            />
+            <Talk
+                image='/assets/talks/mm16ro/sergeylysak.jpg' 
+                title="Magento 2 SEO Lucky Chance" 
+                language="en"
+                speaker="Sergey Lysak" 
+                speakerCompany="Eltrino"
+            />
+        </div>
+        <h4 class="container py-4">Technical Track</h4>
+        <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-4 sm:pb-4 gap-6">
+            <Talk 
+                image='/assets/talks/mm16ro/benmarks.png' 
+                title="Moving Magento 2 Forward" 
+                language="en"
+                speaker="Ben Marks" 
+                speakerCompany="Magento" 
+            />
+            <Talk 
+                image='/assets/talks/mm16ro/mariusstrajeru.jpg' 
+                title="Best Worst Magento Extension" 
+                language="en"
+                speaker="Marius Străjeru" 
+                speakerCompany="Magento Master" 
+            />
+            <Talk 
+                image='/assets/talks/mm16ro/fabianblechschmidt.jpg' 
+                title="Fucking up projects - a manual" 
+                language="en"
+                speaker="Fabian Blechschmidt" 
+                speakerCompany="" 
+            />
+            <Talk 
+                image='/assets/talks/mm16ro/davidmanners.jpg' 
+                title="Don't be a git" 
+                language="en"
+                speaker="David Manners" 
+                speakerCompany="Magento Master" 
+            />
+            <Talk 
+                image='/assets/talks/mm16ro/antonkaplya.jpg' 
+                title="Staging tech" 
+                language="en"
+                speaker="Anton Kaplya" 
+                speakerCompany="Magento" 
+            />
+            <Talk 
+                image='/assets/talks/mm16ro/annavolkl.jpg' 
+                title="Secure input and output handling" 
+                language="en"
+                speaker="Anna Völkl" 
+                speakerCompany="Limesoda, Magento Master" 
+            />
+            <Talk 
+                image='/assets/talks/mm16ro/vinaikopp.jpg' 
+                title="Writing testable code for Magento 1 &amp; 2" 
+                language="en"
+                speaker="Vinai Kopp" 
+                speakerCompany="Magento Master" 
+            />
+            <Talk 
+                image='/assets/talks/mm16ro/volodymyrkublytskyi.jpg' 
+                title="Magento Presentation Layer" 
+                language="en"
+                speaker="Volodymyr Kublytskyi" 
+                speakerCompany="Magento" 
+            />
+            <Talk 
+                image='/assets/talks/mm16ro/miguelbalparda.jpg' 
+                title="Magento 2: Premium Performance with PHP 7 and Varnish" 
+                language="en"
+                speaker="Miguel Balparda" 
+                speakerCompany="Nexcess, Magento Master" 
+            />
+            <Talk 
+                image='/assets/talks/mm16ro/vladtirla.jpg' 
+                title="Creating a delightful customer experience through micro-moments" 
+                language="en"
+                speaker="Vlad Tîrlă" 
+                speakerCompany="Evozon" 
+            />
+            <Talk 
+                image='/assets/talks/mm16ro/sonjariesterer.jpg' 
+                title="Seek and ye shall find - Product Search in Magento 2" 
+                language="en"
+                speaker="Sonja Riesterer" 
+                speakerCompany="" 
+            />
+            <Talk 
+                image='/assets/talks/mm16ro/panel2.jpg' 
+                title="Magento Masters Panel" 
+                language="en"
+                speaker="Ben, Vinai, Marius, Anna, Kuba, Miguel, Sander, David" 
+                speakerCompany="" 
+            />
+            <Talk 
+                image='/assets/talks/mm16ro/andralungu.jpg' 
+                title="Magento 2 Hands-on" 
+                language="en"
+                speaker="Andra Lungu" 
+                speakerCompany="Bitbull" 
+            />
+            <Talk 
+                image='/assets/talks/mm16ro/fabianschmengler.png' 
+                title="Porting A Complex Extension To Magento 2" 
+                language="en"
+                speaker="Fabian Schmengler" 
+                speakerCompany="" 
+            />
+            <Talk 
+                image='/assets/talks/mm16ro/pavlookhrem.jpg' 
+                title="12 Ways to improve Magento 2 performance and security" 
+                language="en"
+                speaker="Pavlo Okhrem" 
+                speakerCompany="Elogic Commerce" 
+            />
+            <Talk 
+                image='/assets/talks/mm16ro/optaros.jpg' 
+                title="How NOT to sell online " 
+                language="en"
+                speaker="Andrei Tătaru" 
+                speakerCompany="Optaros" 
+            />
+        </div>
+
+        <div class="container flex items-center flex-wrap mx-auto pt-12 pb-20 sm:pt-18 sm:pb-26 md:flex-nowrap md:gap-6">
+            <div class="w-full flex-col order-last pt-4 sm:w-1/2 sm:pt-0 sm:order-first">
+                <h5>Organised by</h5>
+                <h2 class="pb-3">MindMagnet</h2>
+            </div>
+            <div class="flex w-full h-48 bg-purple-50 flex-col pt-4 sm:w-1/2 sm:pt-0 items-center justify-center">
+                <img src="/assets/sponsors/mindmagnet.svg" alt="MindMagnet" class="w-1/2 mx-auto" />
+            </div>
+        </div>
+
+		<Newsletter />
+	</main>
+</Layout>

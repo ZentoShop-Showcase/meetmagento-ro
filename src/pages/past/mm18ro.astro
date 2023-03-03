@@ -1,0 +1,201 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import PageBanner from '../../components/PageBanner.astro';
+import SubNavigation from '../../components/Past/SubNavigation.astro';
+import Talk from '../../components/Past/Talk.astro';
+import Newsletter from '../../components/Newsletter.astro';
+---
+
+<Layout title="Meet Magento 2018">
+	<main>
+		<PageBanner title="Meet Magento 2018" />
+        <SubNavigation selected="mm18ro" />
+
+        <h2 class="container pb-4 sm:pb-8">Presentations</h2>
+        <h4 class="container pb-4">Keynote</h4>
+        <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-4 sm:pb-4 gap-6">
+            <Talk 
+                image='/assets/talks/mm18ro/benmarks.png' 
+                title="Magento Roadmap & Magento Association" 
+                language="en"
+                speaker="Ben Marks" 
+                speakerCompany="Magento" 
+            />
+            <Talk 
+                image='/assets/talks/mm18ro/ionutrada.jpg' 
+                title="Sănătate pshihică - Echilibru emoțional" 
+                language="ro"
+                speaker="Ionuț Rada" 
+                speakerCompany="RadaWay" 
+            />
+        </div>
+        <h4 class="container py-4">Business Track</h4>
+        <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-4 sm:pb-4 gap-6">
+            <Talk
+                image='/assets/talks/mm18ro/valentinradu.jpg' 
+                title="What's being hidden in your Magento" 
+                language="ro"
+                speaker="Valentin Radu" 
+                speakerCompany="Omniconvert" 
+            />
+            <Talk 
+                image='/assets/talks/mm18ro/roundtable1.jpg' 
+                title="Roundtable - Provocarile unui eCommerce startup în 2018" 
+                language="ro"
+                speaker="Remus Lucuț, Mădălina Stănescu, Valentin Radu, Iulian Ghișoiu" 
+                speakerCompany="Blugento" 
+            />
+            <Talk 
+                image='/assets/talks/mm18ro/madalinastanescu.jpg' 
+                title="Google AdWords: Advanced e-Commerce Growth Strategies" 
+                language="ro"
+                speaker="Mădălina Stănescu" 
+                speakerCompany="Optimized" 
+            />
+            <Talk 
+                image='/assets/talks/mm18ro/iulianghisoiu.jpg' 
+                title="Set-up your PPC campaigns for success" 
+                language="ro"
+                speaker="Iulian Ghișoiu" 
+                speakerCompany="Target Web" 
+            />
+            <Talk 
+                image='/assets/talks/mm18ro/ihorfurseev.jpg' 
+                title="Leading a team in e-commerce agency" 
+                language="en"
+                speaker="Ihor Furseev" 
+                speakerCompany="Atwix" 
+            />
+            <Talk 
+                image='/assets/talks/mm18ro/mihaelacristea.png' 
+                title="Protecția datelor cu caracter personal - Noul regulament. Tot ce trebuie să știi" 
+                language="ro"
+                speaker="Mihaela Cristea" 
+                speakerCompany="Budușan și Asociații" 
+            />
+        </div>
+        <h4 class="container py-4">Technical Track</h4>
+        <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-4 sm:pb-4 gap-6">
+            <Talk 
+                image='/assets/talks/mm18ro/andriikasian.jpg' 
+                title="Write your code in efficient way" 
+                language="en"
+                speaker="Andrii Kasian" 
+                speakerCompany="Magento" 
+            />
+            <Talk 
+                image='/assets/talks/mm18ro/davidmanners.jpg' 
+                title="The 23 and 1/2 hour developer" 
+                language="en"
+                speaker="David Manners" 
+                speakerCompany="Magento" 
+            />
+            <Talk 
+                image='/assets/talks/mm18ro/davidmanners.jpg' 
+                title="Panel" 
+                language="en"
+                speaker="David Manners" 
+                speakerCompany="Magento" 
+            />
+            <Talk 
+                image='/assets/talks/mm18ro/bartekigielski.jpg' 
+                title="Design system - Creating a consistent UI for Magento store" 
+                language="en"
+                speaker="Bartek Igielski" 
+                speakerCompany="Snowdog"
+            />
+            <Talk 
+                image='/assets/talks/mm18ro/cristianpartica.jpg' 
+                title="GraphQL: Mind your Ps and QLs" 
+                language="en"
+                speaker="Cristian Partica" 
+                speakerCompany="Magento" 
+            />
+            <Talk 
+                image='/assets/talks/mm18ro/alessandroronchi.jpg' 
+                title="Some lessons learned contributing to MSI, the largest community-developed feature in Magento" 
+                language="en"
+                speaker="Alessandro Ronchi" 
+                speakerCompany="Bitbull" 
+            />
+            <Talk 
+                image='/assets/talks/mm18ro/andrewhowden.jpg' 
+                title="Oh my God everything is on fire" 
+                language="en"
+                speaker="Andrew Howden" 
+                speakerCompany="Sitewards"
+            />
+            <Talk 
+                image='/assets/talks/mm18ro/valeriinaida.jpg' 
+                title="Dark side of Architecture" 
+                language="en"
+                speaker="Valerii Naida" 
+                speakerCompany="Magento" 
+            />
+            <Talk 
+                image='/assets/talks/mm18ro/bartekigielski.jpg' 
+                title="Game Changer for eCommerce - Vue Storefront - Open Source PWA" 
+                language="en"
+                speaker="Bartek Igielski" 
+                speakerCompany="Snowdog"
+            />
+            <Talk 
+                image='/assets/talks/mm18ro/johndemian.jpg' 
+                title="Using serverless with Magento" 
+                language="en"
+                speaker="John Demian" 
+                speakerCompany="Dashbird" 
+            />
+
+            <Talk 
+                image='/assets/talks/mm18ro/ruslanaharodnik.jpg' 
+                title="Migration from M1 to M2: How to increase your perfomance and decrease your headache" 
+                language="en"
+                speaker="Ruslan Aharodnik" 
+                speakerCompany="Neklo" 
+            />
+            <Talk 
+                image='/assets/talks/mm18ro/adrianbalcan.jpg' 
+                title="Cloud providers, tools and best practices in running Magento on Kubernetes" 
+                language="en"
+                speaker="Adrian Balcan" 
+                speakerCompany="MindMagnet" 
+            />
+            <Talk 
+                image='/assets/talks/mm18ro/andriikasian.jpg' 
+                title="Using Magento Performance Tools to analyze and improve the performance of your code" 
+                language="en"
+                speaker="Andrii Kasian" 
+                speakerCompany="Magento" 
+            />
+            <Talk 
+                image='/assets/talks/mm18ro/razvanavramescu.jpg' 
+                title="Tips and Tricks in Magento 2 data migration tool" 
+                language="en"
+                speaker="Razvan-Marian Avramescu" 
+                speakerCompany="" 
+            />
+        </div>
+
+        <div class="container flex items-center flex-wrap mx-auto pt-12 pb-20 sm:pt-18 sm:pb-26 md:flex-nowrap md:gap-6">
+            <div class="w-full flex-col order-last pt-4 sm:w-1/2 sm:pt-0 sm:order-first">
+                <h5>Organised by</h5>
+                <h2 class="pb-3">Blugento</h2>
+                <p class="text-l font-normal text-gray-600 pb-8">Blugento is a Software-as-a-Service (SaaS) solution built on top of Magento 1 and offers fully managed eCommerce solutions with state-of-the-art Cloud hosting.</p>
+                <a
+                    id="zento-link"
+                    class="text-orange-600 no-underline hover:text-orange-700 hover:underline"
+                    target="_blank"
+                    href="https://www.blugento.ro"
+                >
+                    Visit Blugento
+                </a>
+            </div>
+            <div class="flex w-full h-48 bg-purple-50 flex-col pt-4 sm:w-1/2 sm:pt-0 items-center justify-center">
+                <img src="/assets/sponsors/blugento.svg" alt="Blugento" class="w-1/2 mx-auto" />
+            </div>
+        </div>
+
+		<Newsletter />
+	</main>
+</Layout>
