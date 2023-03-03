@@ -14,8 +14,8 @@ module.exports = {
                 // => @media (min-width: 1368px) { ... }
                 'xl': '1368px',
                 // => @media (min-width: 1368px) { ... }
-                '2xl': '1920px',
-                // => @media (min-width: 1920px) { ... }
+                '2xl': '1368px',
+                // => @media (min-width: 1368px) { ... }
             },
 
             // Used as leading-{object-key}. *Note: same as default. Added here for easier use

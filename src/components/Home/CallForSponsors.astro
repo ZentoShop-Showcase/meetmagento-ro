@@ -6,24 +6,26 @@ import sponsors from '../../assets/banners/call-for-sponsors.svg';
 
 // const {  } = Astro.props;
 ---
-<div id="call-for-sponsors" class="basis-full md:basis-6/12">
-    <img
-        src={sponsors}
-        width={719}
-        height={404}
-        sizes="(min-width: 320px) 100%"
-        alt="Call for sponsors"
-    />
-    <div class="flex flex-col pt-4">
-        <h2 class="pb-2">Call for Sponsors</h2>
-        <p class="text-xl font-normal text-gray-600 pb-6">Want to support the event?</p>
-        <a
-            id="apply-for-sponsor"
-            class="w-full max-w-48 bg-orange-600 button-m text-white rounded
-              py-4 px-4 text-center hover:bg-orange-700 focus:outline-none"
-            href="/call-for-sponsors"
-        >
-            Become a sponsor
-        </a>
+<div id="call-for-sponsors" class="flex justify-end basis-full md:basis-6/12">
+    <div>
+        <img
+            src={sponsors}
+            width={719}
+            height={404}
+            sizes="(min-width: 320px) 100%"
+            alt="Call for sponsors"
+        />
+        <div class="flex flex-col pt-4">
+            <h2 class="pb-2">Call for Sponsors</h2>
+            <p class="text-xl font-normal text-gray-600 pb-6">Want to support the event?</p>
+            <a
+                id="apply-for-sponsor"
+                class="w-full max-w-48 bg-orange-600 button-m text-white rounded
+                py-4 px-4 text-center hover:bg-orange-700 focus:outline-none"
+                href="/call-for-sponsors"
+            >
+                Become a sponsor
+            </a>
+        </div>
     </div>
 </div>
