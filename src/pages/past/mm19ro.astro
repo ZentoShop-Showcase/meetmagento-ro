@@ -1,0 +1,223 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import PageBanner from '../../components/PageBanner.astro';
+import SubNavigation from '../../components/Past/SubNavigation.astro';
+import Talk from '../../components/Past/Talk.astro';
+import Newsletter from '../../components/Newsletter.astro';
+---
+
+<Layout title="Meet Magento 2019">
+	<main>
+		<PageBanner title="Meet Magento 2019" />
+        <SubNavigation selected="mm19ro" />
+
+        <h2 class="container pb-4 sm:pb-8">Presentations</h2>
+        <h4 class="container pb-4">Keynote</h4>
+        <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-4 sm:pb-4 gap-6">
+            <Talk 
+                image='/assets/talks/mm19ro/benmarks.png' 
+                title="Magento Product Updates" 
+                language="en"
+                speaker="Ben Marks" 
+                speakerCompany="Adobe" 
+            />
+            <Talk 
+                image='/assets/talks/mm19ro/jonathanroeder.png' 
+                title="Magento's Data-Driven Future" 
+                language="en"
+                speaker="Jonathan Roeder" 
+                speakerCompany="Adobe" 
+                video="https://youtu.be/7WygyfBKZNw"
+            />
+            <Talk 
+                image='/assets/talks/mm19ro/ovidiuionuteftimie.jpg' 
+                title="Aveți 5min să vorbim despre Dumnezeul nostru electronic?" 
+                language="ro"
+                speaker="Ovidiu Ionuț Eftimie" 
+                speakerCompany="Times New Roman" 
+            />
+        </div>
+        <h4 class="container py-4">Business Track</h4>
+        <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-4 sm:pb-4 gap-6">
+            <Talk
+                image='/assets/talks/mm19ro/florintoma.png' 
+                title="Extinde-ți afacerea online în afara granițelor" 
+                language="ro"
+                speaker="Florin Toma" 
+                speakerCompany="DHL" 
+            />
+            <Talk 
+                image='/assets/talks/mm19ro/eugenpredescu.jpg' 
+                title="Online Marketing - de la psihologie la deprindere" 
+                language="ro"
+                speaker="Eugen Predescu" 
+                speakerCompany="Canopy Digital" 
+            />
+            <Talk 
+                image='/assets/talks/mm19ro/iulianghisoiu.jpg' 
+                title="7 secrete SEO la magazinele online Magento (de care probabil nu tii cont) " 
+                language="ro"
+                speaker="Iulian Ghișoiu" 
+                speakerCompany="TargetWeb" 
+            />
+            <Talk 
+                image='/assets/talks/mm19ro/claudiufarcas.jpg' 
+                title="Winning the customer through cross-channel digital marketing campaigns" 
+                language="ro"
+                speaker="Claudiu Farcas" 
+                speakerCompany="Arabesque Online" 
+            />
+            <Talk 
+                image='/assets/talks/mm19ro/iulianghisoiu.jpg' 
+                title="Set-up your PPC campaigns for success" 
+                language="ro"
+                speaker="Iulian Ghișoiu" 
+                speakerCompany="Target Web" 
+            />
+            <Talk 
+                image='/assets/talks/mm19ro/elenadobre.png' 
+                title="AI E-commerce Tenets" 
+                language="ro"
+                speaker="Elena Dobre" 
+                speakerCompany="Zarbi" 
+            />
+            <Talk 
+                image='/assets/talks/mm19ro/monicaobogeanu.jpg' 
+                title="Deschiderea unei corporații către startup-uri - câteva produse românești care susțin creșterea magazinelor online" 
+                language="ro"
+                speaker="Monica Obogeanu" 
+                speakerCompany="Orange" 
+            />
+            <Talk 
+                image='/assets/talks/mm19ro/georgianrosu.jpg' 
+                title="eCommerce & ERP - Automatizarea fluxurilor de business ale unui magazin online, folosind sistemul integrat ERP" 
+                language="ro"
+                speaker="Georgian Rosu" 
+                speakerCompany="Pluriva" 
+            />
+            <Talk 
+                image='/assets/talks/mm19ro/remuslucut.jpg' 
+                title="The SaaS era. Cum să-ți crești și să-ți optimizezi afacerea folosind instrumentele SaaS." 
+                language="ro"
+                speaker="Remus Lucuț" 
+                speakerCompany="Blugento" 
+            />
+        </div>
+        <h4 class="container py-4">Technical Track</h4>
+        <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-4 sm:pb-4 gap-6">
+            <Talk 
+                image='/assets/talks/mm19ro/antonkrill.jpg' 
+                title="Magento API Evolution" 
+                language="en"
+                speaker="Anton Krill" 
+                speakerCompany="Adobe" 
+            />
+            <Talk 
+                image='/assets/talks/mm19ro/sandermangels.jpg' 
+                title="PWA, Separating features from solutions" 
+                language="en"
+                speaker="Sander Mangels" 
+                speakerCompany="VueStoreFront" 
+            />
+            <Talk 
+                image='/assets/talks/mm19ro/olenatkacheva.png' 
+                title="Setting Yourself Up For Success with Page Builder" 
+                language="en"
+                speaker="Olena Tkacheva" 
+                speakerCompany="Adobe" 
+            />
+            <Talk 
+                image='/assets/talks/mm19ro/igorminiailo.png' 
+                title="The long way from Monolith to Service Isolated Architecture" 
+                language="en"
+                speaker="Igor Miniailo" 
+                speakerCompany="Adobe" 
+            />
+            <Talk 
+                image='/assets/talks/mm19ro/adrianbalcan.jpg' 
+                title="Taking VSF from Local Env to K8S Production & Operations" 
+                language="en"
+                speaker="Adrian Balcan" 
+                speakerCompany="Blugento"
+            />
+            <Talk 
+                image='/assets/talks/mm19ro/pawelbilinskimaciejslawik.jpg' 
+                title="Delivering Magento 2 for a leading Polish home &amp; deco eCommerce Home&amp;You in 4.5 months." 
+                language="en"
+                speaker="Paweł Biliński &amp; Maciej Sławik" 
+                speakerCompany="" 
+            />
+            <Talk 
+                image='/assets/talks/mm19ro/mariusstrajeru.jpg' 
+                title="I'm importing so you don't have to" 
+                language="en"
+                speaker="Marius Străjeru" 
+                speakerCompany="Arnia"
+            />
+
+            <Talk 
+                image='/assets/talks/mm19ro/antonkrill.jpg' 
+                title="Magento Deep-Dive" 
+                language="en"
+                speaker="Anton Krill" 
+                speakerCompany="Adobe" 
+            />
+            <Talk 
+                image='/assets/talks/mm19ro/alinalexandru.jpg' 
+                title="Magento performance improvements tips and tricks" 
+                language="en"
+                speaker="Alin Alexandru" 
+                speakerCompany="Innobyte" 
+            />
+            <Talk 
+                image='/assets/talks/mm19ro/irinamargescu.jpg' 
+                title="Magento deployment into AWS" 
+                language="en"
+                speaker="Irina Mărgescu" 
+                speakerCompany="Dendrio" 
+            />
+            <Talk 
+                image='/assets/talks/mm19ro/marshanaidoo.jpg' 
+                title="Getting the most from Events?" 
+                language="en"
+                speaker="Marsha Naidoo" 
+                speakerCompany="Meet Magento New York" 
+            />
+            <Talk 
+                image='/assets/talks/mm19ro/catalindumitras.jpg' 
+                title="Getting the best out of Magento with AWS" 
+                language="en"
+                speaker="Cătălin Dumitraș" 
+                speakerCompany="Pentalog" 
+            />
+            <Talk 
+                image='/assets/talks/mm19ro/victortodoran.jpg' 
+                title="Becoming a Magento 2 Certified Professional Developer" 
+                language="en"
+                speaker="Victor Todoran" 
+                speakerCompany="Evozon" 
+            />
+        </div>
+
+        <div class="container flex items-center flex-wrap mx-auto pt-12 pb-20 sm:pt-18 sm:pb-26 md:flex-nowrap md:gap-6">
+            <div class="w-full flex-col order-last pt-4 sm:w-1/2 sm:pt-0 sm:order-first">
+                <h5>Organised by</h5>
+                <h2 class="pb-3">Blugento</h2>
+                <p class="text-l font-normal text-gray-600 pb-8">Blugento is a Software-as-a-Service (SaaS) solution built on top of Magento 1 and offers fully managed eCommerce solutions with state-of-the-art Cloud hosting.</p>
+                <a
+                    id="zento-link"
+                    class="text-orange-600 no-underline hover:text-orange-700 hover:underline"
+                    target="_blank"
+                    href="https://www.blugento.ro"
+                >
+                    Visit Blugento
+                </a>
+            </div>
+            <div class="w-full bg-purple-50 flex-col pt-4 sm:w-1/2 sm:pt-0">
+                <img src="/assets/sponsors/blugento.svg" alt="Blugento" class="w-1/2 mx-auto" />
+            </div>
+        </div>
+
+		<Newsletter />
+	</main>
+</Layout>
