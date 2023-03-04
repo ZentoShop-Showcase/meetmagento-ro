@@ -1,0 +1,241 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import PageBanner from '../../components/PageBanner.astro';
+import SubNavigation from '../../components/Past/SubNavigation.astro';
+import Talk from '../../components/Past/Talk.astro';
+import Newsletter from '../../components/Newsletter.astro';
+---
+
+<Layout title="Meet Magento 2015">
+	<main>
+		<PageBanner title="Meet Magento 2015" />
+        <SubNavigation selected="mm15ro" />
+
+        <h2 class="container pb-4 sm:pb-8">Presentations</h2>
+        <h4 class="container pb-4">Keynote</h4>
+        <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-4 sm:pb-4 gap-6">
+            <Talk 
+                image='/assets/talks/mm15ro/thomasgoletz.jpg' 
+                title="Meet Magento Association Updates" 
+                language="en"
+                speaker="Thomas Goletz" 
+                speakerCompany="Meet Magento Association" 
+            />
+            <Talk 
+                image='/assets/talks/mm15ro/basnawijn.jpg' 
+                title="Magento Keynote" 
+                language="en"
+                speaker="Bas Nawijn" 
+                speakerCompany="Magento" 
+            />
+            <Talk 
+                image='/assets/talks/mm15ro/romanbaluta.jpg' 
+                title="Tangible cloud hosting benefits for merchants and solution providers" 
+                language="en"
+                speaker="Roman Baluta" 
+                speakerCompany="Microsoft" 
+            />
+        </div>
+        <h4 class="container py-4">Business Track</h4>
+        <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-4 sm:pb-4 gap-6">
+            <Talk
+                image='/assets/talks/mm15ro/stefanolena.jpg' 
+                title="How to transform transactional emails into sales opportunities" 
+                language="en"
+                speaker="Stefano Lena" 
+                speakerCompany=""
+            />
+            <Talk
+                image='/assets/talks/mm15ro/markobrisevac.jpg' 
+                title="eCommerce Website Redesign Strategy - Incremental Changes or Full Redesign?" 
+                language="en"
+                speaker="Marko Brisevac" 
+                speakerCompany="Inchoo"
+            />
+            <Talk
+                image='/assets/talks/mm15ro/bogdancolceriu.jpg' 
+                title="E-commerce-ul din spatele magazinului virtual" 
+                language="ro"
+                speaker="Rodica Mihalache &amp; Bogdan Colceriu" 
+                speakerCompany=""
+            />
+            <Talk
+                image='/assets/talks/mm15ro/elizarogalski.png' 
+                title="Brandul de angajator" 
+                language="ro"
+                speaker="Eliza Rogalski" 
+                speakerCompany="Rogalski Damaschin"
+            />
+            <Talk
+                image='/assets/talks/mm15ro/razvanricci.jpg' 
+                title="Your brain on... exercise" 
+                language="ro"
+                speaker="Razvan Ricci" 
+                speakerCompany=""
+            />
+            <Talk
+                image='/assets/talks/mm15ro/thomasfleck.jpg' 
+                title="Online Business For Small & Big Business: How to start, How to Win & How to avoid too much pain" 
+                language="en"
+                speaker="Thomas Fleck" 
+                speakerCompany="NetResearch"
+            />
+            <Talk
+                image='/assets/talks/mm15ro/mihaicraciun.jpg' 
+                title="Helping the customer" 
+                language="ro"
+                speaker="Mihai Crăciun" 
+                speakerCompany=""
+            />
+            <Talk
+                image='/assets/talks/mm15ro/kubazwolinski.jpg' 
+                title="Magento in the Interntet of Things" 
+                language="en"
+                speaker="Kuba Zwolinski" 
+                speakerCompany="Snowdog"
+            />
+            <Talk
+                image='/assets/talks/mm15ro/sergeylysak.jpg' 
+                title="How to make benefits with multi-channel customer support. Magic recipes for eCommerce." 
+                language="en"
+                speaker="Sergey Lysak" 
+                speakerCompany="Eltrino"
+            />
+            <Talk
+                image='/assets/talks/mm15ro/iulianpadurariu.jpg' 
+                title="Gamification in eCommerce" 
+                language="ro"
+                speaker="Iulian Pădurariu" 
+                speakerCompany=""
+            />
+            <Talk
+                image='/assets/talks/mm15ro/mariusghenea.jpg' 
+                title="Startup roadmap" 
+                language="ro"
+                speaker="Marius Ghenea" 
+                speakerCompany=""
+            />
+            <Talk
+                image='/assets/talks/mm15ro/liviutaloi.jpg' 
+                title="Sexy Analytics for amazing Software people" 
+                language="ro"
+                speaker="Liviu Taloi" 
+                speakerCompany=""
+            />
+            <Talk
+                image='/assets/talks/mm15ro/kristinapototskaya.jpg' 
+                title="How to gain up revenue on Email marketing: TOP 10 triggered emails" 
+                language="en"
+                speaker="Kristina Pototskaya" 
+                speakerCompany=""
+            />
+            <Talk
+                image='/assets/talks/mm15ro/calinbiris.jpg' 
+                title="Parteneriatele - o tactică de Guerrilla Marketing" 
+                language="ro"
+                speaker="Călin Biriș" 
+                speakerCompany=""
+            />
+        </div>
+        <h4 class="container py-4">Technical Track</h4>
+        <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-4 sm:pb-4 gap-6">
+            <Talk 
+                image='/assets/talks/mm15ro/benmarks.png' 
+                title="Magento 2: What it means for you" 
+                language="en"
+                speaker="Ben Marks" 
+                speakerCompany="Magento" 
+            />
+            <Talk 
+                image='/assets/talks/mm15ro/silviancretu.jpg' 
+                title="Choose Chef! Choose high availability, consistency and speed!" 
+                language="en"
+                speaker="Silvian Crețu" 
+                speakerCompany="" 
+            />
+            <Talk 
+                image='/assets/talks/mm15ro/igorbondarenko.png' 
+                title="Magento applications and modules functional testing" 
+                language="en"
+                speaker="Igor Bondarenko" 
+                speakerCompany="Neklo" 
+            />
+            <Talk 
+                image='/assets/talks/mm15ro/valhrykyan.jpg' 
+                title="Remote debugging of Magento code - helpful tools" 
+                language="en"
+                speaker="Val Hrykyan" 
+                speakerCompany="Amasty" 
+            />
+            <Talk 
+                image='/assets/talks/mm15ro/andriisemenenko.jpg' 
+                title="Magento 2: Checkout and Payments" 
+                language="en"
+                speaker="Andrii Semenenko" 
+                speakerCompany="Magento" 
+            />
+            <Talk 
+                image='/assets/talks/mm15ro/mariusstrajeru.jpg' 
+                title="Magento 2 as a CMS" 
+                language="en"
+                speaker="Marius Străjeru" 
+                speakerCompany="" 
+            />
+            <Talk 
+                image='/assets/talks/mm15ro/constantinbejenaru.jpg' 
+                title="Load spikes reduced to normal: The full tech stack of our FPC" 
+                language="en"
+                speaker="Constantin Bejenaru" 
+                speakerCompany="Evozon" 
+            />
+            <Talk 
+                image='/assets/talks/mm15ro/raduchelariu.jpg' 
+                title="It's time to ditch the old school" 
+                language="en"
+                speaker="Radu Chelariu" 
+                speakerCompany="" 
+            />
+            <Talk 
+                image='/assets/talks/mm15ro/danhomorodean.jpg' 
+                title="An up-to-date catalog search solution for Magento with Solr and Elasticsearch" 
+                language="en"
+                speaker="Dan Homorodean" 
+                speakerCompany="Evozon" 
+            />
+            <Talk 
+                image='/assets/talks/mm15ro/alexanderturiak.jpg' 
+                title="Codeception tests for Magento" 
+                language="en"
+                speaker="Alexander Turiak" 
+                speakerCompany="" 
+            />
+
+            <Talk 
+                image='/assets/talks/mm15ro/silviancretu.jpg' 
+                title="Cooking with Chef in Amazon AWS" 
+                language="en"
+                speaker="Silvian Crețu" 
+                speakerCompany="" 
+            />
+            <Talk 
+                image='/assets/talks/mm15ro/mariusstrajeru.jpg' 
+                title="Magento 2 ..." 
+                language="en"
+                speaker="Marius Străjeru" 
+                speakerCompany="" 
+            />
+        </div>
+
+        <div class="container flex items-center flex-wrap mx-auto pt-12 pb-20 sm:pt-18 sm:pb-26 md:flex-nowrap md:gap-6">
+            <div class="w-full flex-col order-last pt-4 sm:w-1/2 sm:pt-0 sm:order-first">
+                <h5>Organised by</h5>
+                <h2 class="pb-3">MindMagnet</h2>
+            </div>
+            <div class="flex w-full h-48 bg-purple-50 flex-col pt-4 sm:w-1/2 sm:pt-0 items-center justify-center">
+                <img src="/assets/sponsors/mindmagnet.svg" alt="MindMagnet" class="w-1/2 mx-auto" />
+            </div>
+        </div>
+
+		<Newsletter />
+	</main>
+</Layout>
