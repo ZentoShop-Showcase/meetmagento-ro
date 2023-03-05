@@ -13,13 +13,6 @@ const silverSponsors = sponsors.filter((sponsor) => sponsor.package === SponsorP
 const organizerSponsors = sponsors.filter((sponsor) => sponsor.package === SponsorPackage.Organizer);
 
 ---
-<div class="container flex items-center flex-wrap mx-auto pb-20 sm:pb-2 md:flex-nowrap md:gap-6">
-    <div class="w-full">
-        <h5>2023 Edition</h5>
-        <h2 class="pb-3">Sponsored by</h2>
-    </div>
-</div>
-
 {platinumSponsors.length > 0 &&
     <div class="container w-full text-l pb-3 text-gray-600">
         <h4>Platinum Sponsors</h4>
