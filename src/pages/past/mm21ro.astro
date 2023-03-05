@@ -4,6 +4,10 @@ import PageBanner from '../../components/PageBanner.astro';
 import SubNavigation from '../../components/Past/SubNavigation.astro';
 import Talk from '../../components/Past/Talk.astro';
 import Newsletter from '../../components/Newsletter.astro';
+import Sponsors from '../../components/Home/Sponsors.astro';
+
+import { SponsorsData } from '../../components/Sponsors/data-mm21ro';
+
 ---
 
 <Layout title="Meet Magento 2021">
@@ -192,6 +196,14 @@ import Newsletter from '../../components/Newsletter.astro';
                 <img src="/assets/sponsors/zentoshop.svg" alt="Zento" class="w-1/2 mx-auto" />
             </div>
         </div>
+
+		<div class="container flex items-center flex-wrap mx-auto pb-20 sm:pb-2 md:flex-nowrap md:gap-6">
+			<div class="w-full">
+				<h5>2021 Online Edition</h5>
+				<h2 class="pb-3">Sponsored by</h2>
+			</div>
+		</div>
+		<Sponsors sponsors={SponsorsData}/>
 
 		<Newsletter />
 	</main>
