@@ -40,7 +40,7 @@ export const SponsorsData: Sponsor[] = [
     {
         name: 'Clever++',
         logo: 'assets/sponsors/clever.svg',
-        url: 'https://cleverplusplus.com/',
+        url: 'https://cleverplusplus.ro',
         package: SponsorPackage.Silver,
         description: "Clever++ is a Magento provider and solution specialist.",
     },
