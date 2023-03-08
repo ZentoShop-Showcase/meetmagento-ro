@@ -19,7 +19,7 @@ export const SponsorsData: Sponsor[] = [
     {
         name: 'Aqurate',
         logo: 'assets/sponsors/aqurate.svg',
-        url: 'https://aqurate.ai/',
+        url: 'https://hubs.li/Q01FPxL10',
         package: SponsorPackage.Gold,
         description: 'Aqurate is an AI-powered tool that helps merchants boost conversion rates, AOV, and customer retention through personalization.',
     },
