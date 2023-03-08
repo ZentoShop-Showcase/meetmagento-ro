@@ -26,7 +26,7 @@ export const SponsorsData: Sponsor[] = [
     {
         name: 'EasySales',
         logo: 'assets/sponsors/easysales.svg',
-        url: 'https://easysales.com/',
+        url: 'https://easysales.ro/',
         package: SponsorPackage.Gold,
         description: 'EasySales is a SaaS platform that helps brands and retailers to list their products on relevant marketplaces, with no technical knowledge!',
     },
