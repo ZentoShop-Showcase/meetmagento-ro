@@ -52,6 +52,13 @@ export const SponsorsData: Sponsor[] = [
         description: "Softlead helps companies in the digital transformation process by identifying the most suitable partners across all industries",
     },
     {
+        name: 'theMarketer',
+        logo: 'assets/sponsors/themarketer.svg',
+        url: 'https://themarketer.com/',
+        package: SponsorPackage.Silver,
+        description: "theMarketer is an email and loyalty marketing platform enabling businesses to streamline their marketing processes, optimize their resources, and boost customer lifetime value using a suite of powerful features",
+    },
+    {
         name: 'ZentoShop',
         logo: 'assets/sponsors/zentoshop.svg',
         url: 'https://www.zentoshop.com',
