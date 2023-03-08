@@ -20,7 +20,7 @@ const organizerSponsors = sponsors.filter((sponsor) => sponsor.package === Spons
 }
 <div class="container flex items-center flex-wrap mx-auto pb-4 sm:pb-4 md:flex-nowrap md:gap-6">
     {platinumSponsors.map((sponsor: Sponsor) => (
-        <div class="flex items-center justify-center w-full md:w-1/2 border-solid border-gray-200 border-2 p-4">
+        <div class="flex items-center justify-center w-full h-64 md:w-1/2 border-solid border-gray-200 border-2 p-4">
             <img
                 src={sponsor.logo}
                 alt={sponsor.name}
