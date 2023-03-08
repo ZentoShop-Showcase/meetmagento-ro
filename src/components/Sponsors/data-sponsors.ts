@@ -2,13 +2,13 @@ import type { Sponsor } from './sponsor';
 import { SponsorPackage } from './sponsor';
 
 export const SponsorsData: Sponsor[] = [
-    // {
-    //     name: 'ZentoShop',
-    //     logo: 'assets/sponsors/zentoshop.svg',
-    //     url: 'https://www.zentoshop.com',
-    //     package: SponsorPackage.Platinum,
-    //     description: 'Zento is a Software-as-a-Service (SaaS) solution built on top of Magento 2 and offers fully managed eCommerce solutions with state-of-the-art Cloud hosting to medium and large merchants.',
-    // },
+    {
+        name: 'cyber_Folks',
+        logo: 'assets/sponsors/cyberfolks.svg',
+        url: 'https://cyberfolks.ro/',
+        package: SponsorPackage.Platinum,
+        description: '',
+    },
     {
         name: 'Apsis',
         logo: 'assets/sponsors/apsisai.svg',
@@ -17,11 +17,11 @@ export const SponsorsData: Sponsor[] = [
         description: 'Apsis AI is an AI-powered Visual Search to remove slow and inaccurate textual searches and promote product discovery across domains, from real world images to shops',
     },
     {
-        name: 'Aquarate',
+        name: 'Aqurate',
         logo: 'assets/sponsors/aqurate.svg',
         url: 'https://aqurate.ai/',
         package: SponsorPackage.Gold,
-        description: 'Aquarate is an AI-powered tool that halps merchants boost conversion rates, AOV, and customer retention through personalization.',
+        description: 'Aqurate is an AI-powered tool that helps merchants boost conversion rates, AOV, and customer retention through personalization.',
     },
     {
         name: 'EasySales',
