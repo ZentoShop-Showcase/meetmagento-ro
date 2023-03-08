@@ -45,6 +45,13 @@ export const SponsorsData: Sponsor[] = [
         description: "Clever++ is a Magento provider and solution specialist.",
     },
     {
+        name: 'SoftLead',
+        logo: 'assets/sponsors/softlead.svg',
+        url: 'https://softlead.ro/',
+        package: SponsorPackage.Silver,
+        description: "Softlead helps companies in the digital transformation process by identifying the most suitable partners across all industries",
+    },
+    {
         name: 'ZentoShop',
         logo: 'assets/sponsors/zentoshop.svg',
         url: 'https://www.zentoshop.com',
