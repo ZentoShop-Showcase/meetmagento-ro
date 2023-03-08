@@ -7,7 +7,7 @@ export const SponsorsData: Sponsor[] = [
         logo: 'assets/sponsors/cyberfolks.svg',
         url: 'https://cyberfolks.ro/',
         package: SponsorPackage.Platinum,
-        description: '',
+        description: 'cyber_Folks is a web hosting and e-commerce company, that offers innovative technological solutions supported by exceptional support, to ensure the growth of businesses online.',
     },
     {
         name: 'Apsis',
