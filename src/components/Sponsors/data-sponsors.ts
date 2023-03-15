@@ -59,6 +59,13 @@ export const SponsorsData: Sponsor[] = [
         description: "theMarketer is an email and loyalty marketing platform enabling businesses to streamline their marketing processes, optimize their resources, and boost customer lifetime value using a suite of powerful features",
     },
     {
+        name: 'We as Web',
+        logo: 'assets/sponsors/weasweb.svg',
+        url: 'https://www.weasweb.com/',
+        package: SponsorPackage.Silver,
+        description: "We as Web provides top-notch team augmentation and outsourcing services to companies in various industries who are in search of talented experts for short or long term projects.",
+    },
+    {
         name: 'ZentoShop',
         logo: 'assets/sponsors/zentoshop.svg',
         url: 'https://www.zentoshop.com',
