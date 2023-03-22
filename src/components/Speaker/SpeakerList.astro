@@ -1,0 +1,26 @@
+---
+import SpeakerCard from "./SpeakerCard.astro";
+import type { Speaker } from "./speaker";
+
+const { speakers } = Astro.props;
+---
+
+<div class="container pb-20">
+    <h5>Our 2023</h5>
+    <h2 class="pb-3">Speakers</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mx-auto pb-4 sm:pb-4 gap-6">
+        {speakers.map((speaker: Speaker) => (
+            <SpeakerCard speaker={speaker} />
+        ))}
+    </div>
+    <div class="w-full align-center">
+        <a
+            id="speakers-link"
+            class="w-full max-w-48 bg-orange-600 button-m text-white rounded
+                py-4 px-4 text-center hover:bg-orange-700 focus:outline-none"
+            href="/speakers"
+        >
+            View all Speakers
+        </a>
+    </div>
+</div>
