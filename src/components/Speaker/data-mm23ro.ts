@@ -24,6 +24,22 @@ export const SpeakersData: Speaker[] = [
         company: 'Adobe',
         companyTitle: undefined,
         track: Track.Technical,
+        featured: false,
+    },
+    {
+        name: 'Łukasz Bajsarowicz',
+        photo: 'assets/speakers/mm23ro/lukaszbajsarowicz.png',
+        company: undefined,
+        companyTitle: undefined,
+        track: Track.Technical,
+        featured: true,
+    },
+    {
+        name: 'Mathias Schreiber',
+        photo: 'assets/speakers/mm23ro/mathiasschreiber.jpg',
+        company: 'Meet Magento Asociation',
+        companyTitle: undefined,
+        track: Track.Technical,
         featured: true,
     },
     {
@@ -40,6 +56,14 @@ export const SpeakersData: Speaker[] = [
         company: 'Revo',
         companyTitle: undefined,
         track: Track.Business,
-        featured: true,
+        featured: false,
+    },
+    {
+        name: 'Vlad Marincaș',
+        photo: 'assets/speakers/mm23ro/vladmarincas.png',
+        company: 'Aqurate',
+        companyTitle: undefined,
+        track: Track.Business,
+        featured: false,
     },
 ];
