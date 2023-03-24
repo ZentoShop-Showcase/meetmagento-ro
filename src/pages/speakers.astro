@@ -6,6 +6,7 @@ import SpeakerCard from '../components/Speaker/SpeakerCard.astro';
 
 import { Speaker, Track } from '../components/Speaker/speaker';
 import { SpeakersData } from '../components/Speaker/data-mm23ro';
+import SpeakersMore from '../components/Speaker/SpeakersMore.astro';
 
 const technical = SpeakersData.filter((s: Speaker) => s.track === Track.Technical);
 const business = SpeakersData.filter((s: Speaker) => s.track === Track.Business);
@@ -24,6 +25,7 @@ const business = SpeakersData.filter((s: Speaker) => s.track === Track.Business)
             {technical.map((speaker: Speaker) => (
                 <SpeakerCard speaker={speaker} />
             ))}
+            <SpeakersMore />
         </div>
         
         {technical.length > 0 &&
@@ -35,6 +37,7 @@ const business = SpeakersData.filter((s: Speaker) => s.track === Track.Business)
             {business.map((speaker: Speaker) => (
                 <SpeakerCard speaker={speaker} />
             ))}
+            <SpeakersMore />
         </div>
 
         <div class="container w-full text-l pt-3 pb-10 text-gray-600">
