@@ -31,6 +31,13 @@ export const SponsorsData: Sponsor[] = [
         description: 'EasySales is a SaaS platform that helps brands and retailers to list their products on relevant marketplaces, with no technical knowledge!',
     },
     {
+        name: 'Zitec',
+        logo: '/assets/sponsors/zitec.svg',
+        url: 'https://zitec.com/',
+        package: SponsorPackage.Gold,
+        description: 'Zitec is the digital transformation partner to companies across over 30 countries, tapping on software advancement & innovation to inspire and empower people and organizations to leapfrog growth.',
+    },
+    {
         name: 'eBay',
         logo: 'assets/sponsors/ebay.svg',
         url: 'https://www.ebay.com',
