@@ -14,8 +14,8 @@ module.exports = {
                 // => @media (min-width: 1368px) { ... }
                 'xl': '1368px',
                 // => @media (min-width: 1368px) { ... }
-                '2xl': '1920px',
-                // => @media (min-width: 1920px) { ... }
+                '2xl': '1368px',
+                // => @media (min-width: 1368px) { ... }
             },
 
             // Used as leading-{object-key}. *Note: same as default. Added here for easier use
@@ -292,6 +292,9 @@ module.exports = {
             maxWidth: {
                 32: spacing['32'],
                 48: spacing['48'],
+                '1/8': '12.5%',
+                '9/8': '112.5%',
+                '13/8': '162.5%',
             },
 		},
 	},

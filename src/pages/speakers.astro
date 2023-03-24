@@ -1,0 +1,55 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageBanner from '../components/PageBanner.astro';
+import Newsletter from '../components/Newsletter.astro';
+import SpeakerCard from '../components/Speaker/SpeakerCard.astro';
+
+import { Speaker, Track } from '../components/Speaker/speaker';
+import { SpeakersData } from '../components/Speaker/data-mm23ro';
+
+const technical = SpeakersData.filter((s: Speaker) => s.track === Track.Technical);
+const business = SpeakersData.filter((s: Speaker) => s.track === Track.Business);
+---
+
+<Layout title="Speakers - MeetMagento 2023">
+	<main>
+		<PageBanner title="Sponsors" />
+        
+        {technical.length > 0 &&
+            <div class="container w-full text-l pb-3 text-gray-600">
+                <h2 class="pb-2">Technical Track</h2>
+            </div>
+        }
+        <div class="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mx-auto pb-4 sm:pb-4 gap-6">
+            {technical.map((speaker: Speaker) => (
+                <SpeakerCard speaker={speaker} />
+            ))}
+        </div>
+        
+        {technical.length > 0 &&
+            <div class="container w-full text-l pb-3 text-gray-600">
+                <h2 class="pb-2">Business Track</h2>
+            </div>
+        }
+        <div class="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mx-auto pb-4 sm:pb-4 gap-6">
+            {business.map((speaker: Speaker) => (
+                <SpeakerCard speaker={speaker} />
+            ))}
+        </div>
+
+        <div class="container w-full text-l pt-3 pb-10 text-gray-600">
+            <h2 class="pb-2">Call for Papers</h2>
+            <p class="text-xl font-normal text-gray-600 pb-6">Want to share your ideas and insights?</p>
+            <a
+                id="apply-for-papers"
+                class="w-full max-w-48 bg-orange-600 button-m text-white rounded
+                  py-4 px-4 text-center hover:bg-orange-700 focus:outline-none"
+                href="/call-for-papers"
+            >
+                Apply for a spot
+            </a>
+        </div>
+
+		<Newsletter />
+	</main>
+</Layout>

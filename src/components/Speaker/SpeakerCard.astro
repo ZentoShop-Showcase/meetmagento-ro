@@ -1,0 +1,25 @@
+---
+import { Picture } from '@astrojs/image/components';
+
+const { speaker } = Astro.props;
+const { name, companyTitle, company, photo } = speaker;
+---
+<div class="swiper-slide w-full flex flex-wrap items-start justify-center mx-auto">
+    <div class="h-302 md:h-403 sm:h-262">
+        {photo !== undefined ?
+            <Picture
+                src={photo}
+                aspectRatio="1:1"
+                fix="cover"
+                widths={[403]}
+                sizes=""
+                formats={['webp', 'png']}
+                alt={name}
+                class={"w-full object-cover"}
+                loading={'lazy'}
+            />
+        : null}
+    </div>
+    <div class="w-full mt-4 text-xl font-bold">{name}</div>
+    <div class="w-full mb-4 text-m font-normal text-gray-600">{companyTitle ? companyTitle+', ' : ''}<strong>{company}</strong></div>
+</div>

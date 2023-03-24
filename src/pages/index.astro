@@ -5,19 +5,28 @@ import CallForPapers from '../components/Home/CallForPapers.astro';
 import CallForSponsors from '../components/Home/CallForSponsors.astro';
 import Sponsors from '../components/Home/Sponsors.astro';
 import Venue from '../components/Home/Venue.astro';
+import SpeakerList from '../components/Speaker/SpeakerList.astro';
 import Newsletter from '../components/Newsletter.astro';
 
 import { SponsorsData } from '../components/Sponsors/data-sponsors';
+import type { Speaker } from '../components/Speaker/speaker';
+import { SpeakersData } from '../components/Speaker/data-mm23ro';
 
 ---
 
 <Layout title="Welcome to MMRO">
 	<main>
-		<BannerPreEvent />
-		<div class="container flex items-center flex-wrap mx-auto pb-20 sm:pb-26 md:flex-nowrap md:gap-6">
+		<div class="min-h-[25rem] sm:min-h-[40rem]">
+			<BannerPreEvent />
+		</div>
+
+		<div class="container flex items-center flex-wrap mx-auto pb-20 min-h-[35rem] sm:pb-26 md:flex-nowrap md:gap-6">
 			<CallForPapers />
 			<CallForSponsors />
 		</div>
+
+		<SpeakerList speakers={SpeakersData.filter((s: Speaker) => s.featured === true)} />
+
 		<Venue />
 
 		<div class="container flex items-center flex-wrap mx-auto pb-20 sm:pb-2 md:flex-nowrap md:gap-6">

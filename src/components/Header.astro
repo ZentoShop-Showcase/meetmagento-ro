@@ -7,7 +7,7 @@
 // TODO: create image component
 ---
 <header id="header" class="absolute w-full bg-gradient-to-b from-black py-1 px-6 sm:py-5 sm:px-6 lg:py-3 lg:px-12 z-20">
-    <div class="flex items-center mx-auto">
+    <div class="container flex items-center mx-auto">
         <!-- Logo -->
         <div id="logo" class="basis-1/2 w-full h-14 bg-logo bg-no-repeat bg-contain bg-center sm:bg-left lg:basis-1/6 lg:h-18">
             <a href="/" class="block w-full h-full" aria-label="homepage" />
@@ -15,11 +15,14 @@
 
         <!-- Main Nav - Mobile -->
         <nav class="basis-1/2 flex items-center justify-end md:hidden">
-            <!-- <button
+            <a
+                id='nav-buy-ticket'
+                href="https://shop.meetmagento.ro/"
+                target="_blank"
                 class="hidden sm:block md:hidden w-full max-w-32 bg-orange-600 button-s text-white rounded
                   py-4 px-4 mr-4 hover:bg-orange-700 focus:outline-none">
                 Buy Tickets
-            </button> -->
+            </a>
             <button id="mobile-menu-open" class="w-6 h-6 bg-hamburger" aria-label="open menu" />
             <section
                 id="mobile-menu"
@@ -28,13 +31,13 @@
                     <button data-mobile-menu-close class="block w-6 h-6 bg-close bg-no-repeat bg-center p-6 mr-3 ml-auto" aria-label="close menu" />
                     <ul>
                         <li class="text-right py-2 px-6">
-                            <a href="/sponsors" data-mobile-menu-close class="inline-block button-s text-white hover:underline">
-                                Sponsors
+                            <a href="/speakers" data-mobile-menu-close class="inline-block button-s text-white hover:underline">
+                                Speakers
                             </a>
                         </li>
                         <li class="text-right py-2 px-6">
-                            <a href="/call-for-papers" data-mobile-menu-close class="inline-block button-s text-white hover:underline">
-                                Call for Papers
+                            <a href="/sponsors" data-mobile-menu-close class="inline-block button-s text-white hover:underline">
+                                Sponsors
                             </a>
                         </li>
                         <li class="text-right py-2 px-6">
@@ -52,14 +55,17 @@
                                 Contact
                             </a>
                         </li>
-                        <!-- <li class="text-right py-2 px-6">
-                            <button
+                        <li class="text-right py-2 px-6">
+                            <a
+                                id='nav-buy-ticket'
+                                href="https://shop.meetmagento.ro/"
+                                target="_blank"
                                 data-mobile-menu-close
                                 class="w-full max-w-32 bg-orange-600 button-s text-white rounded
                                   py-4 px-4 hover:bg-orange-700 focus:outline-none sm:hidden">
                                 Buy Tickets
-                            </button>
-                        </li> -->
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </section>
@@ -67,17 +73,20 @@
 
         <!-- Main Nav - Desktop -->
         <nav class="hidden md:flex md:basis-10/12 justify-end items-center gap-3">
+            <a href="/speakers" class="button-s text-white hover:underline">Speakers</a>
             <a href="/sponsors" class="button-s text-white hover:underline">Sponsors</a>
-            <a href="/call-for-papers" class="button-s text-white hover:underline">Call for Papers</a>
             <a href="/venue" class="button-s text-white hover:underline">Venue</a>
             <a href="/past/mm21ro" class="button-s text-white hover:underline">Past Events</a>
             <a href="/contact" class="button-s text-white hover:underline">Contact</a>
-            <!-- <button
+            <a
+                id='nav-buy-ticket'
+                href="https://shop.meetmagento.ro/"
+                target="_blank"
                 data-mobile-menu-close
                 class="w-full max-w-32 bg-orange-600 button-s text-white rounded
-                  py-4 px-4 hover:bg-orange-700 focus:outline-none">
+                  py-4 px-4 text-center hover:bg-orange-700 focus:outline-none">
                 Buy Tickets
-            </button> -->
+            </a>
         </nav>
     </div>
 </header>

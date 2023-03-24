@@ -1,0 +1,49 @@
+---
+import Swiper from '../../swiper/swiper-bundle.min.js';
+import '../../swiper/swiper-bundle.min.css';
+import './swiper-custom.css';
+import SpeakerCard from "./SpeakerCard.astro";
+
+const slides = [
+  { image: 'https://source.unsplash.com/random/1', name: 'Slide 1', title: 'Title 1', company: 'Company 1' },
+  { image: 'https://source.unsplash.com/random/2', name: 'Slide 2', title: 'Title 2', company: 'Company 2' },
+  { image: 'https://source.unsplash.com/random/3', name: 'Slide 3', title: 'Title 3', company: 'Company 3' },
+  { image: 'https://source.unsplash.com/random/4', name: 'Slide 4', title: 'Title 4', company: 'Company 4' },
+  { image: 'https://source.unsplash.com/random/5', name: 'Slide 5', title: 'Title 5', company: 'Company 5' },
+];
+
+---
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        {slides.map(slide => (
+            <SpeakerCard
+                image={slide.image}
+                name={slide.name}
+                title={slide.title}
+                company={slide.company}
+            />
+        ))}
+    </div>
+</div>
+
+<script client:only define:vars={{ Swiper }}>
+
+  function initSwiper() {
+    const swiper = new Swiper('.swiper-container', {
+      slidesPerView: 4,
+      spaceBetween: 16,
+      breakpoints: {
+        640: {
+          slidesPerView: 1.2,
+          spaceBetween: 16,
+        },
+        1024: {
+          slidesPerView: 1.8,
+          spaceBetween: 16,
+        },
+      },
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', initSwiper);
+</script>
