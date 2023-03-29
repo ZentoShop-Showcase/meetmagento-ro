@@ -74,4 +74,12 @@ export const SpeakersData: Speaker[] = [
         track: Track.Business,
         featured: false,
     },
+    {
+        name: 'Călin Petrar',
+        photo: '/assets/speakers/mm23ro/calinpetrar.jpg',
+        company: 'Times New Roman',
+        companyTitle: undefined,
+        track: Track.Business,
+        featured: false,
+    },
 ];
