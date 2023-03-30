@@ -53,7 +53,7 @@ export const SpeakersData: Speaker[] = [
     {
         name: 'Alexandru Balaci',
         photo: '/assets/speakers/mm23ro/alexandrubalaci.jpg',
-        company: 'Revo Technologies',
+        company: 'Mokka',
         companyTitle: 'CEO',
         track: Track.Business,
         featured: false,
