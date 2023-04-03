@@ -73,6 +73,13 @@ export const SponsorsData: Sponsor[] = [
         description: "We as Web provides top-notch team augmentation and outsourcing services to companies in various industries who are in search of talented experts for short or long term projects.",
     },
     {
+        name: 'Baldwin',
+        logo: 'assets/sponsors/baldwin.svg',
+        url: 'https://www.baldwin.agency/?utm_source=https://ro.meet-magento.com/&utm_medium=referral&utm_content=sponsors',
+        package: SponsorPackage.Silver,
+        description: 'From building online stores and developing software solutions to marketing them using a wide range of online promotion tools, Baldwin is the ideal business partner that can guarantee high sales volumes and excellent customer retention rates.',
+    },
+    {
         name: 'ZentoShop',
         logo: 'assets/sponsors/zentoshop.svg',
         url: 'https://www.zentoshop.com',
