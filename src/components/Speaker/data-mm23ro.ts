@@ -4,7 +4,7 @@ import { Track } from './speaker';
 export const SpeakersData: Speaker[] = [
     {
         name: 'Ray Bogman',
-        photo: '/assets/speakers/mm23ro/raybogman.png',
+        photo: '/assets/speakers/mm23ro/raybogman.jpg',
         company: 'Adobe',
         companyTitle: 'Head of Commerce, Customer Engineering EMEA',
         track: Track.Technical,
@@ -28,7 +28,7 @@ export const SpeakersData: Speaker[] = [
     },
     {
         name: 'Łukasz Bajsarowicz',
-        photo: '/assets/speakers/mm23ro/lukaszbajsarowicz.png',
+        photo: '/assets/speakers/mm23ro/lukaszbajsarowicz.jpg',
         company: 'SwiftOtter',
         companyTitle: undefined,
         track: Track.Technical,
@@ -44,7 +44,7 @@ export const SpeakersData: Speaker[] = [
     },
     {
         name: 'Ciprian Cazacu',
-        photo: '/assets/speakers/mm23ro/cipriancazacu.png',
+        photo: '/assets/speakers/mm23ro/cipriancazacu.jpg',
         company: 'easySales',
         companyTitle: 'CEO and co-founder',
         track: Track.Business,
@@ -60,7 +60,7 @@ export const SpeakersData: Speaker[] = [
     },
     {
         name: 'Vlad Marincaș',
-        photo: '/assets/speakers/mm23ro/vladmarincas.png',
+        photo: '/assets/speakers/mm23ro/vladmarincas.jpg',
         company: 'Aqurate',
         companyTitle: 'CEO and co-founder',
         track: Track.Business,
@@ -84,7 +84,7 @@ export const SpeakersData: Speaker[] = [
     },
     {
         name: 'Sorin Trifu',
-        photo: '/assets/speakers/mm23ro/sorintrifu.png',
+        photo: '/assets/speakers/mm23ro/sorintrifu.jpg',
         company: 'HOLD Marketing',
         companyTitle: undefined,
         track: Track.Business,
