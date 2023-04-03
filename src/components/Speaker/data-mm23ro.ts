@@ -29,7 +29,7 @@ export const SpeakersData: Speaker[] = [
     {
         name: 'Łukasz Bajsarowicz',
         photo: '/assets/speakers/mm23ro/lukaszbajsarowicz.png',
-        company: undefined,
+        company: 'SwiftOtter',
         companyTitle: undefined,
         track: Track.Technical,
         featured: false,
@@ -78,6 +78,14 @@ export const SpeakersData: Speaker[] = [
         name: 'Călin Petrar',
         photo: '/assets/speakers/mm23ro/calinpetrar.jpg',
         company: 'Times New Roman',
+        companyTitle: undefined,
+        track: Track.Technical,
+        featured: false,
+    },
+    {
+        name: 'Sorin Trifu',
+        photo: '/assets/speakers/mm23ro/sorintrifu.png',
+        company: 'HOLD Marketing',
         companyTitle: undefined,
         track: Track.Business,
         featured: false,
