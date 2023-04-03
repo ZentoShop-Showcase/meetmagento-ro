@@ -90,4 +90,20 @@ export const SpeakersData: Speaker[] = [
         track: Track.Business,
         featured: false,
     },
+    {
+        name: 'Cristian Glăvan',
+        photo: '/assets/speakers/mm23ro/cristianglavan.jpg',
+        company: 'Zitec',
+        companyTitle: undefined,
+        track: Track.Technical,
+        featured: false,
+    },
+    {
+        name: 'George Mușat',
+        photo: '/assets/speakers/mm23ro/georgemusat.jpg',
+        company: 'Zitec',
+        companyTitle: undefined,
+        track: Track.Technical,
+        featured: false,
+    },
 ];
