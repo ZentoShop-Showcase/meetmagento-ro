@@ -27,6 +27,14 @@ export const SpeakersData: Speaker[] = [
         featured: false,
     },
     {
+        name: 'Ivan Chepurnyi',
+        photo: '/assets/speakers/mm23ro/ivanchepurnyi.jpg',
+        company: 'EcomDev',
+        companyTitle: undefined,
+        track: Track.Technical,
+        featured: false,
+    },
+    {
         name: 'Łukasz Bajsarowicz',
         photo: '/assets/speakers/mm23ro/lukaszbajsarowicz.jpg',
         company: 'SwiftOtter',
