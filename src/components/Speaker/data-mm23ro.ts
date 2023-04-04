@@ -75,6 +75,14 @@ export const SpeakersData: Speaker[] = [
         featured: true,
     },
     {
+        name: 'Artur Pajkert',
+        photo: '/assets/speakers/mm23ro/arturpajkert.jpg',
+        company: 'cyber_Folks',
+        companyTitle: undefined,
+        track: Track.Business,
+        featured: false,
+    },
+    {
         name: 'Cosmin Costea',
         photo: '/assets/speakers/mm23ro/cosmincostea.jpg',
         company: 'theMarketer',
