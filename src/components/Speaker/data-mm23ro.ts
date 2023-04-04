@@ -114,4 +114,12 @@ export const SpeakersData: Speaker[] = [
         track: Track.Technical,
         featured: false,
     },
+    {
+        name: 'Paul Apostu',
+        photo: '/assets/speakers/mm23ro/paulapostu.jpg',
+        company: 'Ecommerce-Today',
+        companyTitle: undefined,
+        track: Track.Business,
+        featured: false,
+    },
 ];
