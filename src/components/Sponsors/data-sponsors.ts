@@ -80,6 +80,13 @@ export const SponsorsData: Sponsor[] = [
         description: 'From building online stores and developing software solutions to marketing them using a wide range of online promotion tools, Baldwin is the ideal business partner that can guarantee high sales volumes and excellent customer retention rates.',
     },
     {
+        name: 'Innobyte',
+        logo: 'assets/sponsors/innobyte.svg',
+        url: 'https://innobyte.com',
+        package: SponsorPackage.Silver,
+        description: 'Innobyte is a strategic e-commerce partner that delivers flawless execution and ongoing counselling for mid and large-scale businesses. We offer a complex range of services to help companies to implement, launch and grow a successful e-commerce platform.',
+    },
+    {
         name: 'ZentoShop',
         logo: 'assets/sponsors/zentoshop.svg',
         url: 'https://www.zentoshop.com',
