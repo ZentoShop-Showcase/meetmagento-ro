@@ -87,6 +87,13 @@ export const SponsorsData: Sponsor[] = [
         description: 'Innobyte is a strategic e-commerce partner that delivers flawless execution and ongoing counselling for mid and large-scale businesses. We offer a complex range of services to help companies to implement, launch and grow a successful e-commerce platform.',
     },
     {
+        name: 'nexttech',
+        logo: 'assets/sponsors/nexttech.svg',
+        url: 'https://nexttech.ro',
+        package: SponsorPackage.Gold,
+        description: 'Romanian privately owned software development and IT consulting company specialized in nearshore and offshore digital transformation with functional expertise in E-commerce, Trading, Banking, Insurance, and Automotive industry.',
+    },
+    {
         name: 'ZentoShop',
         logo: 'assets/sponsors/zentoshop.svg',
         url: 'https://www.zentoshop.com',
