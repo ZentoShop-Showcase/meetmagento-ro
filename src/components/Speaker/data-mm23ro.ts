@@ -130,4 +130,12 @@ export const SpeakersData: Speaker[] = [
         track: Track.Business,
         featured: false,
     },
+    {
+        name: 'Valentin Sandu',
+        photo: '/assets/speakers/mm23ro/valentinsandu.jpg',
+        company: 'R7 Digital Commerce',
+        companyTitle: undefined,
+        track: Track.Technical,
+        featured: false,
+    },
 ];
