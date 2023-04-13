@@ -6,20 +6,36 @@ const { image, title, speaker, speakerCompany, video, language, track } = Astro.
 
 <div class="flex flex-wrap items-start justify-center mx-auto">
     <div class="basis-full sm:basis-1/2 relative md:basis-1/3">
-        {image !== undefined ?
-            <Picture
-                src={image}
-                aspectRatio={track === "keynote" ? "2:1" : "1:1"}
-                fix="cover"
-                position={track === "keynote" ? "center" : "right"}
-                widths={[640]}
-                sizes=""
-                formats={['webp', 'png']}
-                alt={title + ' - ' + speaker + ' - ' + speakerCompany}
-                class={"w-full h-full object-cover"}
-                loading={'lazy'}
-            />
-        : null}
+        {image !== undefined ? <div>
+            <div class="md:hidden">
+                <Picture
+                    src={image}
+                    aspectRatio="2:1"
+                    fix="cover"
+                    position={track === "keynote" ? "center" : "right"}
+                    widths={[640]}
+                    sizes=""
+                    formats={['webp', 'png']}
+                    alt={title + ' - ' + speaker + ' - ' + speakerCompany}
+                    class={"w-full h-full object-cover"}
+                    loading={'lazy'}
+                />
+            </div>
+            <div class="hidden md:block">
+                <Picture
+                    src={image}
+                    aspectRatio={track === "keynote" ? "2:1" : "1:1"}
+                    fix="cover"
+                    position={track === "keynote" ? "center" : "right"}
+                    widths={[640]}
+                    sizes=""
+                    formats={['webp', 'png']}
+                    alt={title + ' - ' + speaker + ' - ' + speakerCompany}
+                    class={"w-full h-full object-cover"}
+                    loading={'lazy'}
+                />
+            </div>
+        </div>: null}
 
         {video !== undefined ?
             <div class="before:content before:absolute before:top-2/4 before:left-2/4 before:transform-50
