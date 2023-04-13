@@ -9,8 +9,9 @@ const { image, title, speaker, speakerCompany, video, language, track } = Astro.
         {image !== undefined ?
             <Picture
                 src={image}
-                aspectRatio="2:1"
+                aspectRatio={track === "keynote" ? "2:1" : "1:1"}
                 fix="cover"
+                position={track === "keynote" ? "center" : "right"}
                 widths={[640]}
                 sizes=""
                 formats={['webp', 'png']}
