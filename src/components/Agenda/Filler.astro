@@ -1,0 +1,51 @@
+---
+import RegistrationIcon from '../../assets/icons/agenda/registration.svg';
+import CoffeeIcon from '../../assets/icons/agenda/coffee.svg';
+import LunchIcon from '../../assets/icons/agenda/lunch.svg';
+import PartyIcon from '../../assets/icons/agenda/party.svg';
+import OpeningIcon from '../../assets/icons/agenda/opening.svg';
+
+const { icon, title, subtitle } = Astro.props;
+
+let iconImg;
+switch (icon) {
+    case 'registration':
+        iconImg = RegistrationIcon;
+        break;
+    case 'coffee':
+        iconImg = CoffeeIcon;
+        break;
+    case 'lunch':
+        iconImg = LunchIcon;
+        break;
+    case 'party':
+        iconImg = PartyIcon;
+        break;
+    case 'opening':
+        iconImg = OpeningIcon;
+        break;
+    default:
+        iconImg = undefined;
+        break;
+}
+
+---
+
+<div class="flex flex-wrap items-start justify-center mx-auto">
+    <div class="basis-full sm:basis-1/2 relative md:basis-1/3 bg-gray-50 h-[162px] flex items-center justify-center">
+        {iconImg !== undefined ?
+            <img
+                src={iconImg}
+                alt={title}
+                class="object-contain"
+                width="80"
+            />
+        : null}
+    </div>
+    <div class="basis-full p-4 sm:basis-1/2 sm:py-0 sm:px-4 md:basis-2/3 md:py-8">
+        <h4 class="pb-3 pt-2">{title}</h4>
+        <p class="text-l font-normal text-gray-600 pb-8">
+            {subtitle}
+        </p>
+    </div>
+</div>

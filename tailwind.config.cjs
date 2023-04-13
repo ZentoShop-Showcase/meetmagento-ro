@@ -250,6 +250,9 @@ module.exports = {
                     800: '#242424cc',
                     900: '#242424eb'
                 },
+                pink: {
+                    500: '#DD026B',
+                },
             },
 
             // Used as text-{object-key} or text-{object-key}-{object-key}

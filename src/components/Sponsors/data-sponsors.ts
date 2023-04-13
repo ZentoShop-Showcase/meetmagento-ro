@@ -31,6 +31,13 @@ export const SponsorsData: Sponsor[] = [
         description: 'EasySales is a SaaS platform that helps brands and retailers to list their products on relevant marketplaces, with no technical knowledge!',
     },
     {
+        name: 'Zitec',
+        logo: '/assets/sponsors/zitec.svg',
+        url: 'https://zitec.com/',
+        package: SponsorPackage.Gold,
+        description: 'Zitec is the digital transformation partner to companies across over 30 countries, tapping on software advancement & innovation to inspire and empower people and organizations to leapfrog growth.',
+    },
+    {
         name: 'eBay',
         logo: 'assets/sponsors/ebay.svg',
         url: 'https://www.ebay.com',
@@ -64,6 +71,34 @@ export const SponsorsData: Sponsor[] = [
         url: 'https://www.weasweb.com/',
         package: SponsorPackage.Silver,
         description: "We as Web provides top-notch team augmentation and outsourcing services to companies in various industries who are in search of talented experts for short or long term projects.",
+    },
+    {
+        name: 'Baldwin',
+        logo: 'assets/sponsors/baldwin.svg',
+        url: 'https://www.baldwin.agency/?utm_source=https://ro.meet-magento.com/&utm_medium=referral&utm_content=sponsors',
+        package: SponsorPackage.Silver,
+        description: 'From building online stores and developing software solutions to marketing them using a wide range of online promotion tools, Baldwin is the ideal business partner that can guarantee high sales volumes and excellent customer retention rates.',
+    },
+    {
+        name: 'Innobyte',
+        logo: 'assets/sponsors/innobyte.svg',
+        url: 'https://innobyte.com',
+        package: SponsorPackage.Silver,
+        description: 'Innobyte is a strategic e-commerce partner that delivers flawless execution and ongoing counselling for mid and large-scale businesses. We offer a complex range of services to help companies to implement, launch and grow a successful e-commerce platform.',
+    },
+    {
+        name: 'nexttech',
+        logo: 'assets/sponsors/nexttech.svg',
+        url: 'https://nexttech.ro',
+        package: SponsorPackage.Gold,
+        description: 'Romanian privately owned software development and IT consulting company specialized in nearshore and offshore digital transformation with functional expertise in E-commerce, Trading, Banking, Insurance, and Automotive industry.',
+    },
+    {
+        name: 'Hyvä',
+        logo: '/assets/sponsors/hyva.svg',
+        url: 'https://hyva.io/',
+        package: SponsorPackage.Gold,
+        description: 'Hyvä is the built-from-scratch Magento 2 front end that makes your online store ultra-fast and performant. Hyvä saves you tons of development time and has the fastest ROI in the market, as your traffic, bounce rate and conversion rates are improved.',
     },
     {
         name: 'ZentoShop',
