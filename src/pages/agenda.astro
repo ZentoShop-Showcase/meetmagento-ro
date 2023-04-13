@@ -1,0 +1,147 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageBanner from '../components/PageBanner.astro';
+import Talk from '../components/Agenda/Talk.astro';
+import Filler from '../components/Agenda/Filler.astro';
+import Newsletter from '../components/Newsletter.astro';
+
+---
+
+<Layout title="Agenda - Meet Magento 2023">
+	<main>
+		<PageBanner title="Agenda" />
+
+        <div class="container mx-auto my-12">
+            <div class="grid grid-cols-1 md:grid-cols-7 gap-4">
+                <!-- 09:00 - 10:00 -->
+                <div class="sm:col-span-1 md:col-span-1 p-2 font-semibold text-xl border-l-4 border-gray-300">
+                    09:00 - 10:00
+                </div>
+                <div class="sm:col-span-1 md:col-span-6 p-2">
+                    <Filler
+                        icon='registration'
+                        title='Registration'
+                        subtitle='Grab your badge and get ready for the event'
+                    />
+                </div>
+
+                <!-- 10:00 - 10:30 -->
+                <div class="sm:col-span-1 md:col-span-1 p-2 font-semibold text-xl border-l-4 border-gray-300">
+                    10:00 - 10:05
+                </div>
+                <div class="sm:col-span-1 md:col-span-6 p-2">
+                    <Filler
+                        icon='opening'
+                        title='OPENING: Welcome to Meet Magento 2023'
+                        subtitle='Vlad Stănescu, Zento'
+                    />
+                </div>
+                <div class="sm:col-span-1 md:col-span-1 p-2 font-semibold text-xl border-l-4 border-gray-300">
+                    10:05 - 10:30
+                </div>
+                <div class="sm:col-span-1 md:col-span-6 p-2">
+                    <Talk 
+                        image='/assets/talks/mm21ro/ericerway.png' 
+                        title="Magento Association - What's next?" 
+                        track="keynote"
+                        language="en"
+                        speaker="Mathias Schreiber" 
+                        speakerCompany="Magento Association" 
+                    />
+                </div>
+
+                <!-- 10:30 - 11:00 -->
+                <div class="sm:col-span-1 md:col-span-1 p-2 font-semibold text-xl border-l-4 border-gray-300">
+                    10:30 - 11:00
+                </div>
+                <div class="sm:col-span-1 md:col-span-6 p-2">
+                    <Talk 
+                        image='/assets/talks/mm21ro/ericerway.png' 
+                        title="Support, or not to Support ... that's the question!" 
+                        track="keynote"
+                        language="en"
+                        speaker="Ray Bogman" 
+                        speakerCompany="Adobe" 
+                    />
+                </div>
+
+                <!-- Coffee 1 -->
+                <div class="sm:col-span-1 md:col-span-1 p-2 font-semibold text-xl border-l-4 border-gray-300">
+                    11:00 - 11:30
+                </div>
+                <div class="sm:col-span-1 md:col-span-6 p-2">
+                    <Filler
+                        icon='coffee'
+                        title='Coffee Break'
+                        subtitle='Grab a coffee and visit our sponsors'
+                    />
+                </div>
+
+                <!-- 11:30 - 12:00 -->
+                <div class="sm:col-span-1 md:col-span-1 p-2 font-semibold text-xl border-l-4 border-gray-300">
+                    11:30 - 12:00
+                </div>
+                <div class="sm:col-span-1 md:col-span-3 p-2">
+                    <Talk 
+                        image='/assets/talks/mm21ro/ericerway.png' 
+                        title='Putting "custom" in custom options' 
+                        language="en"
+                        track="technical"
+                        speaker="Marius Străjeru" 
+                        speakerCompany="Arnia" 
+                    />
+                </div>
+                <div class="sm:col-span-1 md:col-span-3 p-2">
+                    <Talk 
+                        image='/assets/talks/mm21ro/ericerway.png' 
+                        title="A loializa sau a pierde bani in continuare? Aceasta este intrebarea!" 
+                        track="business"
+                        language="ro"
+                        speaker="Cosmin Costea" 
+                        speakerCompany="theMarketeer" 
+                    />
+                </div>
+
+
+                <!-- Lunch -->
+                <div class="sm:col-span-1 md:col-span-1 p-2 font-semibold text-xl border-l-4 border-gray-300">
+                    13:00 - 14:00
+                </div>
+                <div class="sm:col-span-1 md:col-span-6 p-2">
+                    <Filler
+                        icon='lunch'
+                        title='Lunch'
+                    />
+                </div>
+
+
+                <!-- Coffee 2 -->
+                <div class="sm:col-span-1 md:col-span-1 p-2 font-semibold text-xl border-l-4 border-gray-300">
+                    15:30 - 16:00
+                </div>
+                <div class="sm:col-span-1 md:col-span-6 p-2">
+                    <Filler
+                        icon='coffee'
+                        title='Coffee Break'
+                        subtitle='Grab a coffee and visit our sponsors'
+                    />
+                </div>
+
+
+                <!-- Party -->
+                <div class="sm:col-span-1 md:col-span-1 p-2 font-semibold text-xl border-l-4 border-gray-300">
+                    20:00 - 00:00
+                </div>
+                <div class="sm:col-span-1 md:col-span-6 p-2">
+                    <Filler
+                        icon='party'
+                        title='After Party'
+                        subtitle='Meet us a Colins Bistro Pub for a drink and some food'
+                    />
+                </div>
+            </div>
+        </div>
+
+		<Newsletter />
+	</main>
+</Layout>
