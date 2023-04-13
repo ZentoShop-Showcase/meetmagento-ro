@@ -138,4 +138,12 @@ export const SpeakersData: Speaker[] = [
         track: Track.Technical,
         featured: false,
     },
+    {
+        name: 'Sorin Dumitrescu',
+        photo: '/assets/speakers/mm23ro/sorindumitrescu.jpg',
+        company: 'BunnyShell',
+        companyTitle: undefined,
+        track: Track.Technical,
+        featured: false,
+    },
 ];
