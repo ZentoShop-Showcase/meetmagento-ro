@@ -51,6 +51,14 @@ export const SpeakersData: Speaker[] = [
         featured: true,
     },
     {
+        name: 'Roman Bălțeannu',
+        photo: '/assets/speakers/mm23ro/romanbalteanu.jpg',
+        company: 'Google',
+        companyTitle: undefined,
+        track: Track.Business,
+        featured: false,
+    },
+    {
         name: 'Ciprian Cazacu',
         photo: '/assets/speakers/mm23ro/cipriancazacu.jpg',
         company: 'easySales',
