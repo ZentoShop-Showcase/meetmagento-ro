@@ -1,0 +1,337 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageBanner from '../components/PageBanner.astro';
+import Talk from '../components/Agenda/Talk.astro';
+import Filler from '../components/Agenda/Filler.astro';
+import Newsletter from '../components/Newsletter.astro';
+
+---
+
+<Layout title="Agenda - Meet Magento 2023">
+	<main>
+		<PageBanner title="Agenda" />
+
+        <div class="container mx-auto my-12">
+            <div class="grid grid-cols-1 md:grid-cols-7 gap-4">
+                <!-- 09:00 - 10:00 -->
+                <div class="sm:col-span-1 md:col-span-1 p-2 font-semibold text-xl border-l-4 border-gray-300">
+                    09:00 - 10:00
+                </div>
+                <div class="sm:col-span-1 md:col-span-6 p-2">
+                    <Filler
+                        icon='registration'
+                        title='Registration'
+                        subtitle='Grab your badge and get ready for the event'
+                    />
+                </div>
+
+                <!-- 10:00 - 10:30 -->
+                <div class="sm:col-span-1 md:col-span-1 p-2 font-semibold text-xl border-l-4 border-gray-300">
+                    10:00 - 10:05
+                </div>
+                <div class="sm:col-span-1 md:col-span-6 p-2">
+                    <Filler
+                        icon='opening'
+                        title='OPENING: Welcome to Meet Magento 2023'
+                        subtitle='Vlad Stănescu, Zento'
+                    />
+                </div>
+                <div class="sm:col-span-1 md:col-span-1 p-2 font-semibold text-xl border-l-4 border-gray-300">
+                    10:05 - 10:30
+                </div>
+                <div class="sm:col-span-1 md:col-span-6 p-2">
+                    <Talk 
+                        image='/assets/talks/mm23ro/mathiasschreiber.jpg' 
+                        title="Magento Association - What's next?" 
+                        track="keynote"
+                        language="en"
+                        speaker="Mathias Schreiber" 
+                        speakerCompany="Magento Association" 
+                    />
+                </div>
+
+                <!-- 10:30 - 11:00 -->
+                <div class="sm:col-span-1 md:col-span-1 p-2 font-semibold text-xl border-l-4 border-gray-300">
+                    10:30 - 11:00
+                </div>
+                <div class="sm:col-span-1 md:col-span-6 p-2">
+                    <Talk 
+                        image='/assets/talks/mm23ro/raybogman.jpg' 
+                        title="Support, or not to Support ... that's the question!" 
+                        track="keynote"
+                        language="en"
+                        speaker="Ray Bogman" 
+                        speakerCompany="Adobe" 
+                    />
+                </div>
+
+                <!-- Coffee 1 -->
+                <div class="sm:col-span-1 md:col-span-1 p-2 font-semibold text-xl border-l-4 border-gray-300">
+                    11:00 - 11:30
+                </div>
+                <div class="sm:col-span-1 md:col-span-6 p-2">
+                    <Filler
+                        icon='coffee'
+                        title='Coffee Break'
+                        subtitle='Grab a coffee and visit our sponsors'
+                    />
+                </div>
+
+                <!-- 11:30 - 13:00 -->
+                <div class="sm:col-span-1 md:col-span-1 p-2 font-semibold text-xl border-l-4 border-gray-300">
+                    11:30 - 12:00
+                </div>
+                <div class="sm:col-span-1 md:col-span-3 p-2">
+                    <Talk 
+                        image='/assets/talks/mm23ro/mariusstrajeru.jpg' 
+                        title='Putting "custom" in custom options' 
+                        language="en"
+                        track="technical"
+                        speaker="Marius Străjeru" 
+                        speakerCompany="Arnia" 
+                    />
+                </div>
+                <div class="sm:col-span-1 md:col-span-3 p-2">
+                    <Talk 
+                        image='/assets/talks/mm23ro/cosmincostea.jpg' 
+                        title="A loializa sau a pierde bani in continuare? Aceasta este intrebarea!" 
+                        track="business"
+                        language="ro"
+                        speaker="Cosmin Costea" 
+                        speakerCompany="theMarketeer" 
+                    />
+                </div>
+
+                <div class="sm:col-span-1 md:col-span-1 p-2 font-semibold text-xl border-l-4 border-gray-300">
+                    12:00 - 12:30
+                </div>
+                <div class="sm:col-span-1 md:col-span-3 p-2">
+                    <Talk 
+                        image='/assets/talks/mm23ro/razvanbradea.jpg' 
+                        title='Deliver fast and scalable shopping experiences with Catalog Service for Adobe Commerce' 
+                        language="en"
+                        track="technical"
+                        speaker="Răzvan Bradea" 
+                        speakerCompany="Adobe" 
+                    />
+                </div>
+                <div class="sm:col-span-1 md:col-span-3 p-2">
+                    <Talk 
+                        image='/assets/talks/mm23ro/romanbalteanu.jpg' 
+                        title="Harness the Power of AI" 
+                        track="business"
+                        language="ro"
+                        speaker="Roman Bălțeanu" 
+                        speakerCompany="Google" 
+                    />
+                </div>
+
+                <div class="sm:col-span-1 md:col-span-1 p-2 font-semibold text-xl border-l-4 border-gray-300">
+                    12:30 - 13:00
+                </div>
+                <div class="sm:col-span-1 md:col-span-3 p-2">
+                    <Talk 
+                        image='/assets/talks/mm23ro/lukaszbajsarowicz.jpg' 
+                        title="(Don't) Leave Me Alone! -- Facing depression in the remote times."
+                        language="en"
+                        track="technical"
+                        speaker="Łukasz Bajsarowicz" 
+                        speakerCompany="SwiftOtter" 
+                    />
+                </div>
+                <div class="sm:col-span-1 md:col-span-3 p-2">
+                    <Talk 
+                        image='/assets/talks/mm23ro/vladmarincas.jpg' 
+                        title="Personalization in eCommerce: what we can learn from Google, Netflix, Amazon and Facebook" 
+                        track="business"
+                        language="ro"
+                        speaker="Vlad Marincas" 
+                        speakerCompany="Acquarate" 
+                    />
+                </div>
+
+
+                <!-- Lunch -->
+                <div class="sm:col-span-1 md:col-span-1 p-2 font-semibold text-xl border-l-4 border-gray-300">
+                    13:00 - 14:00
+                </div>
+                <div class="sm:col-span-1 md:col-span-6 p-2">
+                    <Filler
+                        icon='lunch'
+                        title='Lunch'
+                    />
+                </div>
+
+                <div class="sm:col-span-1 md:col-span-1 p-2 font-semibold text-xl border-l-4 border-gray-300">
+                    14:00 - 14:30
+                </div>
+                <div class="sm:col-span-1 md:col-span-3 p-2">
+                    <Talk 
+                        image='/assets/talks/mm23ro/calinpetrar.jpg' 
+                        title="Google nu știe nimic"
+                        language="ro"
+                        track="technical"
+                        speaker="Călin Petrar" 
+                        speakerCompany="Times New Roman" 
+                    />
+                </div>
+                <div class="sm:col-span-1 md:col-span-3 p-2">
+                    <Talk 
+                        image='/assets/talks/mm23ro/arthurpajkert.jpg' 
+                        title="Artificial intelligence in e-commerce. Are you standing or are you going?" 
+                        track="business"
+                        language="en"
+                        speaker="Artur Pajkert" 
+                        speakerCompany="cyber_Folks" 
+                    />
+                </div>
+
+                <div class="sm:col-span-1 md:col-span-1 p-2 font-semibold text-xl border-l-4 border-gray-300">
+                    14:30 - 15:00
+                </div>
+                <div class="sm:col-span-1 md:col-span-3 p-2">
+                    <Talk 
+                        image='/assets/talks/mm23ro/ivanchepurnyi.jpg' 
+                        title="Better indexation without performance penalty"
+                        language="en"
+                        track="technical"
+                        speaker="Ivan Chepurnyi" 
+                    />
+                </div>
+                <div class="sm:col-span-1 md:col-span-3 p-2">
+                    <Talk 
+                        image='/assets/talks/mm23ro/alexandrubalaci.jpg' 
+                        title="The State of the Fintech" 
+                        track="business"
+                        language="ro"
+                        speaker="Alexandru Balaci" 
+                        speakerCompany="Mokka" 
+                    />
+                </div>
+
+                <div class="sm:col-span-1 md:col-span-1 p-2 font-semibold text-xl border-l-4 border-gray-300">
+                    15:00 - 15:30
+                </div>
+                <div class="sm:col-span-1 md:col-span-3 p-2">
+                    <Talk 
+                        title="Comming Soon"
+                        language="en"
+                        track="technical"
+                        speaker="" 
+                        speakerCompany="" 
+                    />
+                </div>
+                <div class="sm:col-span-1 md:col-span-3 p-2">
+                    <Talk 
+                        image='/assets/talks/mm23ro/paulapostu.jpg' 
+                        title="Optimized Email Marketing Automation for Magento" 
+                        track="business"
+                        language="ro"
+                        speaker="Paul Apostu" 
+                        speakerCompany="eCommerce Today Agency" 
+                    />
+                </div>
+
+
+                <!-- Coffee 2 -->
+                <div class="sm:col-span-1 md:col-span-1 p-2 font-semibold text-xl border-l-4 border-gray-300">
+                    15:30 - 16:00
+                </div>
+                <div class="sm:col-span-1 md:col-span-6 p-2">
+                    <Filler
+                        icon='coffee'
+                        title='Coffee Break'
+                        subtitle='Grab a coffee and visit our sponsors'
+                    />
+                </div>
+
+                <!-- Group 3 -->
+                <div class="sm:col-span-1 md:col-span-1 p-2 font-semibold text-xl border-l-4 border-gray-300">
+                    16:00 - 16:30
+                </div>
+                <div class="sm:col-span-1 md:col-span-3 p-2">
+                    <Talk 
+                        image='/assets/talks/mm23ro/zitec.jpg' 
+                        title="Black Friday Scaling Success: A Magento 2 Case Study on Kubernetes"
+                        language="en"
+                        track="technical"
+                        speaker="George Mușat & Cristian Glăvan" 
+                        company="Zitec"
+                    />
+                </div>
+                <div class="sm:col-span-1 md:col-span-3 p-2">
+                    <Talk 
+                        image='/assets/talks/mm23ro/cipriancazacu.jpg' 
+                        title="E-Commerce in contextul actual si cum ne putem adapta" 
+                        track="business"
+                        language="ro"
+                        speaker="Ciprian Cazacu" 
+                        speakerCompany="easySales" 
+                    />
+                </div>
+
+                <div class="sm:col-span-1 md:col-span-1 p-2 font-semibold text-xl border-l-4 border-gray-300">
+                    16:30 - 17:00
+                </div>
+                <div class="sm:col-span-1 md:col-span-3 p-2">
+                    <Talk 
+                        image='/assets/talks/mm23ro/paulapostu.jpg' 
+                        title="Bundle Price Reindex takes its time"
+                        track="technical"
+                        language="en"
+                        speaker="Valentin Sandu" 
+                        speakerCompany="R7 Digital Commerce" 
+                    />
+                </div>
+                <div class="sm:col-span-1 md:col-span-3 p-2">
+                    <Talk 
+                        title="Comming Soon"
+                        language="ro"
+                        track="business"
+                        speaker="" 
+                        speakerCompany="" 
+                    />
+                </div>
+
+                <div class="sm:col-span-1 md:col-span-1 p-2 font-semibold text-xl border-l-4 border-gray-300">
+                    17:00 - 17:30
+                </div>
+                <div class="sm:col-span-1 md:col-span-3 p-2">
+                    <Talk 
+                        image='/assets/talks/mm23ro/sorindumitrescu.jpg' 
+                        title="Environments as a Service - Increase developer productivity and improve DX"
+                        language="en"
+                        track="technical"
+                        speaker="Sorin Dumitrescu" 
+                        company="BunnyShell"
+                    />
+                </div>
+                <div class="sm:col-span-1 md:col-span-3 p-2">
+                    <Talk 
+                        image='/assets/talks/mm23ro/sorintrifu.jpg' 
+                        title="Noul rol al agentiilor de marketing in era AI / chatGPT" 
+                        track="business"
+                        language="ro"
+                        speaker="Sorin Trifu" 
+                        speakerCompany="HOLD Marketing" 
+                    />
+                </div>
+
+
+                <!-- Party -->
+                <div class="sm:col-span-1 md:col-span-1 p-2 font-semibold text-xl border-l-4 border-gray-300">
+                    20:00 - 00:00
+                </div>
+                <div class="sm:col-span-1 md:col-span-6 p-2">
+                    <Filler
+                        icon='party'
+                        title='After Party'
+                        subtitle='Meet us a Colins Bistro Pub for a drink and some food'
+                    />
+                </div>
+            </div>
+        </div>
+
+		<Newsletter />
+	</main>
+</Layout>
