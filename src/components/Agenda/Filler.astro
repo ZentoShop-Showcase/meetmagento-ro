@@ -5,7 +5,7 @@ import LunchIcon from '../../assets/icons/agenda/lunch.svg';
 import PartyIcon from '../../assets/icons/agenda/party.svg';
 import OpeningIcon from '../../assets/icons/agenda/opening.svg';
 
-const { icon, title, subtitle } = Astro.props;
+const { icon, title, subtitle, map } = Astro.props;
 
 let iconImg;
 switch (icon) {
@@ -42,10 +42,15 @@ switch (icon) {
             />
         : null}
     </div>
-    <div class="basis-full p-4 sm:basis-1/2 sm:py-0 sm:px-4 md:basis-2/3 md:py-8">
+    <div class="basis-full p-4 sm:basis-1/2 sm:py-0 sm:px-4 md:basis-2/3 md:py-6">
         <h4 class="pb-3 pt-2">{title}</h4>
-        <p class="text-l font-normal text-gray-600 pb-8">
+        <p class="text-l font-normal text-gray-600 pb-2">
             {subtitle}
         </p>
+        {map && 
+            <a href={map} target="_blank" rel="noopener noreferrer" class="text-l font-normal text-gray-600 underline">
+                View on Google Maps
+            </a>
+        }
     </div>
 </div>
