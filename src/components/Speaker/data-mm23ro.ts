@@ -154,4 +154,12 @@ export const SpeakersData: Speaker[] = [
         track: Track.Technical,
         featured: false,
     },
+    {
+        name: 'Alin Alexandru',
+        photo: '/assets/speakers/mm23ro/alinalexandru.jpg',
+        company: 'Innobyte',
+        companyTitle: 'CTO',
+        track: Track.Technical,
+        featured: false,
+    },
 ];
