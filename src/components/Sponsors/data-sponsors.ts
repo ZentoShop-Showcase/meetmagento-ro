@@ -101,6 +101,13 @@ export const SponsorsData: Sponsor[] = [
         description: 'Hyvä is the built-from-scratch Magento 2 front end that makes your online store ultra-fast and performant. Hyvä saves you tons of development time and has the fastest ROI in the market, as your traffic, bounce rate and conversion rates are improved.',
     },
     {
+        name: 'Bunnyshell',
+        logo: '/assets/sponsors/bunnyshell.svg',
+        url: 'https://www.bunnyshell.com/',
+        package: SponsorPackage.Silver,
+        description: "Bunnyshell's DevOps platform simplifies Magento development and testing with on-demand cloud environments for all your teams.",
+    },
+    {
         name: 'ZentoShop',
         logo: 'assets/sponsors/zentoshop.svg',
         url: 'https://www.zentoshop.com',
