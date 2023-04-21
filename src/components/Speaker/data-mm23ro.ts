@@ -149,7 +149,7 @@ export const SpeakersData: Speaker[] = [
     {
         name: 'Sorin Dumitrescu',
         photo: '/assets/speakers/mm23ro/sorindumitrescu.jpg',
-        company: 'BunnyShell',
+        company: 'Bunnyshell',
         companyTitle: undefined,
         track: Track.Technical,
         featured: false,
@@ -160,6 +160,14 @@ export const SpeakersData: Speaker[] = [
         company: 'Innobyte',
         companyTitle: 'CTO',
         track: Track.Technical,
+        featured: false,
+    },
+    {
+        name: 'Attila Kiraly',
+        photo: '/assets/speakers/mm23ro/attilakiraly.jpg',
+        company: 'SEO 365',
+        companyTitle: undefined,
+        track: Track.Business,
         featured: false,
     },
 ];

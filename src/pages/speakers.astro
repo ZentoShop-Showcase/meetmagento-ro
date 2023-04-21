@@ -37,10 +37,15 @@ const business = SpeakersData.filter((s: Speaker) => s.track === Track.Business)
             {business.map((speaker: Speaker) => (
                 <SpeakerCard speaker={speaker} />
             ))}
-            <SpeakersMore />
+            <!-- <SpeakersMore /> -->
         </div>
 
         <div class="container w-full text-l pt-3 pb-10 text-gray-600">
+            <h2 class="pb-2">Thank You!</h2>
+            <p class="text-xl font-normal text-gray-600 pb-6">A big thank you to all our speakers for the generous contribution of their time.</p>
+        </div>
+
+        <!-- <div class="container w-full text-l pt-3 pb-10 text-gray-600">
             <h2 class="pb-2">Call for Papers</h2>
             <p class="text-xl font-normal text-gray-600 pb-6">Want to share your ideas and insights?</p>
             <a
@@ -51,7 +56,7 @@ const business = SpeakersData.filter((s: Speaker) => s.track === Track.Business)
             >
                 Apply for a spot
             </a>
-        </div>
+        </div> -->
 
 		<Newsletter />
 	</main>
