@@ -45,13 +45,13 @@ export const SpeakersData: Speaker[] = [
     {
         name: 'Mathias Schreiber',
         photo: '/assets/speakers/mm23ro/mathiasschreiber.jpg',
-        company: 'Meet Magento Asociation',
+        company: 'Magento Asociation',
         companyTitle: undefined,
         track: Track.Technical,
         featured: true,
     },
     {
-        name: 'Roman Bălțeannu',
+        name: 'Roman Bălțeanu',
         photo: '/assets/speakers/mm23ro/romanbalteanu.jpg',
         company: 'Google',
         companyTitle: undefined,
