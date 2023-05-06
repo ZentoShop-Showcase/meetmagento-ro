@@ -1,7 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 // import BannerPreEvent from '../components/Home/BannerPreEvent.astro';
-import BannerDuringEvent from '../components/Home/BannerDuringEvent.astro';
+// import BannerDuringEvent from '../components/Home/BannerDuringEvent.astro';
+import BannerPostEvent from '../components/Home/BannerPostEvent.astro';
 import Sponsors from '../components/Home/Sponsors.astro';
 import Venue from '../components/Home/Venue.astro';
 import SpeakerList from '../components/Speaker/SpeakerList.astro';
@@ -17,10 +18,8 @@ import IntroBanner from '../components/Home/IntroBanner.astro';
 <Layout title="Welcome to MMRO">
 	<main>
 		<div class="min-h-[25rem] sm:min-h-[40rem]">
-			<BannerDuringEvent />
+			<BannerPostEvent />
 		</div>
-
-		<IntroBanner />
 
 		<SpeakerList speakers={SpeakersData.filter((s: Speaker) => s.featured === true)} />
 
