@@ -300,6 +300,9 @@ module.exports = {
                 '13/8': '162.5%',
             },
 		},
+        listStyleType: {
+            disc: 'disc',
+        },
 	},
     plugins: [],
 }

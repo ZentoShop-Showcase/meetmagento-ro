@@ -87,7 +87,7 @@ export const SponsorsData: Sponsor[] = [
         description: 'Innobyte is a strategic e-commerce partner that delivers flawless execution and ongoing counselling for mid and large-scale businesses. We offer a complex range of services to help companies to implement, launch and grow a successful e-commerce platform.',
     },
     {
-        name: 'nexttech',
+        name: 'Nexttech',
         logo: 'assets/sponsors/nexttech.svg',
         url: 'https://nexttech.ro',
         package: SponsorPackage.Gold,
@@ -99,6 +99,13 @@ export const SponsorsData: Sponsor[] = [
         url: 'https://hyva.io/',
         package: SponsorPackage.Gold,
         description: 'Hyvä is the built-from-scratch Magento 2 front end that makes your online store ultra-fast and performant. Hyvä saves you tons of development time and has the fastest ROI in the market, as your traffic, bounce rate and conversion rates are improved.',
+    },
+    {
+        name: 'Bunnyshell',
+        logo: '/assets/sponsors/bunnyshell.svg',
+        url: 'https://www.bunnyshell.com/',
+        package: SponsorPackage.Silver,
+        description: "Bunnyshell's DevOps platform simplifies Magento development and testing with on-demand cloud environments for all your teams.",
     },
     {
         name: 'ZentoShop',

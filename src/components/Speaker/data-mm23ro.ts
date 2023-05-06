@@ -45,10 +45,18 @@ export const SpeakersData: Speaker[] = [
     {
         name: 'Mathias Schreiber',
         photo: '/assets/speakers/mm23ro/mathiasschreiber.jpg',
-        company: 'Meet Magento Asociation',
+        company: 'Magento Asociation',
         companyTitle: undefined,
         track: Track.Technical,
         featured: true,
+    },
+    {
+        name: 'Roman Bălțeanu',
+        photo: '/assets/speakers/mm23ro/romanbalteanu.jpg',
+        company: 'Google',
+        companyTitle: undefined,
+        track: Track.Business,
+        featured: false,
     },
     {
         name: 'Ciprian Cazacu',
@@ -141,9 +149,25 @@ export const SpeakersData: Speaker[] = [
     {
         name: 'Sorin Dumitrescu',
         photo: '/assets/speakers/mm23ro/sorindumitrescu.jpg',
-        company: 'BunnyShell',
+        company: 'Bunnyshell',
         companyTitle: undefined,
         track: Track.Technical,
+        featured: false,
+    },
+    {
+        name: 'Alin Alexandru',
+        photo: '/assets/speakers/mm23ro/alinalexandru.jpg',
+        company: 'Innobyte',
+        companyTitle: 'CTO',
+        track: Track.Technical,
+        featured: false,
+    },
+    {
+        name: 'Attila Kiraly',
+        photo: '/assets/speakers/mm23ro/attilakiraly.jpg',
+        company: 'SEO 365',
+        companyTitle: undefined,
+        track: Track.Business,
         featured: false,
     },
 ];
