@@ -1,6 +1,8 @@
 ---
 import { Picture } from '@astrojs/image/components';
 
+import YouTubeIcon from '../../assets/icons/youtube.svg';
+
 const { image, title, speaker, speakerCompany, video, language, track } = Astro.props;
 ---
 
@@ -53,9 +55,24 @@ const { image, title, speaker, speakerCompany, video, language, track } = Astro.
         {language && <span class="mx-2 px-2 py-0.5 border-2 border-gray-700 text-sm uppercase">
             {language}
         </span>}
-        <h4 class="pb-3 pt-2">{title}</h4>
-        <p class="text-l font-normal text-gray-600 pb-8">
+        <h4 class="pb-2 pt-2">{title}</h4>
+        <p class="text-l font-normal text-gray-600 pb-4">
             {speaker}{speakerCompany && ', ' + speakerCompany}
         </p>
+        {video !== undefined ?
+            <p>
+                <a href={video} target="_blank" rel="noopener" 
+                    class="w-full max-w-32 bg-orange-600 button-s text-white rounded
+                        py-4 px-4 text-center hover:bg-orange-700 focus:outline-none">
+                    <img src={YouTubeIcon} class="inline-block w-6 h-6 mr-2" alt="YouTube Icon" />
+                    Watch on YouTube
+                </a>
+            </p>
+        : 
+            <p class="w-full max-w-48 bg-orange-200 button-s text-orange-600 rounded
+                py-2 px-4 text-center hover:bg-orange-200 focus:outline-none">
+                Comming Soon
+            </p>
+        }
     </div>
 </div>
