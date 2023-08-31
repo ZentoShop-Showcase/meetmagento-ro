@@ -1,5 +1,5 @@
 ---
-import { Picture } from '@astrojs/image/components';
+import { Image } from "astro:assets";
 
 const { image, title, speaker, speakerCompany, video, language } = Astro.props;
 ---
@@ -7,11 +7,11 @@ const { image, title, speaker, speakerCompany, video, language } = Astro.props;
 <div class="flex flex-wrap items-start justify-center mx-auto">
     <div class="basis-full sm:basis-1/2 relative md:basis-1/3">
         {image !== undefined ?
-            <Picture
+            <Image
                 src={image}
                 aspectRatio="16:9"
                 fix="cover"
-                widths={[216]}
+                width="216"
                 sizes=""
                 formats={['webp', 'png']}
                 alt={title + ' - ' + speaker + ' - ' + speakerCompany}

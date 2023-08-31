@@ -1,6 +1,6 @@
 export type Speaker = {
     name: string;
-    photo: string;
+    photo: any;
     company?: string;
     companyTitle?: string;
     featured?: boolean;

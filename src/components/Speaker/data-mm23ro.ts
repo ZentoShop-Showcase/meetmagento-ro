@@ -1,10 +1,32 @@
 import type { Speaker } from './speaker';
 import { Track } from './speaker';
 
+import RayBogman from '../../assets/speakers/mm23ro/raybogman.jpg';
+import MariusStrajeru from '../../assets/speakers/mm23ro/mariusstrajeru.jpg';
+import RazvanBradea from '../../assets/speakers/mm23ro/razvanbradea.jpg';
+import IvanChepurnyi from '../../assets/speakers/mm23ro/ivanchepurnyi.jpg';
+import LukaszBajsarowicz from '../../assets/speakers/mm23ro/lukaszbajsarowicz.jpg';
+import MathiasSchreiber from '../../assets/speakers/mm23ro/mathiasschreiber.jpg';
+import RomanBalteanu from '../../assets/speakers/mm23ro/romanbalteanu.jpg';
+import CiprianCazacu from '../../assets/speakers/mm23ro/cipriancazacu.jpg';
+import AlexandruBalaci from '../../assets/speakers/mm23ro/alexandrubalaci.jpg';
+import VladMarincas from '../../assets/speakers/mm23ro/vladmarincas.jpg';
+import ArturPajkert from '../../assets/speakers/mm23ro/arturpajkert.jpg';
+import CosminCostea from '../../assets/speakers/mm23ro/cosmincostea.jpg';
+import CalinPetrar from '../../assets/speakers/mm23ro/calinpetrar.jpg';
+import SorinTrifu from '../../assets/speakers/mm23ro/sorintrifu.jpg';
+import CristianGlavan from '../../assets/speakers/mm23ro/cristianglavan.jpg';
+import GeorgeMusat from '../../assets/speakers/mm23ro/georgemusat.jpg';
+import PaulApostu from '../../assets/speakers/mm23ro/paulapostu.jpg';
+import ValentineSandu from '../../assets/speakers/mm23ro/valentinsandu.jpg';
+import SorinDumitrescu from '../../assets/speakers/mm23ro/sorindumitrescu.jpg';
+import AlinAlexandru from '../../assets/speakers/mm23ro/alinalexandru.jpg';
+import AttillaKiraly from '../../assets/speakers/mm23ro/attilakiraly.jpg';
+
 export const SpeakersData: Speaker[] = [
     {
         name: 'Ray Bogman',
-        photo: '/assets/speakers/mm23ro/raybogman.jpg',
+        photo: RayBogman,
         company: 'Adobe',
         companyTitle: 'Head of Commerce, Customer Engineering EMEA',
         track: Track.Technical,
@@ -12,7 +34,7 @@ export const SpeakersData: Speaker[] = [
     },
     {
         name: 'Marius Străjeru',
-        photo: '/assets/speakers/mm23ro/mariusstrajeru.jpg',
+        photo: MariusStrajeru,
         company: 'Arnia',
         companyTitle: undefined,
         track: Track.Technical,
@@ -20,7 +42,7 @@ export const SpeakersData: Speaker[] = [
     },
     {
         name: 'Răzvan Bradea',
-        photo: '/assets/speakers/mm23ro/razvanbradea.jpg',
+        photo: RazvanBradea,
         company: 'Adobe',
         companyTitle: undefined,
         track: Track.Technical,
@@ -28,7 +50,7 @@ export const SpeakersData: Speaker[] = [
     },
     {
         name: 'Ivan Chepurnyi',
-        photo: '/assets/speakers/mm23ro/ivanchepurnyi.jpg',
+        photo: IvanChepurnyi,
         company: 'EcomDev',
         companyTitle: undefined,
         track: Track.Technical,
@@ -36,7 +58,7 @@ export const SpeakersData: Speaker[] = [
     },
     {
         name: 'Łukasz Bajsarowicz',
-        photo: '/assets/speakers/mm23ro/lukaszbajsarowicz.jpg',
+        photo: LukaszBajsarowicz,
         company: 'SwiftOtter',
         companyTitle: undefined,
         track: Track.Technical,
@@ -44,7 +66,7 @@ export const SpeakersData: Speaker[] = [
     },
     {
         name: 'Mathias Schreiber',
-        photo: '/assets/speakers/mm23ro/mathiasschreiber.jpg',
+        photo: MathiasSchreiber,
         company: 'Magento Asociation',
         companyTitle: undefined,
         track: Track.Technical,
@@ -52,7 +74,7 @@ export const SpeakersData: Speaker[] = [
     },
     {
         name: 'Roman Bălțeanu',
-        photo: '/assets/speakers/mm23ro/romanbalteanu.jpg',
+        photo: RomanBalteanu,
         company: 'Google',
         companyTitle: undefined,
         track: Track.Business,
@@ -60,7 +82,7 @@ export const SpeakersData: Speaker[] = [
     },
     {
         name: 'Ciprian Cazacu',
-        photo: '/assets/speakers/mm23ro/cipriancazacu.jpg',
+        photo: CiprianCazacu,
         company: 'easySales',
         companyTitle: 'CEO and co-founder',
         track: Track.Business,
@@ -68,7 +90,7 @@ export const SpeakersData: Speaker[] = [
     },
     {
         name: 'Alexandru Balaci',
-        photo: '/assets/speakers/mm23ro/alexandrubalaci.jpg',
+        photo: AlexandruBalaci,
         company: 'Mokka',
         companyTitle: 'CEO',
         track: Track.Business,
@@ -76,7 +98,7 @@ export const SpeakersData: Speaker[] = [
     },
     {
         name: 'Vlad Marincaș',
-        photo: '/assets/speakers/mm23ro/vladmarincas.jpg',
+        photo: VladMarincas,
         company: 'Aqurate',
         companyTitle: 'CEO and co-founder',
         track: Track.Business,
@@ -84,7 +106,7 @@ export const SpeakersData: Speaker[] = [
     },
     {
         name: 'Artur Pajkert',
-        photo: '/assets/speakers/mm23ro/arturpajkert.jpg',
+        photo: ArturPajkert,
         company: 'cyber_Folks',
         companyTitle: undefined,
         track: Track.Business,
@@ -92,7 +114,7 @@ export const SpeakersData: Speaker[] = [
     },
     {
         name: 'Cosmin Costea',
-        photo: '/assets/speakers/mm23ro/cosmincostea.jpg',
+        photo: CosminCostea,
         company: 'theMarketer',
         companyTitle: 'VP of Sales CEE',
         track: Track.Business,
@@ -100,7 +122,7 @@ export const SpeakersData: Speaker[] = [
     },
     {
         name: 'Călin Petrar',
-        photo: '/assets/speakers/mm23ro/calinpetrar.jpg',
+        photo: CalinPetrar,
         company: 'Times New Roman',
         companyTitle: undefined,
         track: Track.Technical,
@@ -108,7 +130,7 @@ export const SpeakersData: Speaker[] = [
     },
     {
         name: 'Sorin Trifu',
-        photo: '/assets/speakers/mm23ro/sorintrifu.jpg',
+        photo: SorinTrifu,
         company: 'HOLD Marketing',
         companyTitle: undefined,
         track: Track.Business,
@@ -116,7 +138,7 @@ export const SpeakersData: Speaker[] = [
     },
     {
         name: 'Cristian Glăvan',
-        photo: '/assets/speakers/mm23ro/cristianglavan.jpg',
+        photo: CristianGlavan,
         company: 'Zitec',
         companyTitle: undefined,
         track: Track.Technical,
@@ -124,7 +146,7 @@ export const SpeakersData: Speaker[] = [
     },
     {
         name: 'George Mușat',
-        photo: '/assets/speakers/mm23ro/georgemusat.jpg',
+        photo: GeorgeMusat,
         company: 'Zitec',
         companyTitle: undefined,
         track: Track.Technical,
@@ -132,7 +154,7 @@ export const SpeakersData: Speaker[] = [
     },
     {
         name: 'Paul Apostu',
-        photo: '/assets/speakers/mm23ro/paulapostu.jpg',
+        photo: PaulApostu,
         company: 'Ecommerce-Today',
         companyTitle: undefined,
         track: Track.Business,
@@ -140,7 +162,7 @@ export const SpeakersData: Speaker[] = [
     },
     {
         name: 'Valentin Sandu',
-        photo: '/assets/speakers/mm23ro/valentinsandu.jpg',
+        photo: ValentineSandu,
         company: 'R7 Digital Commerce',
         companyTitle: undefined,
         track: Track.Technical,
@@ -148,7 +170,7 @@ export const SpeakersData: Speaker[] = [
     },
     {
         name: 'Sorin Dumitrescu',
-        photo: '/assets/speakers/mm23ro/sorindumitrescu.jpg',
+        photo: SorinDumitrescu,
         company: 'Bunnyshell',
         companyTitle: undefined,
         track: Track.Technical,
@@ -156,7 +178,7 @@ export const SpeakersData: Speaker[] = [
     },
     {
         name: 'Alin Alexandru',
-        photo: '/assets/speakers/mm23ro/alinalexandru.jpg',
+        photo: AlinAlexandru,
         company: 'Innobyte',
         companyTitle: 'CTO',
         track: Track.Technical,
@@ -164,7 +186,7 @@ export const SpeakersData: Speaker[] = [
     },
     {
         name: 'Attila Kiraly',
-        photo: '/assets/speakers/mm23ro/attilakiraly.jpg',
+        photo: AttillaKiraly,
         company: 'SEO 365',
         companyTitle: undefined,
         track: Track.Business,

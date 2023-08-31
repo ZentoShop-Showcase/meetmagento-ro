@@ -1,9 +1,13 @@
 ---
-import { Picture } from '@astrojs/image/components';
+import { Image } from "astro:assets";
 
 import heroMobile from '../assets/banners/banner-mobile.png';
 import heroTablet from '../assets/banners/banner-tablet.png';
 import heroDesktop from '../assets/banners/banner-desktop.png';
+
+// const optimizedHeroMobile = await getImage({ src: heroMobile, aspectRatio: "2:1", fix: "cover", widths: [360], formats: ["png", "webp"] })
+// const optimizedHeroTablet = await getImage({ src: heroTablet })
+// const optimizedHeroDesktop = await getImage({ src: heroDesktop })
 
 export interface Props {
     title: string;
@@ -13,7 +17,17 @@ const { title } = Astro.props;
 ---
 
 <div class="relative mb-12">
-    <Picture
+    <Image
+        src={heroMobile}
+        aspectRatio="2:1"
+        fix="cover"
+        widths={[360]}
+        sizes=""
+        formats={['png', 'webp']}
+        alt="Meet Magento Romania"
+        class={"w-full h-full object-cover sm:hidden"}
+    />
+    <!-- <Picture
         src={heroMobile}
         aspectRatio="2:1"
         fix="cover"
@@ -22,8 +36,18 @@ const { title } = Astro.props;
         formats={['png', 'webp']}
         alt="Test image"
         class={"w-full h-full object-cover sm:hidden"}
+    /> -->
+    <Image
+        src={heroTablet}
+        aspectRatio="12:5"
+        fix="cover"
+        widths={[768]}
+        sizes=""
+        formats={['png', 'webp']}
+        alt="Meet Magento Romania"
+        class={"w-full h-full object-cover hidden sm:block lg:hidden"}
     />
-    <Picture
+    <!-- <Picture
         src={heroTablet}
         aspectRatio="12:5"
         fix="cover"
@@ -32,8 +56,18 @@ const { title } = Astro.props;
         formats={['png', 'webp']}
         alt="Test image"
         class={"w-full h-full object-cover hidden sm:block lg:hidden"}
+    /> -->
+    <Image 
+        src={heroDesktop}
+        aspectRatio="6:1"
+        fix="cover"
+        widths={[1920]}
+        sizes=""
+        formats={['png', 'webp']}
+        alt="Meet Magento Romania"
+        class={"w-full h-full object-cover hidden lg:block"}
     />
-    <Picture
+    <!-- <Picture
         src={heroDesktop}
         aspectRatio="6:1"
         fix="cover"
@@ -42,7 +76,7 @@ const { title } = Astro.props;
         formats={['png', 'webp']}
         alt="Test image"
         class={"w-full h-full object-cover hidden lg:block"}
-    />
+    /> -->
     <div class="absolute right-0 bottom-0 left-0 container mx-auto py-4 px-6 flex flex-col justify-center lg:bottom-8 lg:py-0">
         <h1 class="heading-mobile-l sm:heading-desktop-l text-white">{title}</h1>
     </div>

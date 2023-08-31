@@ -1,5 +1,5 @@
 ---
-import { Picture } from '@astrojs/image/components';
+import { Image } from "astro:assets";
 
 import heroMobile from '../../assets/banners/hero-mobile.png';
 import heroTablet from '../../assets/banners/hero-tablet.png';
@@ -12,7 +12,7 @@ import heroDesktop from '../../assets/banners/hero-desktop.png';
 ---
 
 <div class="relative mb-12">
-    <Picture
+    <Image
         src={heroMobile}
         aspectRatio={'3:4'}
         fix="cover"
@@ -23,7 +23,7 @@ import heroDesktop from '../../assets/banners/hero-desktop.png';
         class={"w-full h-full object-cover sm:hidden"}
         loading={'eager'}
     />
-    <Picture
+    <Image
         src={heroTablet}
         aspectRatio="1:1"
         fix="cover"
@@ -34,7 +34,7 @@ import heroDesktop from '../../assets/banners/hero-desktop.png';
         class={"w-full h-full object-cover hidden sm:block lg:hidden"}
         loading={'eager'}
     />
-    <Picture
+    <Image
         src={heroDesktop}
         aspectRatio="5:2"
         fix="cover"

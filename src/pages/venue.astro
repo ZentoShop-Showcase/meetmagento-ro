@@ -1,5 +1,5 @@
 ---
-import { Picture } from '@astrojs/image/components';
+import { Image } from "astro:assets";
 
 import Layout from '../layouts/Layout.astro';
 import PageBanner from '../components/PageBanner.astro';
@@ -20,7 +20,7 @@ import Map from '../assets/banners/venue/venuecitymap.png';
                 <p class="text-l font-normal text-gray-600 pb-8">Grand Hotel Italia is a 5 star hotel and rooms are available for attendees to book.</p>
             </div>
             <div class="w-full sm:w-1/2 flex-col pt-4">
-                <Picture
+                <Image
                     src={Banner}
                     aspectRatio="1:1"
                     fix="cover"
@@ -37,7 +37,7 @@ import Map from '../assets/banners/venue/venuecitymap.png';
         <h3 class="container mx-auto pb-5 md:gap-6">How to get there</h3>
 		<div class="container flex flex-wrap mx-auto pb-20 sm:pb-26 md:flex-nowrap md:gap-6">
             <div class="w-full sm:w-2/3 flex-col pt-4">
-                <Picture
+                <Image
                     src={Map}
                     aspectRatio="2:1"
                     fix="cover"
