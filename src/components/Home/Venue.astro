@@ -1,14 +1,15 @@
 ---
-import { Picture } from '@astrojs/image/components';
+import { Picture } from 'astro:assets';
 
 import Banner from '../../assets/banners/venue/banner_venue.png';
 // tailwind fullwidth div containing 2 divs 50/50
+// aspectRatio="1:1" fix="cover"
 ---
 <div class="container flex items-center flex-wrap mx-auto pb-20 sm:pb-26 md:flex-nowrap md:gap-6">
     <div class="w-full sm:w-1/2 flex-col pt-4 sm:order-first order-last">
-        <h5>2023 Edition</h5>
+        <h5>2024 Edition</h5>
         <h2 class="pb-3">Venue</h2>
-        <p class="text-l font-normal text-gray-600 pb-3">Meet Magento Romania 2023 will be hosted at Grand Hotel Italia, the premium venue that hosted Meet Magento Romania in 2018, 2017 and 2015.</p>
+        <p class="text-l font-normal text-gray-600 pb-3">Meet Magento Romania 2024 will be hosted at Grand Hotel Italia, the premium venue that hosted Meet Magento Romania in 2023, 2018, 2017 and 2015.</p>
         <p class="text-l font-normal text-gray-600 pb-8">Grand Hotel Italia is a 5 star hotel and rooms are available for attendees to book.</p>
         <a
             id="venue-link"
@@ -22,11 +23,10 @@ import Banner from '../../assets/banners/venue/banner_venue.png';
     <div class="w-full sm:w-1/2 flex-col pt-4">
         <Picture
             src={Banner}
-            aspectRatio="1:1"
-            fix="cover"
-            widths={[628, 1256]}
-            sizes=""
-            formats={['webp', 'png']}
+            width={1256}
+            height={1256}
+            densities={[1, 2]}
+            formats={['webp']}
             alt="Meet Magento Romania 2023 Venue"
             class={"w-full h-full object-cover"}
             loading={'lazy'}

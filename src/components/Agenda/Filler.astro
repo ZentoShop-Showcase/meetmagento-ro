@@ -36,7 +36,7 @@ switch (icon) {
     <div class="basis-full sm:basis-1/2 relative md:basis-1/3 bg-gray-50 h-[162px] flex items-center justify-center">
         {iconImg !== undefined ?
             <img
-                src={iconImg}
+                src={iconImg.src}
                 alt={title}
                 class="object-contain"
                 width="80"
@@ -58,7 +58,7 @@ switch (icon) {
                 <a href={video} target="_blank" rel="noopener" 
                     class="w-full max-w-32 bg-orange-600 button-s text-white rounded
                         py-3 px-4 text-center hover:bg-orange-700 focus:outline-none">
-                    <img src={YouTubeIcon} class="inline-block w-6 h-6 mr-2" alt="YouTube Icon" />
+                    <img src={YouTubeIcon.src} class="inline-block w-6 h-6 mr-2" alt="YouTube Icon" />
                     Watch on YouTube
                 </a>
             </p>

@@ -1,18 +1,18 @@
 ---
-import { Picture } from '@astrojs/image/components';
+import { Picture } from 'astro:assets';
 
 const { speaker } = Astro.props;
 const { name, companyTitle, company, photo } = speaker;
+// aspectRatio="1:1" fix="cover"
 ---
 <div class="swiper-slide w-full flex flex-wrap items-start justify-center mx-auto">
     <div>
         {photo !== undefined ?
             <Picture
                 src={photo}
-                aspectRatio="1:1"
-                fix="cover"
-                widths={[403]}
-                sizes=""
+                width="403"
+                height="403"
+                densities={[1, 2]}
                 formats={['webp', 'jpg']}
                 alt={name}
                 class={"w-full object-cover"}

@@ -1,9 +1,20 @@
 ---
-import { Picture } from '@astrojs/image/components';
+import { Picture, getImage } from 'astro:assets';
 
 import YouTubeIcon from '../../assets/icons/youtube.svg';
 
 const { image, title, speaker, speakerCompany, video, language, track } = Astro.props;
+
+// const squareImage = await getImage({
+//     src: image,
+//     width: 640,
+//     height: 640,
+//     formats: ['webp','png'],
+//     alt: title + ' - ' + speaker + ' - ' + speakerCompany
+// });
+
+// aspectRatio="2:1" fix="cover" position={track === "keynote" ? "center" : "right"}
+// aspectRatio={track === "keynote" ? "2:1" : "1:1"} fix="cover" position={track === "keynote" ? "center" : "right"}
 ---
 
 <div class="flex flex-wrap items-start justify-center mx-auto">
@@ -12,26 +23,25 @@ const { image, title, speaker, speakerCompany, video, language, track } = Astro.
             <div class="md:hidden">
                 <Picture
                     src={image}
-                    aspectRatio="2:1"
-                    fix="cover"
-                    position={track === "keynote" ? "center" : "right"}
-                    widths={[640]}
+                    width={640}
+                    height={320}
+                    densities={[1, 2]}
                     sizes=""
-                    formats={['webp', 'png']}
+                    formats={['webp']}
                     alt={title + ' - ' + speaker + ' - ' + speakerCompany}
                     class={"w-full h-full object-cover"}
                     loading={'lazy'}
+
                 />
             </div>
             <div class="hidden md:block">
                 <Picture
                     src={image}
-                    aspectRatio={track === "keynote" ? "2:1" : "1:1"}
-                    fix="cover"
-                    position={track === "keynote" ? "center" : "right"}
-                    widths={[640]}
+                    width={640}
+                    height={track === "keynote" ? 320 : 640}
+                    densities={[1, 2]}
                     sizes=""
-                    formats={['webp', 'png']}
+                    formats={['webp']}
                     alt={title + ' - ' + speaker + ' - ' + speakerCompany}
                     class={"w-full h-full object-cover"}
                     loading={'lazy'}
@@ -64,7 +74,7 @@ const { image, title, speaker, speakerCompany, video, language, track } = Astro.
                 <a href={video} target="_blank" rel="noopener" 
                     class="w-full max-w-32 bg-orange-600 button-s text-white rounded
                         py-3 px-4 text-center hover:bg-orange-700 focus:outline-none">
-                    <img src={YouTubeIcon} class="inline-block w-6 h-6 mr-2" alt="YouTube Icon" />
+                    <img src={YouTubeIcon.src} class="inline-block w-6 h-6 mr-2" alt="YouTube Icon" />
                     Watch on YouTube
                 </a>
             </p>

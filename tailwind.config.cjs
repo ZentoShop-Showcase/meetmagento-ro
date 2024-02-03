@@ -267,7 +267,7 @@ module.exports = {
 
             backgroundImage: {
                 'logo': "url('/src/assets/logos/logo.svg')",
-                'logo-footer': "url('/src/assets/logos/logo-footer.svg')",
+                'logo-footer': "url('/src/assets/logos/logo-footer_cyberfolks.svg')",
                 'logo-magento': "url('/src/assets/logos/magento-association.png')",
                 'newsletter': "url('/src/assets/banners/newsletter.png')",
                 'hamburger': "url('/src/assets/icons/hamburger.svg')",

@@ -1,7 +1,8 @@
 ---
-import { Picture } from '@astrojs/image/components';
+import { Picture } from 'astro:assets';
 
-const { image, title, speaker, speakerCompany, video, language } = Astro.props;
+const { track, image, title, speaker, speakerCompany, video, language } = Astro.props;
+// aspectRatio="16:9" fix="cover"
 ---
 
 <div class="flex flex-wrap items-start justify-center mx-auto">
@@ -9,11 +10,10 @@ const { image, title, speaker, speakerCompany, video, language } = Astro.props;
         {image !== undefined ?
             <Picture
                 src={image}
-                aspectRatio="16:9"
-                fix="cover"
-                widths={[216]}
-                sizes=""
-                formats={['webp', 'png']}
+                width={216}
+                height={121}
+                densities={[1, 2]}
+                formats={['webp']}
                 alt={title + ' - ' + speaker + ' - ' + speakerCompany}
                 class={"w-full h-full object-cover"}
                 loading={'lazy'}
@@ -30,7 +30,13 @@ const { image, title, speaker, speakerCompany, video, language } = Astro.props;
         : null}
     </div>
     <div class="basis-full p-4 sm:basis-1/2 sm:py-0 sm:px-4 md:basis-2/3">
-        <h4 class="pb-3">{title}</h4>
+        {track && <span class="bg-gray-100 py-1 px-2 border-l-4 border-pink-500 text-pink-500">
+            {track === "keynote" ? "Keynote" : track === "business" ? "Business Track" : "Technical Track"}
+        </span>} 
+        {language && <span class="mx-2 px-2 py-0.5 border-2 border-gray-700 text-sm uppercase">
+            {language}
+        </span>}
+        <h4 class="pt-2 pb-3">{title}</h4>
         <p class="text-l font-normal text-gray-600 pb-8">
             {speaker} {speakerCompany && ' - ' + speakerCompany}
         </p>

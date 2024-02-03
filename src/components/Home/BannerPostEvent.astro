@@ -1,5 +1,5 @@
 ---
-import { Picture } from '@astrojs/image/components';
+import { Picture } from 'astro:assets';
 
 import heroMobile from '../../assets/banners/hero-mobile.png';
 import heroTablet from '../../assets/banners/hero-tablet.png';
@@ -9,38 +9,35 @@ import heroDesktop from '../../assets/banners/hero-desktop.png';
 // }
 
 // const {  } = Astro.props;
+// aspectRatio={'3:4'} fix="cover"
+// aspectRatio="1:1" fix="cover"
+// aspectRatio="5:2" fix="cover"
 ---
 
 <div class="relative mb-12">
     <Picture
         src={heroMobile}
-        aspectRatio={'3:4'}
-        fix="cover"
         widths={[360]}
         sizes=""
-        formats={['webp', 'png']}
+        formats={['webp']}
         alt="Meet Magento Romania 2023, 8 May"
         class={"w-full h-full object-cover sm:hidden"}
         loading={'eager'}
     />
     <Picture
         src={heroTablet}
-        aspectRatio="1:1"
-        fix="cover"
         widths={[768]}
         sizes=""
-        formats={['webp', 'png']}
+        formats={['webp']}
         alt="Meet Magento Romania 2023, 8 May"
         class={"w-full h-full object-cover hidden sm:block lg:hidden"}
         loading={'eager'}
     />
     <Picture
         src={heroDesktop}
-        aspectRatio="5:2"
-        fix="cover"
         widths={[1920]}
         sizes=""
-        formats={['webp', 'png']}
+        formats={['webp']}
         alt="Meet Magento Romania 2023, 8 May"
         class={"w-full h-full object-cover hidden lg:block"}
         loading={'eager'}
