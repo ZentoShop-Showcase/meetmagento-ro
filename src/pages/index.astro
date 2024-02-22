@@ -5,14 +5,14 @@ import BannerPreEvent from '../components/Home/BannerPreEvent.astro';
 // import BannerPostEvent from '../components/Home/BannerPostEvent.astro';
 // import Sponsors from '../components/Home/Sponsors.astro';
 import Venue from '../components/Home/Venue.astro';
-// import SpeakerList from '../components/Speaker/SpeakerList.astro';
+import SpeakerList from '../components/Speaker/SpeakerList.astro';
 import Newsletter from '../components/Newsletter.astro';
 import CallForPapers from '../components/Home/CallForPapers.astro';
 import CallForSponsors from '../components/Home/CallForSponsors.astro';
 
 // import { SponsorsData } from '../components/Sponsors/data-sponsors';
-// import type { Speaker } from '../components/Speaker/speaker';
-// import { SpeakersData } from '../components/Speaker/data-mm23ro';
+import type { Speaker } from '../components/Speaker/speaker';
+import { SpeakersData } from '../components/Speaker/data-mm24ro';
 // import IntroBanner from '../components/Home/IntroBanner.astro';
 
 ---
@@ -22,6 +22,8 @@ import CallForSponsors from '../components/Home/CallForSponsors.astro';
 		<div class="min-h-[25rem] sm:min-h-[40rem]">
 			<BannerPreEvent />
 		</div>
+
+		<SpeakerList speakers={SpeakersData.filter((s: Speaker) => s.featured === true)} />
 
 		<div class="container flex items-center flex-wrap mx-auto pb-20 sm:pb-26 md:flex-nowrap md:gap-6">
 			<div class="w-full sm:w-1/2 flex-col pt-4">
@@ -33,46 +35,6 @@ import CallForSponsors from '../components/Home/CallForSponsors.astro';
 		</div>
 
 		<Venue />
-
-		<div class="container flex items-center flex-wrap mx-auto pb-20 sm:pb-26 md:flex-nowrap md:gap-6">
-			<div class="w-full sm:w-1/2 flex-col pt-4 sm:order-first order-last">
-				<h5>2023 Edition</h5>
-				<h2 class="pb-3">Photos & After-Movie</h2>
-				<p class="text-l font-normal text-gray-600 pb-3">Meet Magento Romania 2023 was held on May 8th at Grand Hotel Italia.</p>
-				<p class="text-l font-normal text-gray-600 pb-8">Check out the photo albums on Facebook and tag yourself or Google Photos and watch the after-movie on YouTube.</p>
-				<div class="flex w-full">
-					<a
-						id="photos-fb-link"
-						class="flex-1 w-full max-w-48 bg-orange-600 button-m text-white rounded
-							py-4 px-4 text-center hover:bg-orange-700 focus:outline-none"
-						href="https://www.facebook.com/media/set/?vanity=meetmagentoromania&set=a.217085661073756"
-						target="_blank"
-					>
-						Facebook Album
-					</a>
-					<a
-						id="photos-google-link"
-						class="flex-1 w-full max-w-48 bg-orange-600 button-m text-white rounded
-							py-4 px-4 mx-4 text-center hover:bg-orange-700 focus:outline-none"
-						href="https://photos.app.goo.gl/J11gArYPvuoEkni28"
-						target="_blank"
-					>
-						Google Photos
-					</a>
-				</div>
-			</div>
-			<div class="w-full sm:w-1/2 flex-col pt-4">
-				<iframe 
-					width="560" 
-					height="315" 
-					src="https://www.youtube.com/embed/Bq7IjHJ0PDk" 
-					title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
-					class="w-full lg:w-[560px]"
-				></iframe>
-			</div>
-		</div>
-
-		<!-- <SpeakerList speakers={SpeakersData.filter((s: Speaker) => s.featured === true)} /> -->
 
 		<!-- <div class="container flex items-center flex-wrap mx-auto pb-20 sm:pb-2 md:flex-nowrap md:gap-6">
 			<div class="w-full">
