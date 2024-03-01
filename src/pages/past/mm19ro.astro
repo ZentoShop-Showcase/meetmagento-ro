@@ -4,6 +4,11 @@ import PageBanner from '../../components/PageBanner.astro';
 import SubNavigation from '../../components/Past/SubNavigation.astro';
 import Talk from '../../components/Past/Talk.astro';
 import Newsletter from '../../components/Newsletter.astro';
+
+import ImgBenMarks from '../../assets/talks/mm19ro/benmarks.png';
+import ImgJonathanRoeder from '../../assets/talks/mm19ro/jonathanroeder.png';
+import ImgOvidiuIonutEftimie from '../../assets/talks/mm19ro/ovidiuionuteftimie.png';
+
 ---
 
 <Layout title="Meet Magento 2019">
@@ -15,14 +20,14 @@ import Newsletter from '../../components/Newsletter.astro';
         <h4 class="container pb-4">Keynote</h4>
         <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-4 sm:pb-4 gap-6">
             <Talk 
-                image='/assets/talks/mm19ro/benmarks.png' 
+                image={ImgBenMarks}
                 title="Magento Product Updates" 
                 language="en"
                 speaker="Ben Marks" 
                 speakerCompany="Adobe" 
             />
             <Talk 
-                image='/assets/talks/mm19ro/jonathanroeder.png' 
+                image={ImgJonathanRoeder}
                 title="Magento's Data-Driven Future" 
                 language="en"
                 speaker="Jonathan Roeder" 
@@ -30,7 +35,7 @@ import Newsletter from '../../components/Newsletter.astro';
                 video="https://youtu.be/7WygyfBKZNw"
             />
             <Talk 
-                image='/assets/talks/mm19ro/ovidiuionuteftimie.jpg' 
+                image={ImgOvidiuIonutEftimie}
                 title="Aveți 5min să vorbim despre Dumnezeul nostru electronic?" 
                 language="ro"
                 speaker="Ovidiu Ionuț Eftimie" 

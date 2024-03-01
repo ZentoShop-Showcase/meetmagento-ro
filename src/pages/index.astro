@@ -3,14 +3,14 @@ import Layout from '../layouts/Layout.astro';
 import BannerPreEvent from '../components/Home/BannerPreEvent.astro';
 // import BannerDuringEvent from '../components/Home/BannerDuringEvent.astro';
 // import BannerPostEvent from '../components/Home/BannerPostEvent.astro';
-// import Sponsors from '../components/Home/Sponsors.astro';
+import Sponsors from '../components/Home/Sponsors.astro';
 import Venue from '../components/Home/Venue.astro';
 import SpeakerList from '../components/Speaker/SpeakerList.astro';
 import Newsletter from '../components/Newsletter.astro';
 import CallForPapers from '../components/Home/CallForPapers.astro';
 import CallForSponsors from '../components/Home/CallForSponsors.astro';
 
-// import { SponsorsData } from '../components/Sponsors/data-sponsors';
+import { SponsorsData } from '../components/Sponsors/data-sponsors';
 import type { Speaker } from '../components/Speaker/speaker';
 import { SpeakersData } from '../components/Speaker/data-mm24ro';
 // import IntroBanner from '../components/Home/IntroBanner.astro';
@@ -36,13 +36,13 @@ import { SpeakersData } from '../components/Speaker/data-mm24ro';
 
 		<Venue />
 
-		<!-- <div class="container flex items-center flex-wrap mx-auto pb-20 sm:pb-2 md:flex-nowrap md:gap-6">
+		<div class="container flex items-center flex-wrap mx-auto pb-20 sm:pb-2 md:flex-nowrap md:gap-6">
 			<div class="w-full">
-				<h5>2023 Edition</h5>
+				<h5>2024 Edition</h5>
 				<h2 class="pb-3">Sponsored by</h2>
 			</div>
 		</div>
-		<Sponsors sponsors={SponsorsData}/> -->
+		<Sponsors sponsors={SponsorsData}/>
 		
 		<Newsletter />
 	</main>
