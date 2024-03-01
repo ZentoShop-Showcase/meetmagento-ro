@@ -4,6 +4,37 @@ import PageBanner from '../../components/PageBanner.astro';
 import SubNavigation from '../../components/Past/SubNavigation.astro';
 import Talk from '../../components/Past/Talk.astro';
 import Newsletter from '../../components/Newsletter.astro';
+
+import ImgThomasGoletz from '../../assets/talks/mm15ro/thomasgoletz.png';
+import ImgBasNawijn from '../../assets/talks/mm15ro/basnawijn.png';
+import ImgRomanBaluta from '../../assets/talks/mm15ro/romanbaluta.png';
+
+import ImgStefanoLena from '../../assets/talks/mm15ro/stefanolena.png';
+import ImgMarkoBrisevac from '../../assets/talks/mm15ro/markobrisevac.png';
+import ImgBogdanColceriu from '../../assets/talks/mm15ro/bogdancolceriu.png';
+import ImgElizaRogalski from '../../assets/talks/mm15ro/elizarogalski.png';
+import ImgRazvanRicci from '../../assets/talks/mm15ro/razvanricci.png';
+import ImgThomasFleck from '../../assets/talks/mm15ro/thomasfleck.png';
+import ImgMihaiCraciun from '../../assets/talks/mm15ro/mihaicraciun.png';
+import ImgKubaZwolinski from '../../assets/talks/mm15ro/kubazwolinski.png';
+import ImgSergeyLysak from '../../assets/talks/mm15ro/sergeylysak.png';
+import ImgIulianPadurariu from '../../assets/talks/mm15ro/iulianpadurariu.png';
+// import ImgMariusGhenea from '../../assets/talks/mm15ro/mariusghenea.png';
+// import ImgLiviuTaloi from '../../assets/talks/mm15ro/liviutaloi.png';
+// import ImgKristinaPototskaya from '../../assets/talks/mm15ro/kristinapototskaya.png';
+// import ImgCalinBiris from '../../assets/talks/mm15ro/calinbiris.png';
+
+import ImgBenMarks from '../../assets/talks/mm15ro/benmarks.png';
+// import ImgSilvianCretu from '../../assets/talks/mm15ro/silviancretu.png';
+// import ImgIgorBondarenko from '../../assets/talks/mm15ro/igorbondarenko.png';
+// import ImgValHrykyan from '../../assets/talks/mm15ro/valhrykyan.png';
+// import ImgAndriiSemenenko from '../../assets/talks/mm15ro/andriisemenenko.png';
+import ImgMariusStrajeru from '../../assets/talks/mm15ro/mariusstrajeru.png';
+// import ImgConstantinBejenaru from '../../assets/talks/mm15ro/constantinbejenaru.png';
+// import ImgRaduChelariu from '../../assets/talks/mm15ro/raduchelariu.png';
+// import ImgDanHomorodean from '../../assets/talks/mm15ro/danhomorodean.png';
+// import ImgAlexanderTuriak from '../../assets/talks/mm15ro/alexanderturiak.png';
+
 ---
 
 <Layout title="Meet Magento 2015">
@@ -15,21 +46,21 @@ import Newsletter from '../../components/Newsletter.astro';
         <h4 class="container pb-4">Keynote</h4>
         <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-4 sm:pb-4 gap-6">
             <Talk 
-                image='/assets/talks/mm15ro/thomasgoletz.jpg' 
+                image={ImgThomasGoletz}
                 title="Meet Magento Association Updates" 
                 language="en"
                 speaker="Thomas Goletz" 
                 speakerCompany="Meet Magento Association" 
             />
             <Talk 
-                image='/assets/talks/mm15ro/basnawijn.jpg' 
+                image={ImgBasNawijn}
                 title="Magento Keynote" 
                 language="en"
                 speaker="Bas Nawijn" 
                 speakerCompany="Magento" 
             />
             <Talk 
-                image='/assets/talks/mm15ro/romanbaluta.jpg' 
+                image={ImgRomanBaluta}
                 title="Tangible cloud hosting benefits for merchants and solution providers" 
                 language="en"
                 speaker="Roman Baluta" 
@@ -39,70 +70,70 @@ import Newsletter from '../../components/Newsletter.astro';
         <h4 class="container py-4">Business Track</h4>
         <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-4 sm:pb-4 gap-6">
             <Talk
-                image='/assets/talks/mm15ro/stefanolena.jpg' 
+                image={ImgStefanoLena}
                 title="How to transform transactional emails into sales opportunities" 
                 language="en"
                 speaker="Stefano Lena" 
                 speakerCompany=""
             />
             <Talk
-                image='/assets/talks/mm15ro/markobrisevac.jpg' 
+                image={ImgMarkoBrisevac}
                 title="eCommerce Website Redesign Strategy - Incremental Changes or Full Redesign?" 
                 language="en"
                 speaker="Marko Brisevac" 
                 speakerCompany="Inchoo"
             />
             <Talk
-                image='/assets/talks/mm15ro/bogdancolceriu.jpg' 
+                image={ImgBogdanColceriu}
                 title="E-commerce-ul din spatele magazinului virtual" 
                 language="ro"
                 speaker="Rodica Mihalache &amp; Bogdan Colceriu" 
                 speakerCompany=""
             />
             <Talk
-                image='/assets/talks/mm15ro/elizarogalski.png' 
+                image={ImgElizaRogalski}
                 title="Brandul de angajator" 
                 language="ro"
                 speaker="Eliza Rogalski" 
                 speakerCompany="Rogalski Damaschin"
             />
             <Talk
-                image='/assets/talks/mm15ro/razvanricci.jpg' 
+                image={ImgRazvanRicci}
                 title="Your brain on... exercise" 
                 language="ro"
                 speaker="Razvan Ricci" 
                 speakerCompany=""
             />
             <Talk
-                image='/assets/talks/mm15ro/thomasfleck.jpg' 
+                image={ImgThomasFleck}
                 title="Online Business For Small & Big Business: How to start, How to Win & How to avoid too much pain" 
                 language="en"
                 speaker="Thomas Fleck" 
-                speakerCompany="NetResearch"
+                speakerCompany="Blugento Germany"
             />
             <Talk
-                image='/assets/talks/mm15ro/mihaicraciun.jpg' 
+                image={ImgMihaiCraciun}
                 title="Helping the customer" 
                 language="ro"
                 speaker="Mihai Crăciun" 
                 speakerCompany=""
             />
             <Talk
-                image='/assets/talks/mm15ro/kubazwolinski.jpg' 
+                image={ImgKubaZwolinski}
                 title="Magento in the Interntet of Things" 
                 language="en"
                 speaker="Kuba Zwolinski" 
                 speakerCompany="Snowdog"
             />
             <Talk
-                image='/assets/talks/mm15ro/sergeylysak.jpg' 
+                image={ImgSergeyLysak}
                 title="How to make benefits with multi-channel customer support. Magic recipes for eCommerce." 
                 language="en"
                 speaker="Sergey Lysak" 
                 speakerCompany="Eltrino"
             />
             <Talk
-                image='/assets/talks/mm15ro/iulianpadurariu.jpg' 
+                image={ImgIulianPadurariu}
                 title="Gamification in eCommerce" 
                 language="ro"
                 speaker="Iulian Pădurariu" 
@@ -140,7 +171,7 @@ import Newsletter from '../../components/Newsletter.astro';
         <h4 class="container py-4">Technical Track</h4>
         <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-4 sm:pb-4 gap-6">
             <Talk 
-                image='/assets/talks/mm15ro/benmarks.png' 
+                image={ImgBenMarks}
                 title="Magento 2: What it means for you" 
                 language="en"
                 speaker="Ben Marks" 
@@ -175,7 +206,7 @@ import Newsletter from '../../components/Newsletter.astro';
                 speakerCompany="Magento" 
             />
             <Talk 
-                image='/assets/talks/mm15ro/mariusstrajeru.jpg' 
+                image={ImgMariusStrajeru}
                 title="Magento 2 as a CMS" 
                 language="en"
                 speaker="Marius Străjeru" 
@@ -218,7 +249,7 @@ import Newsletter from '../../components/Newsletter.astro';
                 speakerCompany="" 
             />
             <Talk 
-                image='/assets/talks/mm15ro/mariusstrajeru.jpg' 
+                image={ImgMariusStrajeru}
                 title="Magento 2 ..." 
                 language="en"
                 speaker="Marius Străjeru" 
