@@ -8,6 +8,26 @@ import Sponsors from '../../components/Home/Sponsors.astro';
 
 import { SponsorsData } from '../../components/Sponsors/data-mm21ro';
 
+import ImgEricErway from '../../assets/talks/mm21ro/ericerway.png';
+import ImgRaduApreutesei from '../../assets/talks/mm21ro/raduapreutesei.png';
+import ImgDanaGate from '../../assets/talks/mm21ro/danagate.png';
+import ImgAlinaMitrica from '../../assets/talks/mm21ro/alinamitrica.png';
+import ImgSilviaNiculescu from '../../assets/talks/mm21ro/silvianiculescu.png';
+import ImgMihaiBocai from '../../assets/talks/mm21ro/mihaibocai.png';
+import ImgIulianGhisoiu from '../../assets/talks/mm21ro/iulianghisoiu.png';
+import ImgCiprianBorodescu from '../../assets/talks/mm21ro/ciprianborodescu.png';
+import ImgDanielaMarin from '../../assets/talks/mm21ro/danielamarin.png';
+import ImgChristianWilhelmRoth from '../../assets/talks/mm21ro/christianwilhelmroth.png';
+import ImgVinaikopp from '../../assets/talks/mm21ro/vinaikopp.png';
+import ImgRiccardoTempesta from '../../assets/talks/mm21ro/riccardotempesta.png';
+import ImgAlinAlexandru from '../../assets/talks/mm21ro/alinalexandru.png';
+import ImgSergioVeraDanielDelCarmen from '../../assets/talks/mm21ro/sergioveradanieldelcarmen.png';
+import ImgValentinSandu from '../../assets/talks/mm21ro/valentinsandu.png';
+import ImgHeitorRamonRibeiro from '../../assets/talks/mm21ro/heitorramonribeiro.png';
+import ImgIvanChepurnyi from '../../assets/talks/mm21ro/ivanchepurnyi.png';
+import ImgCristianPartica from '../../assets/talks/mm21ro/cristianpartica.png';
+import ImgMaxLesechko from '../../assets/talks/mm21ro/maxlesechko.png';
+
 ---
 
 <Layout title="Meet Magento 2021">
@@ -19,7 +39,7 @@ import { SponsorsData } from '../../components/Sponsors/data-mm21ro';
         <h4 class="container pb-4">Keynote</h4>
         <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-4 sm:pb-4 gap-6">
             <Talk 
-                image='/assets/talks/mm21ro/ericerway.png' 
+                image={ImgEricErway}
                 title="Magento Product Updates" 
                 language="en"
                 speaker="Eric Erway" 
@@ -30,7 +50,7 @@ import { SponsorsData } from '../../components/Sponsors/data-mm21ro';
         <h4 class="container py-4">Business Track</h4>
         <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-4 sm:pb-4 gap-6">
             <Talk
-                image='/assets/talks/mm21ro/raduapreutesei.png' 
+                image={ImgRaduApreutesei}
                 title="Importanța Strategiei de tip Funnel și Interpretarea Corectă a Rezultatelor în suita Google" 
                 language="ro"
                 speaker="Radu Apreutesei" 
@@ -38,7 +58,7 @@ import { SponsorsData } from '../../components/Sponsors/data-mm21ro';
                 video="https://youtu.be/1Ae-2bAdns8"
             />
             <Talk 
-                image='/assets/talks/mm21ro/danagate.png' 
+                image={ImgDanaGate}
                 title="Returns. How to create and manage a smooth system" 
                 language="ro"
                 speaker="Dana Gațe" 
@@ -46,7 +66,7 @@ import { SponsorsData } from '../../components/Sponsors/data-mm21ro';
                 video="https://youtu.be/ae-rDyRsdcA"
             />
             <Talk 
-                image='/assets/talks/mm21ro/alinamitrica.png' 
+                image={ImgAlinaMitrica}
                 title="Marketing automation tools you must integrate with Magento" 
                 language="ro"
                 speaker="Alina Mitrică" 
@@ -54,7 +74,7 @@ import { SponsorsData } from '../../components/Sponsors/data-mm21ro';
                 video="https://youtu.be/pLHzw3iyVZ8"
             />
             <Talk 
-                image='/assets/talks/mm21ro/silvianiculescu.png' 
+                image={ImgSilviaNiculescu}
                 title="Importanța Cunoașterii Comportamentului Consumatorului pentru un Business de Succes" 
                 language="ro"
                 speaker="Silvia Niculescu" 
@@ -62,7 +82,7 @@ import { SponsorsData } from '../../components/Sponsors/data-mm21ro';
                 video="https://youtu.be/j5Moc0cUanw"
             />
             <Talk 
-                image='/assets/talks/mm21ro/mihaibocai.png' 
+                image={ImgMihaiBocai}
                 title="Enhance your Black Friday Strategy with User Generated Content" 
                 language="ro"
                 speaker="Mihai Bocai" 
@@ -70,7 +90,7 @@ import { SponsorsData } from '../../components/Sponsors/data-mm21ro';
                 video="https://youtu.be/a6swHtNYBLo"
             />
             <Talk 
-                image='/assets/talks/mm21ro/iulianghisoiu.png' 
+                image={ImgIulianGhisoiu}
                 title="Cum faci SEO la o pagina de produs" 
                 language="ro"
                 speaker="Iulian Ghișoiu" 
@@ -78,7 +98,7 @@ import { SponsorsData } from '../../components/Sponsors/data-mm21ro';
                 video="https://youtu.be/ihX-FoZZYDI"
             />
             <Talk 
-                image='/assets/talks/mm21ro/ciprianborodescu.png' 
+                image={ImgCiprianBorodescu}
                 title="AI E-commerce Tenets" 
                 language="ro"
                 speaker="Ciprian Borodescu" 
@@ -86,7 +106,7 @@ import { SponsorsData } from '../../components/Sponsors/data-mm21ro';
                 video="https://youtu.be/ssJEWvAwPtE"
             />
             <Talk 
-                image='/assets/talks/mm21ro/danielamarin.png' 
+                image={ImgDanielaMarin}
                 title="BERD in sprijinul antreprenorilor locali" 
                 language="ro"
                 speaker="Daniela Marin" 
@@ -94,7 +114,7 @@ import { SponsorsData } from '../../components/Sponsors/data-mm21ro';
                 video="https://youtu.be/Hm3j9bMyxCk"
             />
             <Talk 
-                image='/assets/talks/mm21ro/christianwilhelmroth.png' 
+                image={ImgChristianWilhelmRoth}
                 title="Livestreaming as a Sales Booster? " 
                 language="en"
                 speaker="Christian Wilhelm Roth" 
@@ -105,7 +125,7 @@ import { SponsorsData } from '../../components/Sponsors/data-mm21ro';
         <h4 class="container py-4">Technical Track</h4>
         <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-4 sm:pb-4 gap-6">
             <Talk 
-                image='/assets/talks/mm21ro/vinaikopp.png' 
+                image={ImgVinaikopp}
                 title="Howto Hyvä - Compatibility Modules" 
                 language="en"
                 speaker="Vinai Kopp" 
@@ -113,7 +133,7 @@ import { SponsorsData } from '../../components/Sponsors/data-mm21ro';
                 video="https://youtu.be/D88NoVwEclU"
             />
             <Talk 
-                image='/assets/talks/mm21ro/riccardotempesta.png' 
+                image={ImgRiccardoTempesta}
                 title="GraphQL in Magento2" 
                 language="en"
                 speaker="Riccardo Tempesta" 
@@ -121,7 +141,7 @@ import { SponsorsData } from '../../components/Sponsors/data-mm21ro';
                 video="https://youtu.be/ci3kfbZX0Es"
             />
             <Talk 
-                image='/assets/talks/mm21ro/alinalexandru.png' 
+                image={ImgAlinAlexandru}
                 title="Optimise the development process with simple tips and tricks" 
                 language="ro"
                 speaker="Alin Alexandru" 
@@ -129,7 +149,7 @@ import { SponsorsData } from '../../components/Sponsors/data-mm21ro';
                 video="https://youtu.be/852750_zB_E"
             />
             <Talk 
-                image='/assets/talks/mm21ro/sergioveradanieldelcarmen.png' 
+                image={ImgSergioVeraDanielDelCarmen}
                 title="Upgrade Compatibility Tool" 
                 language="en"
                 speaker="Sergio Vera & Daniel Del Carmen" 
@@ -137,7 +157,7 @@ import { SponsorsData } from '../../components/Sponsors/data-mm21ro';
                 video="https://youtu.be/drdTbtw9Xqo"
             />
             <Talk 
-                image='/assets/talks/mm21ro/valentinsandu.png' 
+                image={ImgValentinSandu}
                 title="Magento Indexers - Unlocked" 
                 language="en"
                 speaker="Valentin Sandu" 
@@ -145,7 +165,7 @@ import { SponsorsData } from '../../components/Sponsors/data-mm21ro';
                 video="https://youtu.be/smGIEuwR16c"
             />
             <Talk 
-                image='/assets/talks/mm21ro/heitorramonribeiro.png' 
+                image={ImgHeitorRamonRibeiro}
                 title="Vue Storefront 2 & Magento 2 - The new best friends" 
                 language="en"
                 speaker="Heitor Ramon Ribeiro" 
@@ -153,7 +173,7 @@ import { SponsorsData } from '../../components/Sponsors/data-mm21ro';
                 video="https://youtu.be/7E3dwRywLqQ"
             />
             <Talk 
-                image='/assets/talks/mm21ro/ivanchepurnyi.png' 
+                image={ImgIvanChepurnyi}
                 title="Optimizing Magento by Preloading Data" 
                 language="en"
                 speaker="Ivan Chepurnyi" 
@@ -161,7 +181,7 @@ import { SponsorsData } from '../../components/Sponsors/data-mm21ro';
                 video="https://youtu.be/-AEq_-0DgVo"
             />
             <Talk 
-                image='/assets/talks/mm21ro/cristianpartica.png' 
+                image={ImgCristianPartica}
                 title="Evolving Adobe Commerce through modern APIs" 
                 language="en"
                 speaker="Cristian Partica" 
@@ -169,7 +189,7 @@ import { SponsorsData } from '../../components/Sponsors/data-mm21ro';
                 video="https://youtu.be/urgp-EH7JB8"
             />
             <Talk 
-                image='/assets/talks/mm21ro/maxlesechko.png' 
+                image={ImgMaxLesechko}
                 title="Renovation: long-awaited and modern updates" 
                 language="en"
                 speaker="Max Lesechko" 

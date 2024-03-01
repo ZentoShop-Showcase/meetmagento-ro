@@ -8,6 +8,27 @@ import Sponsors from '../../components/Home/Sponsors.astro';
 
 import { SponsorsData } from '../../components/Sponsors/data-mm23ro';
 
+import ImgMathiasSchreiber from '../../assets/talks/mm23ro/mathiasschreiber.jpg';
+import ImgRayBogman from '../../assets/talks/mm23ro/raybogman.jpg';
+import ImgCosminCostea from '../../assets/talks/mm23ro/cosmincostea.jpg';
+import ImgRomanBalteanu from '../../assets/talks/mm23ro/romanbalteanu.jpg';
+import ImgVladMarincas from '../../assets/talks/mm23ro/vladmarincas.jpg';
+import ImgArturPajkert from '../../assets/talks/mm23ro/arthurpajkert.jpg';
+import ImgAlexandruBalaci from '../../assets/talks/mm23ro/alexandrubalaci.jpg';
+import ImgPaulApostu from '../../assets/talks/mm23ro/paulapostu.jpg';
+import ImgCiprianCazacu from '../../assets/talks/mm23ro/cipriancazacu.jpg';
+import ImgAttilaKiraly from '../../assets/talks/mm23ro/attilakiraly.jpg';
+import ImgSorinTrifu from '../../assets/talks/mm23ro/sorintrifu.jpg';
+import ImgMariusStrajeru from '../../assets/talks/mm23ro/mariusstrajeru.jpg';
+import ImgRazvanBradea from '../../assets/talks/mm23ro/razvanbradea.jpg';
+import ImgLukaszBajsarowicz from '../../assets/talks/mm23ro/lukaszbajsarowicz.jpg';
+import ImgCalinPetrar from '../../assets/talks/mm23ro/calinpetrar.jpg';
+import ImgIvanChepurnyi from '../../assets/talks/mm23ro/ivanchepurnyi.jpg';
+import ImgAlinAlexandru from '../../assets/talks/mm23ro/alinalexandru.jpg';
+import ImgZitec from '../../assets/talks/mm23ro/zitec.jpg';
+import ImgValentinSandu from '../../assets/talks/mm23ro/valentinsandu.jpg';
+import ImgSorinDumitrescu from '../../assets/talks/mm23ro/sorindumitrescu.jpg';
+
 ---
 
 <Layout title="Meet Magento 2023">
@@ -57,7 +78,7 @@ import { SponsorsData } from '../../components/Sponsors/data-mm23ro';
         <h4 class="container pb-4">Keynote</h4>
         <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-4 sm:pb-4 gap-6">
             <Talk 
-                image='/assets/talks/mm23ro/mathiasschreiber.jpg' 
+                image={ImgMathiasSchreiber}
                 title="Magento Association - What's next?" 
                 track="keynote"
                 language="en"
@@ -68,7 +89,7 @@ import { SponsorsData } from '../../components/Sponsors/data-mm23ro';
         </div>
         <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-4 sm:pb-4 gap-6">
             <Talk 
-                image='/assets/talks/mm23ro/raybogman.jpg' 
+                image={ImgRayBogman}
                 title="Support, or not to Support ... that's the question!" 
                 track="keynote"
                 language="en"
@@ -80,7 +101,7 @@ import { SponsorsData } from '../../components/Sponsors/data-mm23ro';
         <h4 class="container py-4">Business Track</h4>
         <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-4 sm:pb-4 gap-6">
             <Talk
-                image='/assets/talks/mm23ro/cosmincostea.jpg' 
+                image={ImgCosminCostea}
                 title="Keep your customers loyal or keep losing money" 
                 track="business"
                 language="ro"
@@ -89,7 +110,7 @@ import { SponsorsData } from '../../components/Sponsors/data-mm23ro';
                 video="https://youtu.be/rDnz1tSEY1k"
             />
             <Talk 
-                image='/assets/talks/mm23ro/romanbalteanu.jpg' 
+                image={ImgRomanBalteanu}
                 title="Harness the Power of AI" 
                 track="business"
                 language="ro"
@@ -98,7 +119,7 @@ import { SponsorsData } from '../../components/Sponsors/data-mm23ro';
                 video="https://youtu.be/D5IeCm8baKI"
             />
             <Talk 
-                image='/assets/talks/mm23ro/vladmarincas.jpg' 
+                image={ImgVladMarincas}
                 title="Personalization in eCommerce: what we can learn from Google, Netflix, Amazon and Facebook" 
                 track="business"
                 language="ro"
@@ -107,7 +128,7 @@ import { SponsorsData } from '../../components/Sponsors/data-mm23ro';
                 video="https://youtu.be/NM3QlMZdQys"
             />
             <Talk 
-                image='/assets/talks/mm23ro/arthurpajkert.jpg' 
+                image={ImgArturPajkert}
                 title="Artificial intelligence in e-commerce. Are you standing or are you going?" 
                 track="business"
                 language="en"
@@ -116,7 +137,7 @@ import { SponsorsData } from '../../components/Sponsors/data-mm23ro';
                 video="https://youtu.be/RSBjXwPft2o"
             />
             <Talk 
-                image='/assets/talks/mm23ro/alexandrubalaci.jpg' 
+                image={ImgAlexandruBalaci}
                 title="The State of the Fintech" 
                 track="business"
                 language="ro"
@@ -125,7 +146,7 @@ import { SponsorsData } from '../../components/Sponsors/data-mm23ro';
                 video="https://youtu.be/Gb4xTbx87kI"
             />
             <Talk 
-                image='/assets/talks/mm23ro/paulapostu.jpg' 
+                image={ImgPaulApostu}
                 title="Optimized Email Marketing Automation for Magento" 
                 track="business"
                 language="ro"
@@ -134,7 +155,7 @@ import { SponsorsData } from '../../components/Sponsors/data-mm23ro';
                 video="https://youtu.be/3S6EzLcl4AY"
             />
             <Talk 
-                image='/assets/talks/mm23ro/cipriancazacu.jpg' 
+                image={ImgCiprianCazacu}
                 title="E-Commerce in contextul actual si cum ne putem adapta" 
                 track="business"
                 language="ro"
@@ -143,7 +164,7 @@ import { SponsorsData } from '../../components/Sponsors/data-mm23ro';
                 video="https://youtu.be/UGK0npEKJaA"
             />
             <Talk 
-                image='/assets/talks/mm23ro/attilakiraly.jpg' 
+                image={ImgAttilaKiraly}
                 title="2 Be or Not 2 Be: Importanța Strategiei de Marketing în Era Digitală"
                 language="ro"
                 track="business"
@@ -152,7 +173,7 @@ import { SponsorsData } from '../../components/Sponsors/data-mm23ro';
                 video="https://youtu.be/d7eswiqhhGU"
             />
             <Talk 
-                image='/assets/talks/mm23ro/sorintrifu.jpg' 
+                image={ImgSorinTrifu}
                 title="Noul rol al agentiilor de marketing in era AI / chatGPT" 
                 track="business"
                 language="ro"
@@ -164,7 +185,7 @@ import { SponsorsData } from '../../components/Sponsors/data-mm23ro';
         <h4 class="container py-4">Technical Track</h4>
         <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-4 sm:pb-4 gap-6">
             <Talk 
-                image='/assets/talks/mm23ro/mariusstrajeru.jpg' 
+                image={ImgMariusStrajeru}
                 title='Putting "custom" in custom options' 
                 language="en"
                 track="technical"
@@ -173,7 +194,7 @@ import { SponsorsData } from '../../components/Sponsors/data-mm23ro';
                 video="https://youtu.be/NzcC4DHBDyA"
             />
             <Talk 
-                image='/assets/talks/mm23ro/razvanbradea.jpg' 
+                image={ImgRazvanBradea}
                 title='Deliver fast and scalable shopping experiences with Catalog Service for Adobe Commerce' 
                 language="en"
                 track="technical"
@@ -182,7 +203,7 @@ import { SponsorsData } from '../../components/Sponsors/data-mm23ro';
                 video="https://youtu.be/U0m2kjrpY08"
             />
             <Talk 
-                image='/assets/talks/mm23ro/lukaszbajsarowicz.jpg' 
+                image={ImgLukaszBajsarowicz}
                 title="(Don't) Leave Me Alone! - Facing depression in the remote times."
                 language="en"
                 track="technical"
@@ -191,7 +212,7 @@ import { SponsorsData } from '../../components/Sponsors/data-mm23ro';
                 video="https://youtu.be/-K5OE4Oxxm8"
             />
             <Talk 
-                image='/assets/talks/mm23ro/calinpetrar.jpg' 
+                image={ImgCalinPetrar}
                 title="Google nu știe nimic"
                 language="ro"
                 track="technical"
@@ -200,7 +221,7 @@ import { SponsorsData } from '../../components/Sponsors/data-mm23ro';
                 video="https://youtu.be/dlt4yng7snY"
             />
             <Talk 
-                image='/assets/talks/mm23ro/ivanchepurnyi.jpg' 
+                image={ImgIvanChepurnyi}
                 title="Better indexation without performance penalty"
                 language="en"
                 track="technical"
@@ -208,7 +229,7 @@ import { SponsorsData } from '../../components/Sponsors/data-mm23ro';
                 video="https://youtu.be/wOM5M26TrDE"
             />
             <Talk 
-                image='/assets/talks/mm23ro/alinalexandru.jpg' 
+                image={ImgAlinAlexandru}
                 title="How to monitor the performance of a Magento instance"
                 language="ro"
                 track="technical"
@@ -217,7 +238,7 @@ import { SponsorsData } from '../../components/Sponsors/data-mm23ro';
                 video="https://youtu.be/ylKnEk4Lyw4"
             />
             <Talk 
-                image='/assets/talks/mm23ro/zitec.jpg' 
+                image={ImgZitec}
                 title="Black Friday Scaling Success: A Magento 2 Case Study on Kubernetes"
                 language="ro"
                 track="technical"
@@ -226,7 +247,7 @@ import { SponsorsData } from '../../components/Sponsors/data-mm23ro';
                 video="https://youtu.be/sh3Z10KkoWk"
             />
             <Talk 
-                image='/assets/talks/mm23ro/valentinsandu.jpg' 
+                image={ImgValentinSandu}
                 title="Bundle Price Reindex takes its time"
                 track="technical"
                 language="en"
@@ -235,7 +256,7 @@ import { SponsorsData } from '../../components/Sponsors/data-mm23ro';
                 video="https://youtu.be/XD3DJ7Q9IEg"
             />
             <Talk 
-                image='/assets/talks/mm23ro/sorindumitrescu.jpg' 
+                image={ImgSorinDumitrescu}
                 title="Environments as a Service - Increase developer productivity and improve DX"
                 language="ro"
                 track="technical"
