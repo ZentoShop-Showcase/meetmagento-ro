@@ -95,7 +95,7 @@ export const SponsorsData: Sponsor[] = [
     // },
     {
         name: 'MageFan',
-        logo: '/assets/sponsors/Magefan.svg',
+        logo: '/assets/sponsors/magefan.svg',
         url: 'https://www.magefan.com/',
         package: SponsorPackage.Silver,
         description: "Magefan company is about high-quality e-commerce solutions for Magento 2 you can trust.",
