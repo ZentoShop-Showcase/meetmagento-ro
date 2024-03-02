@@ -4,6 +4,31 @@ import PageBanner from '../../components/PageBanner.astro';
 import SubNavigation from '../../components/Past/SubNavigation.astro';
 import Talk from '../../components/Past/Talk.astro';
 import Newsletter from '../../components/Newsletter.astro';
+
+import ImgThomasGoletz from '../../assets/talks/mm14ro/thomasgoletz.png';
+import ImgBenMarks from '../../assets/talks/mm14ro/benmarks.png';
+import ImgPanel2 from '../../assets/talks/mm14ro/panel2.png';
+
+import ImgVladStanescu from '../../assets/talks/mm14ro/vladstanescu.png';
+import ImgMattMacDougall from '../../assets/talks/mm14ro/mattmacdougall.png';
+import ImgMariusLazarescu from '../../assets/talks/mm14ro/mariuslazarescu.png';
+import ImgAlexUrsa from '../../assets/talks/mm14ro/alexursa.png';
+import ImgRazvanBarbu from '../../assets/talks/mm14ro/razvanbarbu.png';
+import ImgPanel1 from '../../assets/talks/mm14ro/panel1.png';
+import ImgKubaZwolinski from '../../assets/talks/mm14ro/kubazwolinski.png';
+import ImgDeryckHarlick from '../../assets/talks/mm14ro/deryckharlick.png';
+
+import ImgFabianBlechschmidt from '../../assets/talks/mm14ro/fabianblechschmidt.png';
+import ImgKamilBarbarski from '../../assets/talks/mm14ro/kamilbarbarski.png';
+import ImgTomRobertshaw from '../../assets/talks/mm14ro/tomrobertshaw.png';
+import ImgAntonKrill from '../../assets/talks/mm14ro/antonkrill.png';
+import ImgIgorMinialo from '../../assets/talks/mm14ro/igorminialo.png';
+import ImgNikolaiKrambrock from '../../assets/talks/mm14ro/nikolaikrambrock.png';
+import ImgAlexanderTuriak from '../../assets/talks/mm14ro/alexanderturiak.png';
+import ImgDavidManners from '../../assets/talks/mm14ro/davidmanners.png';
+import ImgRazvanStoica from '../../assets/talks/mm14ro/razvanstoica.png';
+import ImgBogdanGeorgescu from '../../assets/talks/mm14ro/bogdangeorgescu.png';
+
 ---
 
 <Layout title="Meet Magento 2014">
@@ -15,21 +40,21 @@ import Newsletter from '../../components/Newsletter.astro';
         <h4 class="container pb-4">Keynote</h4>
         <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-4 sm:pb-4 gap-6">
             <Talk 
-                image='/assets/talks/mm14ro/thomasgoletz.jpg' 
+                image={ImgThomasGoletz}
                 title="Meet Magento, Magento, Romania & Europe" 
                 language="en"
                 speaker="Thomas Goletz" 
                 speakerCompany="Meet Magento Association" 
             />
             <Talk 
-                image='/assets/talks/mm14ro/benmarks.jpg' 
+                image={ImgBenMarks}
                 title="The Care and Feeding of Magento Developers" 
                 language="en"
                 speaker="Ben Marks" 
                 speakerCompany="Magento" 
             />
             <Talk
-                image='/assets/talks/mm14ro/panel2.jpg' 
+                image={ImgPanel2}
                 title="Magento Community" 
                 language="en"
                 speaker="Thomas Goletz, Ben Marks, Vlad Stănescu, Marius Străjeru" 
@@ -39,63 +64,63 @@ import Newsletter from '../../components/Newsletter.astro';
         <h4 class="container py-4">Business Track</h4>
         <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-4 sm:pb-4 gap-6">
             <Talk
-                image='/assets/talks/mm14ro/vladstanescu.jpg' 
+                image={ImgVladStanescu}
                 title="Magento: Start-up & Growth" 
                 language="ro"
                 speaker="Vlad Stănescu" 
                 speakerCompany="MindMagnet"
             />
             <Talk
-                image='/assets/talks/mm14ro/thomasgoletz.jpg' 
+                image={ImgThomasGoletz}
                 title="Using Open Source for implementing your business strategy" 
                 language="en"
                 speaker="Thomas Goletz" 
                 speakerCompany="Meet Magento Association" 
             />
             <Talk
-                image='/assets/talks/mm14ro/mattmacdougall.jpg' 
+                image={ImgMattMacDougall}
                 title="Building Loyalty" 
                 language="en"
                 speaker="Matt MacDougall" 
                 speakerCompany="Rocket Web" 
             />
             <Talk
-                image='/assets/talks/mm14ro/mariuslazarescu.jpg' 
+                image={ImgMariusLazarescu}
                 title="7 ideas to get more clients from online marketing campaigns in 2014" 
                 language="ro"
                 speaker="Marius Lăzărescu" 
                 speakerCompany="" 
             />
             <Talk
-                image='/assets/talks/mm14ro/alexursa.jpg' 
+                image={ImgAlexUrsa}
                 title="ERP Integrations with Magento: How to do it fast, good and affordable" 
                 language="ro"
                 speaker="Alex Ursa" 
                 speakerCompany="Netlogiq" 
             />
             <Talk
-                image='/assets/talks/mm14ro/razvanbarbu.png' 
+                image={ImgRazvanBarbu}
                 title="Offline - Online Commerce" 
                 language="ro"
                 speaker="Răzvan Barbu" 
                 speakerCompany="Zitec" 
             />
             <Talk
-                image='/assets/talks/mm14ro/panel1.jpg' 
+                image={ImgPanel1}
                 title="eCommerce 360" 
                 language="ro"
                 speaker="Laurențiu Marian, Remus Lucuț, Ioana Costea" 
                 speakerCompany="" 
             />
             <Talk
-                image='/assets/talks/mm14ro/kubazwolinski.jpg' 
+                image={ImgKubaZwolinski}
                 title="Magento B2B case study" 
                 language="en"
                 speaker="Kuba Zwolinski" 
                 speakerCompany="Snowdog" 
             />
             <Talk
-                image='/assets/talks/mm14ro/deryckharlick.jpg' 
+                image={ImgDeryckHarlick}
                 title="The forgotten heart of Magento: empowering end-users for the benefit of everyone" 
                 language="en"
                 speaker="Deryck Harlick" 
@@ -105,42 +130,42 @@ import Newsletter from '../../components/Newsletter.astro';
         <h4 class="container py-4">Technical Track</h4>
         <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-4 sm:pb-4 gap-6">
             <Talk 
-                image='/assets/talks/mm14ro/fabianblechschmidt.jpg' 
+                image={ImgFabianBlechschmidt}
                 title="Half a roush hour of magento" 
                 language="en"
                 speaker="Fabian Blechschmidt" 
                 speakerCompany="" 
             />
             <Talk 
-                image='/assets/talks/mm14ro/kamilbarbarski.jpg' 
+                image={ImgKamilBarbarski}
                 title="Beyond Building Features - Agile Business Model Development with Lean Startup" 
                 language="en"
                 speaker="Kamil Barbarski" 
                 speakerCompany="" 
             />
             <Talk 
-                image='/assets/talks/mm14ro/kamilbarbarski.jpg' 
+                image={ImgTomRobertshaw}
                 title="Responsive Design for Magento" 
                 language="en"
                 speaker="Tom Robertshaw" 
                 speakerCompany="Meanbee" 
             />
             <Talk 
-                image='/assets/talks/mm14ro/antonkrill.jpg' 
+                image={ImgAntonKrill}
                 title="Magento 2 Code Concepts" 
                 language="en"
                 speaker="Anton Krill" 
                 speakerCompany="Magento" 
             />
             <Talk 
-                image='/assets/talks/mm14ro/igorminialo.jpg' 
+                image={ImgIgorMinialo}
                 title="Modular development in Magento 2" 
                 language="en"
                 speaker="Igor Minialo" 
                 speakerCompany="Magento" 
             />
             <Talk 
-                image='/assets/talks/mm14ro/nikolaikrambrock.jpg' 
+                image={ImgNikolaiKrambrock}
                 title="Code Quality on Magento" 
                 language="en"
                 speaker="Nikolai Krambrock" 
@@ -148,21 +173,21 @@ import Newsletter from '../../components/Newsletter.astro';
                 video="https://youtu.be/dMVCgd67ctA"
             />
             <Talk 
-                image='/assets/talks/mm14ro/alexanderturiak.jpg' 
+                image={ImgAlexanderTuriak}
                 title="Using Vagrant for Magento development" 
                 language="en"
                 speaker="Alexander Turiak" 
                 speakerCompany="" 
             />
             <Talk 
-                image='/assets/talks/mm14ro/davidmanners.jpg' 
+                image={ImgDavidManners}
                 title="MDD - Mistake Driven Development" 
                 language="en"
                 speaker="David Manners" 
                 speakerCompany="" 
             />
             <Talk 
-                image='/assets/talks/mm14ro/razvanstoica.jpg' 
+                image={ImgRazvanStoica}
                 title="Cyber Monday, every Monday: Running a Large Scale Private Sales Site on AWS" 
                 language="ro"
                 speaker="Răzvan Stoica" 
@@ -170,7 +195,7 @@ import Newsletter from '../../components/Newsletter.astro';
                 video="https://youtu.be/eJMBXvXeyis"
             />
             <Talk 
-                image='/assets/talks/mm14ro/bogdangeorgescu.jpg' 
+                image={ImgBogdanGeorgescu}
                 title="Magento Performance Monitoring and Troubleshooting with AppNeta TraceView" 
                 language="ro"
                 speaker="Bogdan Georgescu" 
