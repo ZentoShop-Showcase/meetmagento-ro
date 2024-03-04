@@ -50,4 +50,20 @@ export const SpeakersData: Speaker[] = [
         track: Track.Technical,
         featured: false,
     },
+    {
+        name: 'Bogdan Iftemie',
+        photo: '/assets/speakers/mm24ro/bogdaniftemie.jpg',
+        company: 'PayPo',
+        companyTitle: 'Business Development Director',
+        track: Track.Business,
+        featured: false,
+    },
+    {
+        name: 'Bogdan Marin',
+        photo: '/assets/speakers/mm24ro/bogdanmarin.jpg',
+        company: 'Adobe',
+        companyTitle: 'Enginnering Manager',
+        track: Track.Business,
+        featured: false,
+    },
 ];
