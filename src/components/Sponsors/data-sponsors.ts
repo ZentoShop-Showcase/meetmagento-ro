@@ -31,13 +31,6 @@ export const SponsorsData: Sponsor[] = [
         description: 'Innobyte is a strategic e-commerce partner that delivers flawless execution and ongoing counselling for mid and large-scale businesses. We offer a complex range of services to help companies to implement, launch and grow a successful e-commerce platform.',
     },
     // {
-    //     name: 'Clever++',
-    //     logo: 'assets/sponsors/clever.svg',
-    //     url: 'https://cleverplusplus.com/',
-    //     package: SponsorPackage.Silver,
-    //     description: "Clever++ is a Magento provider and solution specialist.",
-    // },
-    // {
     //     name: 'SoftLead',
     //     logo: 'assets/sponsors/softlead.svg',
     //     url: 'https://softlead.ro/',
@@ -57,13 +50,6 @@ export const SponsorsData: Sponsor[] = [
     //     url: 'https://www.weasweb.com/',
     //     package: SponsorPackage.Silver,
     //     description: "We as Web provides top-notch team augmentation and outsourcing services to companies in various industries who are in search of talented experts for short or long term projects.",
-    // },
-    // {
-    //     name: 'Baldwin',
-    //     logo: 'assets/sponsors/baldwin.svg',
-    //     url: 'https://www.baldwin.agency/?utm_source=https://ro.meet-magento.com/&utm_medium=referral&utm_content=sponsors',
-    //     package: SponsorPackage.Silver,
-    //     description: 'From building online stores and developing software solutions to marketing them using a wide range of online promotion tools, Baldwin is the ideal business partner that can guarantee high sales volumes and excellent customer retention rates.',
     // },
     // {
     //     name: 'Nexttech',
@@ -99,6 +85,20 @@ export const SponsorsData: Sponsor[] = [
         url: 'https://www.magefan.com/',
         package: SponsorPackage.Silver,
         description: "Magefan company is about high-quality e-commerce solutions for Magento 2 you can trust.",
+    },
+    {
+        name: 'Baldwin',
+        logo: 'assets/sponsors/baldwin.svg',
+        url: 'https://www.baldwin.agency/?utm_source=https://ro.meet-magento.com/&utm_medium=referral&utm_content=sponsors',
+        package: SponsorPackage.Silver,
+        description: 'From building online stores and developing software solutions to marketing them using a wide range of online promotion tools, Baldwin is the ideal business partner that can guarantee high sales volumes and excellent customer retention rates.',
+    },
+    {
+        name: 'Clever++',
+        logo: 'assets/sponsors/clever.svg',
+        url: 'https://cleverplusplus.com/',
+        package: SponsorPackage.Silver,
+        description: "Clever++ is a Magento provider and solution specialist.",
     },
     {
         name: 'cyber_Folks',
