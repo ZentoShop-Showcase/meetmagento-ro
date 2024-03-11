@@ -66,4 +66,12 @@ export const SpeakersData: Speaker[] = [
         track: Track.Business,
         featured: false,
     },
+    {
+        name: 'Valentin Bolboacă',
+        photo: '/assets/speakers/mm24ro/valentinbolboaca.jpg',
+        company: 'Klain',
+        companyTitle: 'CEO',
+        track: Track.Business,
+        featured: false,
+    },
 ];
