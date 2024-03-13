@@ -82,4 +82,12 @@ export const SpeakersData: Speaker[] = [
         track: Track.Business,
         featured: false,
     },
+    {
+        name: 'Nick Muldoon',
+        photo: '/assets/speakers/mm24ro/nickmuldoon.jpg',
+        company: 'JH',
+        companyTitle: 'Customer Success Manager',
+        track: Track.Business,
+        featured: false,
+    },
 ];
