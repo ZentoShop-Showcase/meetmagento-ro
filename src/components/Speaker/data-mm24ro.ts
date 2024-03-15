@@ -90,4 +90,12 @@ export const SpeakersData: Speaker[] = [
         track: Track.Business,
         featured: false,
     },
+    {
+        name: 'Piotr Pantkowski',
+        photo: '/assets/speakers/mm24ro/piotrpantkowski.jpg',
+        company: 'cyber_Folks',
+        companyTitle: undefined,
+        track: Track.Business,
+        featured: false,
+    },
 ];
