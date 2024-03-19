@@ -58,13 +58,13 @@ export const SponsorsData: Sponsor[] = [
     //     package: SponsorPackage.Gold,
     //     description: 'Romanian privately owned software development and IT consulting company specialized in nearshore and offshore digital transformation with functional expertise in E-commerce, Trading, Banking, Insurance, and Automotive industry.',
     // },
-    // {
-    //     name: 'Hyvä',
-    //     logo: '/assets/sponsors/hyva.svg',
-    //     url: 'https://hyva.io/',
-    //     package: SponsorPackage.Gold,
-    //     description: 'Hyvä is the built-from-scratch Magento 2 front end that makes your online store ultra-fast and performant. Hyvä saves you tons of development time and has the fastest ROI in the market, as your traffic, bounce rate and conversion rates are improved.',
-    // },
+    {
+        name: 'Hyvä',
+        logo: '/assets/sponsors/hyva.svg',
+        url: 'https://hyva.io/',
+        package: SponsorPackage.Gold,
+        description: 'Hyvä is the built-from-scratch Magento 2 front end that makes your online store ultra-fast and performant. Hyvä saves you tons of development time and has the fastest ROI in the market, as your traffic, bounce rate and conversion rates are improved.',
+    },
     // {
     //     name: 'Bunnyshell',
     //     logo: '/assets/sponsors/bunnyshell.svg',
