@@ -98,4 +98,12 @@ export const SpeakersData: Speaker[] = [
         track: Track.Business,
         featured: false,
     },
+    {
+        name: 'Dan Ilie',
+        photo: '/assets/speakers/mm24ro/danilie.jpg',
+        company: 'Adobe',
+        companyTitle: 'Senior Developer',
+        track: Track.Technical,
+        featured: false,
+    },
 ];
