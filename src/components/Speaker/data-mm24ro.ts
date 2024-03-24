@@ -114,4 +114,12 @@ export const SpeakersData: Speaker[] = [
         track: Track.Technical,
         featured: false,
     },
+    {
+        name: 'Dmitriy Gallamov',
+        photo: '/assets/speakers/mm24ro/dmitriygallamov.jpg',
+        company: 'Developers Alliance',
+        companyTitle: undefined,
+        track: Track.Technical,
+        featured: false,
+    },
 ];
