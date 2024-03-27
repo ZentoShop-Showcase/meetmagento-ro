@@ -122,4 +122,12 @@ export const SpeakersData: Speaker[] = [
         track: Track.Technical,
         featured: false,
     },
+    {
+        name: 'Kuba Zwolinski ',
+        photo: '/assets/speakers/mm24ro/kubazwolinski.jpg',
+        company: 'SnowDog',
+        companyTitle: undefined,
+        track: Track.Business,
+        featured: false,
+    },
 ];
