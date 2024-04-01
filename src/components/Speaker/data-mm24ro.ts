@@ -123,10 +123,28 @@ export const SpeakersData: Speaker[] = [
         featured: false,
     },
     {
-        name: 'Kuba Zwolinski ',
+        name: 'Kuba Zwolinski',
         photo: '/assets/speakers/mm24ro/kubazwolinski.jpg',
         company: 'SnowDog',
-        companyTitle: undefined,
+        companyTitle: 'Founder & CEO',
+        track: Track.Business,
+        featured: false,
+    },
+    {
+        name: 'Andrei Leica',
+        photo: '/assets/speakers/mm24ro/andreileica.jpg',
+        company: 'Arina',
+        companyTitle: 'Lead AI Research Engineer',
+        track: Track.Technical,
+        featured: false,
+    },
+    // TODO: Jakub Wilkler
+    // TODO: Sorin Bărnuțiu
+    {
+        name: 'Adrian Ilovan',
+        photo: '/assets/speakers/mm24ro/adrianilovan.jpg',
+        company: 'Netlogiq',
+        companyTitle: 'CEO',
         track: Track.Business,
         featured: false,
     },

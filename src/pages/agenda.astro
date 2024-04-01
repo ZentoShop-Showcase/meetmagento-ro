@@ -5,6 +5,30 @@ import Talk from '../components/Agenda/Talk.astro';
 import Filler from '../components/Agenda/Filler.astro';
 import Newsletter from '../components/Newsletter.astro';
 
+import ImgMathiasSchreiber from '../assets/talks/mm24ro/mathiasschreiber.png';
+import ImgMariusStrajeru from '../assets/talks/mm24ro/mariusstrajeru.png';
+
+import ImgIvanChepurnyi from '../assets/talks/mm24ro/ivanchepurnyi.png';
+import ImgDenisaConstantinoiu from '../assets/talks/mm24ro/denisaconstantinoiu.png';
+import ImgJohnHughes from '../assets/talks/mm24ro/johnhughes.png';
+import ImgBogdanMarin from '../assets/talks/mm24ro/bogdanmarin.png';
+// TODO: Jakub Wilkler
+import ImgIuliaGreab from '../assets/talks/mm24ro/iuliagreab.png';
+
+import ImgDanIlie from '../assets/talks/mm24ro/danilie.png';
+import ImgPiotrPantkowski from '../assets/talks/mm24ro/piotrpantkowski.png';
+import ImgAndreiLeica from '../assets/talks/mm24ro/andreileica.png';
+import ImgNickMuldoon from '../assets/talks/mm24ro/nickmuldoon.png';
+import ImgDmitriyGallamov from '../assets/talks/mm24ro/dmitriygallamov.png';
+import ImgKubaZwolinski from '../assets/talks/mm24ro/kubazwolinski.png';
+
+import ImgValentinSandu from '../assets/talks/mm24ro/valentinsandu.png';
+import ImgBogdanIftemie from '../assets/talks/mm24ro/bogdaniftemie.png';
+import ImgAlinAlexandru from '../assets/talks/mm24ro/alinalexandru.png';
+import ImgValentinBolboaca from '../assets/talks/mm24ro/valentinbolboaca.png';
+// import ImgSorinBarnutiu from '../assets/talks/mm24ro/sorinbarnutiu.png';
+import ImgAdrianIlovan from '../assets/talks/mm24ro/adrianilovan.png';
+
 ---
 
 <Layout title="Agenda - Meet Magento 2024">
@@ -13,7 +37,7 @@ import Newsletter from '../components/Newsletter.astro';
 
         <div class="container mx-auto my-12">
             <div class="grid grid-cols-1 md:grid-cols-7 gap-4">
-                <!-- 09:00 - 10:00 -->
+                <!-- Opening -->
                 <div class="sm:col-span-1 md:col-span-1 p-2 font-semibold text-xl border-l-4 border-gray-300">
                     09:00 - 10:00
                 </div>
@@ -25,7 +49,7 @@ import Newsletter from '../components/Newsletter.astro';
                     />
                 </div>
 
-                <!-- 10:00 - 10:30 -->
+                <!-- Joint - 1 -->
                 <div class="sm:col-span-1 md:col-span-1 p-2 font-semibold text-xl border-l-4 border-gray-300">
                     10:00 - 10:05
                 </div>
@@ -34,7 +58,6 @@ import Newsletter from '../components/Newsletter.astro';
                         icon='opening'
                         title='OPENING: Welcome to Meet Magento 2024'
                         subtitle='Vlad Stănescu, Zento'
-                        video="https://youtu.be/N20Hb2-zL48"
                     />
                 </div>
                 <div class="sm:col-span-1 md:col-span-1 p-2 font-semibold text-xl border-l-4 border-gray-300">
@@ -42,29 +65,27 @@ import Newsletter from '../components/Newsletter.astro';
                 </div>
                 <div class="sm:col-span-1 md:col-span-6 p-2">
                     <Talk 
-                        image='/assets/talks/mm23ro/mathiasschreiber.jpg' 
-                        title="Magento Association - What's next?" 
+                        image={ImgMathiasSchreiber}
+                        title="What's up, Magento" 
                         track="keynote"
                         language="en"
                         speaker="Mathias Schreiber" 
                         speakerCompany="Magento Association" 
-                        video="https://youtu.be/QV1qIK4mgPo"
                     />
                 </div>
 
-                <!-- 10:30 - 11:00 -->
+                <!-- Joint - 2 -->
                 <div class="sm:col-span-1 md:col-span-1 p-2 font-semibold text-xl border-l-4 border-gray-300">
                     10:30 - 11:00
                 </div>
                 <div class="sm:col-span-1 md:col-span-6 p-2">
                     <Talk 
-                        image='/assets/talks/mm23ro/raybogman.jpg' 
-                        title="Support, or not to Support ... that's the question!" 
+                        image={ImgMariusStrajeru}
+                        title="What did the author mean?" 
                         track="keynote"
                         language="en"
-                        speaker="Ray Bogman" 
-                        speakerCompany="Adobe" 
-                        video="https://youtu.be/qSuQmtL6ohI"
+                        speaker="Marius Străjeru" 
+                        speakerCompany="Arnia" 
                     />
                 </div>
 
@@ -80,82 +101,77 @@ import Newsletter from '../components/Newsletter.astro';
                     />
                 </div>
 
-                <!-- 11:30 - 13:00 -->
+                <!-- Split - 1 -->
                 <div class="sm:col-span-1 md:col-span-1 p-2 font-semibold text-xl border-l-4 border-gray-300">
                     11:30 - 12:00
                 </div>
                 <div class="sm:col-span-1 md:col-span-3 p-2">
                     <Talk 
-                        image='/assets/talks/mm23ro/mariusstrajeru.jpg' 
-                        title='Putting "custom" in custom options' 
+                        image={ImgIvanChepurnyi}
+                        title="Blazingly Fast Catalog Data Streaming and Processing"
                         language="en"
                         track="technical"
-                        speaker="Marius Străjeru" 
-                        speakerCompany="Arnia" 
-                        video="https://youtu.be/NzcC4DHBDyA"
+                        speaker="Ivan Chepurnyi" 
                     />
                 </div>
                 <div class="sm:col-span-1 md:col-span-3 p-2">
                     <Talk 
-                        image='/assets/talks/mm23ro/cosmincostea.jpg' 
-                        title="Keep your customers loyal or keep losing money" 
+                        image={ImgDenisaConstantinoiu}
+                        title="Generatia Z si noua provocare digitala: Cum îți adaptezi strategia de comunicare?" 
                         track="business"
                         language="ro"
-                        speaker="Cosmin Costea" 
-                        speakerCompany="theMarketer" 
-                        video="https://youtu.be/rDnz1tSEY1k"
+                        speaker="Denisa Constantinoiu" 
+                        speakerCompany="Kollab" 
                     />
                 </div>
 
+                <!-- Split - 2 -->
                 <div class="sm:col-span-1 md:col-span-1 p-2 font-semibold text-xl border-l-4 border-gray-300">
                     12:00 - 12:30
                 </div>
                 <div class="sm:col-span-1 md:col-span-3 p-2">
                     <Talk 
-                        image='/assets/talks/mm23ro/razvanbradea.jpg' 
-                        title='Deliver fast and scalable shopping experiences with Catalog Service for Adobe Commerce' 
+                        image={undefined}
+                        title="Challenges to Change: Harnessing Frustration for Innovation in Magento Development"
                         language="en"
                         track="technical"
-                        speaker="Răzvan Bradea" 
-                        speakerCompany="Adobe" 
-                        video="https://youtu.be/U0m2kjrpY08"
+                        speaker="Jakub Wilkler" 
+                        speakerCompany={undefined}
                     />
                 </div>
                 <div class="sm:col-span-1 md:col-span-3 p-2">
                     <Talk 
-                        image='/assets/talks/mm23ro/romanbalteanu.jpg' 
-                        title="Harness the Power of AI" 
+                        image={ImgBogdanMarin}
+                        title="Adobe Innovation: Building the fastest ecommerce websites in the world" 
                         track="business"
                         language="ro"
-                        speaker="Roman Bălțeanu" 
-                        speakerCompany="Google" 
-                        video="https://youtu.be/D5IeCm8baKI"
+                        speaker="Bogdan Marin" 
+                        speakerCompany="Adobe" 
                     />
                 </div>
 
+                <!-- Split - 3 -->
                 <div class="sm:col-span-1 md:col-span-1 p-2 font-semibold text-xl border-l-4 border-gray-300">
                     12:30 - 13:00
                 </div>
                 <div class="sm:col-span-1 md:col-span-3 p-2">
                     <Talk 
-                        image='/assets/talks/mm23ro/lukaszbajsarowicz.jpg' 
-                        title="(Don't) Leave Me Alone! - Facing depression in the remote times."
+                        image={ImgJohnHughes}
+                        title='Evolutionary e-commerce - you need Hyvä, not a revolution' 
                         language="en"
                         track="technical"
-                        speaker="Łukasz Bajsarowicz" 
-                        speakerCompany="SwiftOtter" 
-                        video="https://youtu.be/-K5OE4Oxxm8"
+                        speaker="John Hughes" 
+                        speakerCompany="Hyvä"
                     />
                 </div>
                 <div class="sm:col-span-1 md:col-span-3 p-2">
                     <Talk 
-                        image='/assets/talks/mm23ro/vladmarincas.jpg' 
-                        title="Personalization in eCommerce: what we can learn from Google, Netflix, Amazon and Facebook" 
+                        image={ImgIuliaGreab}
+                        title="Maximizeaza vanzarile online: Cele mai eficiente funnel-uri de ecommerce" 
                         track="business"
                         language="ro"
-                        speaker="Vlad Marincaș" 
-                        speakerCompany="Aqurate" 
-                        video="https://youtu.be/NM3QlMZdQys"
+                        speaker="Iulia Greab" 
+                        speakerCompany="DoAds" 
                     />
                 </div>
 
@@ -172,80 +188,78 @@ import Newsletter from '../components/Newsletter.astro';
                     />
                 </div>
 
+                <!-- Split - 4 -->
                 <div class="sm:col-span-1 md:col-span-1 p-2 font-semibold text-xl border-l-4 border-gray-300">
                     14:00 - 14:30
                 </div>
                 <div class="sm:col-span-1 md:col-span-3 p-2">
                     <Talk 
-                        image='/assets/talks/mm23ro/calinpetrar.jpg' 
-                        title="Google nu știe nimic"
+                        image={ImgDanIlie}
+                        title="Building a high-performance storefront on Edge Delivery Services for Adobe Commerce"
                         language="ro"
                         track="technical"
-                        speaker="Călin Petrar" 
-                        speakerCompany="Times New Roman" 
-                        video="https://youtu.be/dlt4yng7snY"
+                        speaker="Dan Ilie & Bogdan Marin" 
+                        speakerCompany="Adobe" 
                     />
                 </div>
                 <div class="sm:col-span-1 md:col-span-3 p-2">
                     <Talk 
-                        image='/assets/talks/mm23ro/arthurpajkert.jpg' 
-                        title="Artificial intelligence in e-commerce. Are you standing or are you going?" 
+                        image={ImgPiotrPantkowski}
+                        title="How does store stability affect a business?" 
                         track="business"
                         language="en"
-                        speaker="Artur Pajkert" 
-                        speakerCompany="cyber_Folks" 
-                        video="https://youtu.be/RSBjXwPft2o"
+                        speaker="Piotr Pantkowski" 
+                        speakerCompany="cyber_Folks"
                     />
                 </div>
 
+                <!-- Split - 5 -->
                 <div class="sm:col-span-1 md:col-span-1 p-2 font-semibold text-xl border-l-4 border-gray-300">
                     14:30 - 15:00
                 </div>
                 <div class="sm:col-span-1 md:col-span-3 p-2">
                     <Talk 
-                        image='/assets/talks/mm23ro/ivanchepurnyi.jpg' 
-                        title="Better indexation without performance penalty"
+                        image={ImgAndreiLeica}
+                        title="AI-Powered Shopping Assistants: Bridging LLM Chatbots with Unified Text and Visual Search"
                         language="en"
                         track="technical"
-                        speaker="Ivan Chepurnyi" 
-                        video="https://youtu.be/wOM5M26TrDE"
+                        speaker="Andrei Leica" 
+                        speakerCompany="Apsis"
                     />
                 </div>
                 <div class="sm:col-span-1 md:col-span-3 p-2">
                     <Talk 
-                        image='/assets/talks/mm23ro/alexandrubalaci.jpg' 
-                        title="The State of the Fintech" 
+                        image={ImgKubaZwolinski}
+                        title="How to safely prepare your ecommerce for upcoming accessibility regulations in Europe (EAA)" 
                         track="business"
-                        language="ro"
-                        speaker="Alexandru Balaci" 
-                        speakerCompany="Mokka" 
-                        video="https://youtu.be/Gb4xTbx87kI"
+                        language="en"
+                        speaker="Kuba Zwolinski" 
+                        speakerCompany="Snowdog" 
                     />
                 </div>
 
+                <!-- Split - 6 -->
                 <div class="sm:col-span-1 md:col-span-1 p-2 font-semibold text-xl border-l-4 border-gray-300">
                     15:00 - 15:30
                 </div>
                 <div class="sm:col-span-1 md:col-span-3 p-2">
                     <Talk 
-                        image='/assets/talks/mm23ro/alinalexandru.jpg' 
-                        title="How to monitor the performance of a Magento instance"
-                        language="ro"
+                        image={ImgDmitriyGallamov}
+                        title="Local development with advanced Docker"
+                        language="en"
                         track="technical"
-                        speaker="Alin Alexandru" 
-                        speakerCompany="Innobyte" 
-                        video="https://youtu.be/ylKnEk4Lyw4"
+                        speaker="Dmitriy Gallamov" 
+                        speakerCompany="Developers Alliance" 
                     />
                 </div>
                 <div class="sm:col-span-1 md:col-span-3 p-2">
                     <Talk 
-                        image='/assets/talks/mm23ro/paulapostu.jpg' 
-                        title="Optimized Email Marketing Automation for Magento" 
+                        image={ImgNickMuldoon}
+                        title="How AI allows the small companies to play with the big boys" 
                         track="business"
-                        language="ro"
-                        speaker="Paul Apostu" 
-                        speakerCompany="eCommerce Today Agency" 
-                        video="https://youtu.be/3S6EzLcl4AY"
+                        language="en"
+                        speaker="Nick Muldoon" 
+                        speakerCompany="JH" 
                     />
                 </div>
 
@@ -262,82 +276,77 @@ import Newsletter from '../components/Newsletter.astro';
                     />
                 </div>
 
-                <!-- Group 3 -->
+                <!-- Split - 7 -->
                 <div class="sm:col-span-1 md:col-span-1 p-2 font-semibold text-xl border-l-4 border-gray-300">
                     16:00 - 16:30
                 </div>
                 <div class="sm:col-span-1 md:col-span-3 p-2">
                     <Talk 
-                        image='/assets/talks/mm23ro/zitec.jpg' 
-                        title="Black Friday Scaling Success: A Magento 2 Case Study on Kubernetes"
-                        language="ro"
+                        image={ImgValentinSandu}
+                        title="TBC"
+                        language="en"
                         track="technical"
-                        speaker="George Mușat & Cristian Glăvan" 
-                        speakerCompany="Zitec"
-                        video="https://youtu.be/sh3Z10KkoWk"
+                        speaker="Valentin Sandu" 
+                        speakerCompany="R7 Digital Commerce"
                     />
                 </div>
                 <div class="sm:col-span-1 md:col-span-3 p-2">
                     <Talk 
-                        image='/assets/talks/mm23ro/cipriancazacu.jpg' 
-                        title="E-Commerce in contextul actual si cum ne putem adapta" 
+                        image={ImgBogdanIftemie}
+                        title="BNPL - Oportunitati si beneficii" 
                         track="business"
                         language="ro"
-                        speaker="Ciprian Cazacu" 
-                        speakerCompany="easySales" 
-                        video="https://youtu.be/UGK0npEKJaA"
+                        speaker="Bogdan Iftemie" 
+                        speakerCompany="PayPo" 
                     />
                 </div>
 
+                <!-- Split - 8 -->
                 <div class="sm:col-span-1 md:col-span-1 p-2 font-semibold text-xl border-l-4 border-gray-300">
                     16:30 - 17:00
                 </div>
                 <div class="sm:col-span-1 md:col-span-3 p-2">
                     <Talk 
-                        image='/assets/talks/mm23ro/valentinsandu.jpg' 
-                        title="Bundle Price Reindex takes its time"
+                        image={ImgAlinAlexandru}
+                        title="TBC"
                         track="technical"
                         language="en"
-                        speaker="Valentin Sandu" 
-                        speakerCompany="R7 Digital Commerce" 
-                        video="https://youtu.be/XD3DJ7Q9IEg"
+                        speaker="Alin Alexandru" 
+                        speakerCompany="Innobyte" 
                     />
                 </div>
                 <div class="sm:col-span-1 md:col-span-3 p-2">
                     <Talk 
-                        image='/assets/talks/mm23ro/attilakiraly.jpg' 
-                        title="2 Be or Not 2 Be: Importanța Strategiei de Marketing în Era Digitală"
+                        image={ImgValentinBolboaca}
+                        title="De ce eșuează strategiile de marketing"
                         language="ro"
                         track="business"
-                        speaker="Attila Kiraly" 
-                        speakerCompany="SEO 365" 
-                        video="https://youtu.be/d7eswiqhhGU"
+                        speaker="Valentin Bolboaca" 
+                        speakerCompany="Klain" 
                     />
                 </div>
 
+                <!-- Split - 9 -->
                 <div class="sm:col-span-1 md:col-span-1 p-2 font-semibold text-xl border-l-4 border-gray-300">
                     17:00 - 17:30
                 </div>
                 <div class="sm:col-span-1 md:col-span-3 p-2">
                     <Talk 
-                        image='/assets/talks/mm23ro/sorindumitrescu.jpg' 
-                        title="Environments as a Service - Increase developer productivity and improve DX"
-                        language="ro"
+                        image={undefined}
+                        title="TBC"
+                        language="en"
                         track="technical"
-                        speaker="Sorin Dumitrescu" 
-                        speakerCompany="Bunnyshell"
-                        video="https://youtu.be/7SmZ8aEutnE"
+                        speaker="TBC" 
                     />
                 </div>
                 <div class="sm:col-span-1 md:col-span-3 p-2">
                     <Talk 
-                        image='/assets/talks/mm23ro/sorintrifu.jpg' 
-                        title="Noul rol al agentiilor de marketing in era AI / chatGPT" 
+                        image={ImgAdrianIlovan}
+                        title="Keyword Research + AI pentru vanzari mai mari" 
                         track="business"
                         language="ro"
-                        speaker="Sorin Trifu" 
-                        speakerCompany="HOLD Marketing" 
-                        video="https://youtu.be/wn1Fx1iaQz0"
+                        speaker="Adrian Ilovan" 
+                        speakerCompany="Netlogiq" 
                     />
                 </div>
 
@@ -350,7 +359,7 @@ import Newsletter from '../components/Newsletter.astro';
                     <Filler
                         icon='party'
                         title='After Party - 404 Party'
-                        subtitle="Meet us a Colin's Gastro Pub for a drink and some food"
+                        subtitle="Drinks & Food at Colin's Gastro Pub sponsored by PayPo"
                         map="https://goo.gl/maps/qrVuQAmhofjfXMqo7"
                     />
                 </div>
