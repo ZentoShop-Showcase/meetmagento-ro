@@ -101,6 +101,27 @@ export const SponsorsData: Sponsor[] = [
         description: "Clever++ is a Magento provider and solution specialist.",
     },
     {
+        name: 'Developers Alliance',
+        logo: 'assets/sponsors/devall.svg',
+        url: 'https://www.developers-alliance.com/?utm_source=https://ro.meet-magento.com/&utm_medium=referral&utm_content=sponsors',
+        package: SponsorPackage.Silver,
+        description: "Developers Alliance specialises in providing certified developers to Agencies and Merchants. We ensure that the developers are happy, maintain quality, and continue to grow, allowing you to focus on your business.",
+    },
+    // {
+    //     name: 'Netlogiq',
+    //     logo: 'assets/sponsors/netlogiq.svg',
+    //     url: 'https://www.netlogiq.ro/?utm_source=https://ro.meet-magento.com/&utm_medium=referral&utm_content=sponsors',
+    //     package: SponsorPackage.Silver,
+    //     description: "...",
+    // },
+    {
+        name: 'Zento',
+        logo: 'assets/sponsors/zentoshop.svg',
+        url: 'https://www.zentoshop.com/?utm_source=https://ro.meet-magento.com/&utm_medium=referral&utm_content=sponsors',
+        package: SponsorPackage.Silver,
+        description: 'Zento is a Software-as-a-Service (SaaS) solution built on top of Magento 2 and offers fully managed eCommerce solutions with state-of-the-art Cloud hosting to medium and large merchants.',
+    },
+    {
         name: 'cyber_Folks',
         logo: 'assets/sponsors/cyberfolks.svg',
         url: 'https://cyberfolks.ro/?utm_source=https://ro.meet-magento.com/&utm_medium=referral&utm_content=sponsors',
