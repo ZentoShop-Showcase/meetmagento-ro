@@ -109,7 +109,7 @@ export const SpeakersData: Speaker[] = [
     {
         name: 'Valentin Sandu',
         photo: '/assets/speakers/mm24ro/valentinsandu.jpg',
-        company: 'R7 Digital Commerce',
+        company: 'Reverse Seven',
         companyTitle: undefined,
         track: Track.Technical,
         featured: false,
