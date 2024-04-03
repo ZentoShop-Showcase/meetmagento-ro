@@ -15,6 +15,14 @@ import type { Speaker } from '../components/Speaker/speaker';
 import { SpeakersData } from '../components/Speaker/data-mm24ro';
 // import IntroBanner from '../components/Home/IntroBanner.astro';
 
+//      <div class="container flex items-center flex-wrap mx-auto pb-20 sm:pb-26 md:flex-nowrap md:gap-6">
+// 			<div class="w-full sm:w-1/2 flex-col pt-4">
+// 				<CallForPapers />
+// 			</div>
+// 			<div class="w-full sm:w-1/2 flex-col pt-4">
+// 				<CallForSponsors />
+// 			</div>
+// 		</div>
 ---
 
 <Layout title="Welcome to MMRO">
@@ -24,15 +32,6 @@ import { SpeakersData } from '../components/Speaker/data-mm24ro';
 		</div>
 
 		<SpeakerList speakers={SpeakersData.filter((s: Speaker) => s.featured === true)} />
-
-		<div class="container flex items-center flex-wrap mx-auto pb-20 sm:pb-26 md:flex-nowrap md:gap-6">
-			<div class="w-full sm:w-1/2 flex-col pt-4">
-				<CallForPapers />
-			</div>
-			<div class="w-full sm:w-1/2 flex-col pt-4">
-				<CallForSponsors />
-			</div>
-		</div>
 
 		<Venue />
 

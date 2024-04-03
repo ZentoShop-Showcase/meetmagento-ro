@@ -133,7 +133,7 @@ export const SpeakersData: Speaker[] = [
     {
         name: 'Andrei Leica',
         photo: '/assets/speakers/mm24ro/andreileica.jpg',
-        company: 'Arina',
+        company: 'Arnia',
         companyTitle: 'Lead AI Research Engineer',
         track: Track.Technical,
         featured: false,
