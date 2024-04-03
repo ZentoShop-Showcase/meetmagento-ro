@@ -138,6 +138,14 @@ export const SpeakersData: Speaker[] = [
         track: Track.Technical,
         featured: false,
     },
+    {
+        name: 'Jakub Wilkler',
+        photo: '/assets/speakers/mm24ro/jakubwilkler.jpg',
+        company: 'Q-Solutions Studio',
+        companyTitle: 'CEO',
+        track: Track.Technical,
+        featured: false,
+    },
     // TODO: Jakub Wilkler
     // TODO: Sorin Bărnuțiu
     {
