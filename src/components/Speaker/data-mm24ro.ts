@@ -146,8 +146,14 @@ export const SpeakersData: Speaker[] = [
         track: Track.Technical,
         featured: false,
     },
-    // TODO: Jakub Wilkler
-    // TODO: Sorin Bărnuțiu
+    {
+        name: 'Sorin Bărnuțiu',
+        photo: '/assets/speakers/mm24ro/sorinbarnutiu.jpg',
+        company: 'Baldwin',
+        companyTitle: 'Senior Front-end Developer',
+        track: Track.Technical,
+        featured: false,
+    },
     {
         name: 'Adrian Ilovan',
         photo: '/assets/speakers/mm24ro/adrianilovan.jpg',
