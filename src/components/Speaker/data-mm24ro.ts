@@ -125,7 +125,7 @@ export const SpeakersData: Speaker[] = [
     {
         name: 'Kuba Zwolinski',
         photo: '/assets/speakers/mm24ro/kubazwolinski.jpg',
-        company: 'SnowDog',
+        company: 'Snowdog',
         companyTitle: 'Founder & CEO',
         track: Track.Business,
         featured: false,
