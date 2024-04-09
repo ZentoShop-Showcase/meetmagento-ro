@@ -109,7 +109,7 @@ export const SponsorsData: Sponsor[] = [
     },
     {
         name: 'Netlogiq',
-        logo: 'assets/sponsors/netlogiq.svg',
+        logo: 'assets/sponsors/netlogiq2.svg',
         url: 'https://www.netlogiq.ro/?utm_source=https://ro.meet-magento.com/&utm_medium=referral&utm_content=sponsors',
         package: SponsorPackage.Silver,
         description: "Netlogiq specializes in the design, construction, and continuous development of online stores on Magento. The services offered include design/redesign (including on Hyvä), Magento extensions creation, maintenance and updates, migrations, conversion rate optimization, SEO, and advertising.",
