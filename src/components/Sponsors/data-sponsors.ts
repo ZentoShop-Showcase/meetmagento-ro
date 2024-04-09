@@ -107,13 +107,13 @@ export const SponsorsData: Sponsor[] = [
         package: SponsorPackage.Silver,
         description: "Developers Alliance specialises in providing certified developers to Agencies and Merchants. We ensure that the developers are happy, maintain quality, and continue to grow, allowing you to focus on your business.",
     },
-    // {
-    //     name: 'Netlogiq',
-    //     logo: 'assets/sponsors/netlogiq.svg',
-    //     url: 'https://www.netlogiq.ro/?utm_source=https://ro.meet-magento.com/&utm_medium=referral&utm_content=sponsors',
-    //     package: SponsorPackage.Silver,
-    //     description: "...",
-    // },
+    {
+        name: 'Netlogiq',
+        logo: 'assets/sponsors/netlogiq.svg',
+        url: 'https://www.netlogiq.ro/?utm_source=https://ro.meet-magento.com/&utm_medium=referral&utm_content=sponsors',
+        package: SponsorPackage.Silver,
+        description: "Netlogiq specializes in the design, construction, and continuous development of online stores on Magento. The services offered include design/redesign (including on Hyvä), Magento extensions creation, maintenance and updates, migrations, conversion rate optimization, SEO, and advertising.",
+    },
     {
         name: 'Zento',
         logo: 'assets/sponsors/zentoshop.svg',
