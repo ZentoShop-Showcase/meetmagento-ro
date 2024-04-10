@@ -109,7 +109,7 @@
     </div>
 </header>
 
-<script>
+<script is:inline data-astro-rerun>
     // @ts-nocheck
     document.addEventListener('scroll', () => {
         const headerElem = document.querySelector('#header');
@@ -128,21 +128,23 @@
         }
     });
 
-    document.querySelector('#mobile-menu-open').addEventListener('click', () => {
-        const menuElem = document.querySelector('#mobile-menu');
-        menuElem.classList.remove('hide-menu');
-        menuElem.classList.add('show-menu');
-        document.body.style.overflow = 'hidden';
-    });
-
-    const buttons = document.querySelectorAll('[data-mobile-menu-close]');
-
-    buttons.forEach((button) => {
-        button.addEventListener('click', () => {
+    document.addEventListener('astro:page-load', () => {
+        document.querySelector('#mobile-menu-open').addEventListener('click', () => {
             const menuElem = document.querySelector('#mobile-menu');
-            menuElem.classList.remove('show-menu');
-            menuElem.classList.add('hide-menu');
-            document.body.style.overflow = 'auto';
+            menuElem.classList.remove('hide-menu');
+            menuElem.classList.add('show-menu');
+            document.body.style.overflow = 'hidden';
+        });
+
+        const buttons = document.querySelectorAll('[data-mobile-menu-close]');
+
+        buttons.forEach((button) => {
+            button.addEventListener('click', () => {
+                const menuElem = document.querySelector('#mobile-menu');
+                menuElem.classList.remove('show-menu');
+                menuElem.classList.add('hide-menu');
+                document.body.style.overflow = 'auto';
+            });
         });
     });
 </script>
