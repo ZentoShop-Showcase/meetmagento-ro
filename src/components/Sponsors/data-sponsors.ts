@@ -12,7 +12,7 @@ export const SponsorsData: Sponsor[] = [
     {
         name: 'PayPo',
         logo: 'assets/sponsors/paypo.svg',
-        url: 'https://paypo.ro/?utm_source=https://ro.meet-magento.com/&utm_medium=referral&utm_content=sponsors',
+        url: 'https://paypo.ro/',
         package: SponsorPackage.Gold,
         description: 'Paypo este o companie fintech fondata in 2016 in Polonia, lider regional in CEE pe piata solutiilor BNPL. Prin integrarea metodei de plata PayPo, comerciantii online isi pot creste afacerea si conversia, prin cresterea valorii medii a cosului (AOV) si prin scaderea ratei de abandon a cosului.',
     },
