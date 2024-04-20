@@ -2,14 +2,14 @@ import type { Speaker } from './speaker';
 import { Track } from './speaker';
 
 export const SpeakersData: Speaker[] = [
-    {
-        name: 'Marius Străjeru',
-        photo: '/assets/speakers/mm24ro/mariusstrajeru.jpg',
-        company: 'Arnia',
-        companyTitle: undefined,
-        track: Track.Technical,
-        featured: false,
-    },
+    // {
+    //     name: 'Marius Străjeru',
+    //     photo: '/assets/speakers/mm24ro/mariusstrajeru.jpg',
+    //     company: 'Arnia',
+    //     companyTitle: undefined,
+    //     track: Track.Technical,
+    //     featured: false,
+    // },
     {
         name: 'Ivan Chepurnyi',
         photo: '/assets/speakers/mm24ro/ivanchepurnyi.jpg',
@@ -159,6 +159,14 @@ export const SpeakersData: Speaker[] = [
         photo: '/assets/speakers/mm24ro/adrianilovan.jpg',
         company: 'Netlogiq',
         companyTitle: 'CEO',
+        track: Track.Business,
+        featured: false,
+    },
+    {
+        name: 'Vlad Marincaș',
+        photo: '/assets/speakers/mm24ro/vladmarincas.jpg',
+        company: 'Aqurate',
+        companyTitle: 'CEO and co-founder',
         track: Track.Business,
         featured: false,
     },
