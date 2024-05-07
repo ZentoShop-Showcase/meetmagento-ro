@@ -139,7 +139,7 @@ export const SpeakersData: Speaker[] = [
         featured: false,
     },
     {
-        name: 'Jakub Wilkler',
+        name: 'Jakub Winkler',
         photo: '/assets/speakers/mm24ro/jakubwilkler.jpg',
         company: 'Q-Solutions Studio',
         companyTitle: 'CEO',
