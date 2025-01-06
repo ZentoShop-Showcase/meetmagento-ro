@@ -4,8 +4,9 @@ import CoffeeIcon from '../../assets/icons/agenda/coffee.svg';
 import LunchIcon from '../../assets/icons/agenda/lunch.svg';
 import PartyIcon from '../../assets/icons/agenda/party.svg';
 import OpeningIcon from '../../assets/icons/agenda/opening.svg';
+import YouTubeIcon from '../../assets/icons/youtube.svg';
 
-const { icon, title, subtitle, map } = Astro.props;
+const { icon, title, subtitle, map, video } = Astro.props;
 
 let iconImg;
 switch (icon) {
@@ -35,7 +36,7 @@ switch (icon) {
     <div class="basis-full sm:basis-1/2 relative md:basis-1/3 bg-gray-50 h-[162px] flex items-center justify-center">
         {iconImg !== undefined ?
             <img
-                src={iconImg}
+                src={iconImg.src}
                 alt={title}
                 class="object-contain"
                 width="80"
@@ -44,13 +45,23 @@ switch (icon) {
     </div>
     <div class="basis-full p-4 sm:basis-1/2 sm:py-0 sm:px-4 md:basis-2/3 md:py-6">
         <h4 class="pb-3 pt-2">{title}</h4>
-        <p class="text-l font-normal text-gray-600 pb-2">
+        <p class="text-l font-normal text-gray-600 pb-6">
             {subtitle}
         </p>
         {map && 
             <a href={map} target="_blank" rel="noopener noreferrer" class="text-l font-normal text-gray-600 underline">
                 View on Google Maps
             </a>
+        }
+        {video !== undefined &&
+            <p>
+                <a href={video} target="_blank" rel="noopener" 
+                    class="w-full max-w-32 bg-orange-600 button-s text-white rounded
+                        py-3 px-4 text-center hover:bg-orange-700 focus:outline-none">
+                    <img src={YouTubeIcon.src} class="inline-block w-6 h-6 mr-2" alt="YouTube Icon" />
+                    Watch on YouTube
+                </a>
+            </p>
         }
     </div>
 </div>

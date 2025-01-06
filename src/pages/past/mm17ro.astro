@@ -4,6 +4,37 @@ import PageBanner from '../../components/PageBanner.astro';
 import SubNavigation from '../../components/Past/SubNavigation.astro';
 import Talk from '../../components/Past/Talk.astro';
 import Newsletter from '../../components/Newsletter.astro';
+
+import ImgBenMarks from '../../assets/talks/mm17ro/benmarks.png';
+
+import ImgElenaDobre from '../../assets/talks/mm17ro/elenadobre.png';
+import ImgBogdanHerea from '../../assets/talks/mm17ro/bogdanherea.png';
+import ImgDorinBoerescu from '../../assets/talks/mm17ro/dorinboerescu.png';
+import ImgSergiuBabasan from '../../assets/talks/mm17ro/babasan.png';
+import ImgRobertBerza from '../../assets/talks/mm17ro/robertberza.png';
+import ImgValentinRadu from '../../assets/talks/mm17ro/valentinradu.png';
+import ImgBogdanColceriu from '../../assets/talks/mm17ro/bogdancolceriu.png';
+import ImgAdrianIlovan from '../../assets/talks/mm17ro/adrianilovan.png';
+import ImgAlexandraCohutiu from '../../assets/talks/mm17ro/alexandracohutiu.png';
+import ImgGuidoJansen from '../../assets/talks/mm17ro/guidojansen.png';
+import ImgCristianFilimon from '../../assets/talks/mm17ro/cristianfilimon.png';
+
+import ImgMariusStrajeru from '../../assets/talks/mm17ro/mariusstrajeru.png';
+import ImgMaxYekaterynenko from '../../assets/talks/mm17ro/maxyekaterynenko.png';
+import ImgTomRobertshaw from '../../assets/talks/mm17ro/tomrobertshaw.png';
+import ImgRiccardoTempesta from '../../assets/talks/mm17ro/ricardotempesta.png';
+import ImgRebeccaBrocton from '../../assets/talks/mm17ro/rebeccabrocton.png';
+import ImgIevgenShakhsuvarov from '../../assets/talks/mm17ro/ievgenshakhsuvarov.png';
+import ImgAndraLungu from '../../assets/talks/mm17ro/andralungu.png';
+import ImgSanderMangel from '../../assets/talks/mm17ro/sandermangel.png';
+import ImgSherrieRohde from '../../assets/talks/mm17ro/sherrierohde.png';
+import ImgGoranBokun from '../../assets/talks/mm17ro/goranbokun.png';
+import ImgPavloOkhrem from '../../assets/talks/mm17ro/pavlookhrem.png';
+import ImgRazvanAvramescu from '../../assets/talks/mm17ro/razvanavramescu.png';
+import ImgBartekIgielski from '../../assets/talks/mm17ro/bartekigielski.png';
+import ImgMaciejKalkowski from '../../assets/talks/mm17ro/maciejkalkowski.png';
+import ImgNorbertHes from '../../assets/talks/mm17ro/norberthes.png';
+
 ---
 
 <Layout title="Meet Magento 2017">
@@ -11,11 +42,49 @@ import Newsletter from '../../components/Newsletter.astro';
 		<PageBanner title="Meet Magento 2017" />
         <SubNavigation selected="mm17ro" />
 
+		<div class="container flex items-center flex-wrap mx-auto pb-20 sm:pb-26 md:flex-nowrap md:gap-6">
+			<div class="w-full sm:w-1/2 flex-col pt-4 sm:order-first order-last">
+				<h5>2017 Edition</h5>
+				<h2 class="pb-3">Photos & After-Movie</h2>
+				<p class="text-l font-normal text-gray-600 pb-3">Meet Magento Romania 2017 was held on October 16-17 at Grand Hotel Italia, Cluj-Napoca.</p>
+				<p class="text-l font-normal text-gray-600 pb-8">Check out the photo albums on Facebook and tag yourself and watch the after-movie on YouTube.</p>
+				<div class="flex w-full">
+					<a
+						id="photos-fb-link"
+						class="flex-1 w-full max-w-48 bg-orange-600 button-m text-white rounded
+							py-4 px-4 text-center hover:bg-orange-700 focus:outline-none"
+						href="https://www.facebook.com/media/set/?set=a.1482875201747671&type=3"
+						target="_blank"
+					>
+						Day 1
+					</a>
+					<a
+						id="photos-fb-link"
+						class="flex-1 w-full max-w-48 bg-orange-600 button-m text-white rounded
+							py-4 px-4 mx-4 text-center hover:bg-orange-700 focus:outline-none"
+						href="https://www.facebook.com/media/set/?set=a.1482882615080263&type=3"
+						target="_blank"
+					>
+						Day 2
+					</a>
+				</div>
+			</div>
+			<div class="w-full sm:w-1/2 flex-col pt-4">
+				<iframe 
+					width="560" 
+					height="315" 
+					src="https://www.youtube.com/embed/R-5Szbt3byc" 
+					title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
+					class="w-full lg:w-[560px]"
+				></iframe>
+			</div>
+		</div>
+
         <h2 class="container pb-4 sm:pb-8">Presentations</h2>
         <h4 class="container pb-4">Keynote</h4>
         <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-4 sm:pb-4 gap-6">
             <Talk 
-                image='/assets/talks/mm17ro/benmarks.png' 
+                image={ImgBenMarks}
                 title="The future of Magento" 
                 language="en"
                 speaker="Ben Marks" 
@@ -26,7 +95,7 @@ import Newsletter from '../../components/Newsletter.astro';
         <h4 class="container py-4">Business Track</h4>
         <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-4 sm:pb-4 gap-6">
             <Talk
-                image='/assets/talks/mm17ro/elenadobre.png' 
+                image={ImgElenaDobre}
                 title="Promovarea pe mobil - aplicații și mobi-site-uri - 7 recomandări de performanță" 
                 language="ro"
                 speaker="Elena Dobre" 
@@ -34,14 +103,14 @@ import Newsletter from '../../components/Newsletter.astro';
                 video="https://youtu.be/oXmotz4FRD8"
             />
             <Talk 
-                image='/assets/talks/mm17ro/bogdanherea.jpg' 
+                image={ImgBogdanHerea}
                 title="Roundtable - Provocarile unui eCommerce startup în 2018" 
                 language="ro"
                 speaker="Bogdan Herea" 
                 speakerCompany="PitechPlus" 
             />
             <Talk 
-                image='/assets/talks/mm17ro/dorinboerescu.png' 
+                image={ImgDorinBoerescu}
                 title="Performance marketing in sharing economy" 
                 language="ro"
                 speaker="Dorin Boerescu" 
@@ -49,7 +118,7 @@ import Newsletter from '../../components/Newsletter.astro';
                 video="https://youtu.be/uEaT7xWn_LU"
             />
             <Talk 
-                image='/assets/talks/mm17ro/babasan.jpg' 
+                image={ImgSergiuBabasan}
                 title="GoOnline Roundtable" 
                 language="ro"
                 speaker="Sergiu Babașan, Ovidiu Kalman, Marius Panait, Marius Flore" 
@@ -57,14 +126,14 @@ import Newsletter from '../../components/Newsletter.astro';
                 video="https://youtu.be/d74s9856XE8"
             />
             <Talk 
-                image='/assets/talks/mm17ro/robertberza.jpg' 
+                image={ImgRobertBerza}
                 title="BlackFriday la FashionDays - interviu" 
                 language="ro"
                 speaker="Robert Berza" 
                 speakerCompany="FashionDays" 
             />
             <Talk 
-                image='/assets/talks/mm17ro/valentinradu.jpg' 
+                image={ImgValentinRadu}
                 title="How and why to make your Magento eCommerce Customer-Centric" 
                 language="ro"
                 speaker="Valentin Radu" 
@@ -72,7 +141,7 @@ import Newsletter from '../../components/Newsletter.astro';
                 video="https://youtu.be/mmpLJgX_wm0"
             />
             <Talk 
-                image='/assets/talks/mm17ro/bogdancolceriu.jpg' 
+                image={ImgBogdanColceriu}
                 title="The actual costs for operating an online store" 
                 language="ro"
                 speaker="Bogdan Colceriu" 
@@ -80,7 +149,7 @@ import Newsletter from '../../components/Newsletter.astro';
                 video="https://youtu.be/g2gIGTTwJeI"
             />
             <Talk 
-                image='/assets/talks/mm17ro/adrianilovan.jpg' 
+                image={ImgAdrianIlovan}
                 title="Magento 2 vs WooCommerce pentru magazine online B2C și B2B" 
                 language="ro"
                 speaker="Adrian Ilovan" 
@@ -88,16 +157,15 @@ import Newsletter from '../../components/Newsletter.astro';
                 video="https://youtu.be/55w6hgram64"
             />
             <Talk 
-                image='/assets/talks/mm17ro/alexandracohutiu.jpg' 
+                image={ImgAlexandraCohutiu}
                 title="From Setting Up The Relationship With The Investors to Data Protection" 
                 language="ro"
                 speaker="Alexandra Cohutiu" 
                 speakerCompany="LLA" 
                 video="https://youtu.be/DRcec6AnHAE"
             />
-
             <Talk 
-                image='/assets/talks/mm17ro/guidojansen.jpg' 
+                image={ImgGuidoJansen}
                 title="Global and local strategies for Merchants and Agencies" 
                 language="en"
                 speaker="Guido Jansen" 
@@ -105,7 +173,7 @@ import Newsletter from '../../components/Newsletter.astro';
                 video="https://youtu.be/UEuyMR2c1-c"
             />
             <Talk 
-                image='/assets/talks/mm17ro/cristianfilimon.jpg' 
+                image={ImgCristianFilimon}
                 title="Cum sa iti optimizezi relatia cu agentia de webdevelopment" 
                 language="ro"
                 speaker="Cristian Filimon" 
@@ -116,7 +184,7 @@ import Newsletter from '../../components/Newsletter.astro';
         <h4 class="container py-4">Technical Track</h4>
         <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-4 sm:pb-4 gap-6">
             <Talk 
-                image='/assets/talks/mm17ro/mariusstrajeru.jpg' 
+                image={ImgMariusStrajeru}
                 title="Because it's in the core" 
                 language="en"
                 speaker="Marius Străjeru" 
@@ -124,56 +192,56 @@ import Newsletter from '../../components/Newsletter.astro';
                 video="https://youtu.be/2ykt7m8lcEg"
             />
             <Talk 
-                image='/assets/talks/mm17ro/maxyekaterynenko.jpg' 
+                image={ImgMaxYekaterynenko}
                 title="Magento 2 Open Source: What and How?" 
                 language="en"
                 speaker="Max Yekaterynenko" 
                 speakerCompany="Magento" 
             />
             <Talk 
-                image='/assets/talks/mm17ro/tomrobertshaw.jpg' 
+                image={ImgTomRobertshaw}
                 title="Improving engagement and conversions with Progressive Web Apps" 
                 language="en"
                 speaker="Tom Robertshaw" 
                 speakerCompany="MeanBee" 
             />
             <Talk 
-                image='/assets/talks/mm17ro/ricardotempesta.jpg' 
+                image={ImgRiccardoTempesta}
                 title="The right tools for the right job" 
                 language="en"
                 speaker="Riccardo Tempesta" 
                 speakerCompany=""
             />
             <Talk 
-                image='/assets/talks/mm17ro/rebeccabrocton.jpg' 
+                image={ImgRebeccaBrocton}
                 title="Do not attend this talk, the speaker is a complete fraud" 
                 language="en"
                 speaker="Rebecca Brocton" 
                 speakerCompany="" 
             />
             <Talk 
-                image='/assets/talks/mm17ro/ievgenshakhsuvarov.png' 
+                image={ImgIevgenShakhsuvarov}
                 title="CQRS and Event Sourcing in Magento 2" 
                 language="en"
                 speaker="Ievgen Shakhsuvarov" 
                 speakerCompany="Magento" 
             />
             <Talk 
-                image='/assets/talks/mm17ro/andralungu.jpg' 
+                image={ImgAndraLungu}
                 title="Tools out of the box with Magento 2 in PHPSTORM" 
                 language="en"
                 speaker="Andra Lungu" 
                 speakerCompany="Bitbull"
             />
             <Talk 
-                image='/assets/talks/mm17ro/sandermangel.jpg' 
+                image={ImgSanderMangel}
                 title="Headless Magento" 
                 language="en"
                 speaker="Sander Mangel" 
                 speakerCompany="" 
             />
             <Talk 
-                image='/assets/talks/mm17ro/sherrierohde.png' 
+                image={ImgSherrieRohde}
                 title="Building an Inclusive Magento Community" 
                 language="en"
                 speaker="Sherrie Rohde" 
@@ -181,7 +249,7 @@ import Newsletter from '../../components/Newsletter.astro';
                 video="https://youtu.be/7eV4BbCVo3I"
             />
             <Talk 
-                image='/assets/talks/mm17ro/goranbokun.jpg' 
+                image={ImgGoranBokun}
                 title="Start small to win or lose big - why you should keep an eye on details when managing eCommerce projects" 
                 language="en"
                 speaker="Goran Bokun" 
@@ -189,7 +257,7 @@ import Newsletter from '../../components/Newsletter.astro';
                 video="https://youtu.be/R_JvjGRmdys" 
             />
             <Talk 
-                image='/assets/talks/mm17ro/ievgenshakhsuvarov.png' 
+                image={ImgIevgenShakhsuvarov}
                 title="Magento 2.2 Technical Guidelines" 
                 language="en"
                 speaker="Ievgen Shakhsuvarov" 
@@ -198,7 +266,7 @@ import Newsletter from '../../components/Newsletter.astro';
             />
 
             <Talk 
-                image='/assets/talks/mm17ro/pavlookhrem.jpg' 
+                image={ImgPavloOkhrem}
                 title="12 Ways to improve Magento 2 Security and Performance" 
                 language="en"
                 speaker="Pavlo Okhrem" 
@@ -206,7 +274,7 @@ import Newsletter from '../../components/Newsletter.astro';
                 video="https://youtu.be/eGbglrcwjB0"
             />
             <Talk 
-                image='/assets/talks/mm17ro/razvanavramescu.jpg' 
+                image={ImgRazvanAvramescu}
                 title="Magento 2 on Kubernetes" 
                 language="en"
                 speaker="Răzvan Avramescu" 
@@ -214,7 +282,7 @@ import Newsletter from '../../components/Newsletter.astro';
                 video="https://youtu.be/mERet8xUoA0"
             />
             <Talk 
-                image='/assets/talks/mm17ro/bartekigielski.jpg' 
+                image={ImgBartekIgielski}
                 title="Magento 2 Front-end performance tips &amp; tricks" 
                 language="en"
                 speaker="Bartek Igielski" 
@@ -222,14 +290,14 @@ import Newsletter from '../../components/Newsletter.astro';
                 video="https://youtu.be/ec1E6D3OVOg"
             />
             <Talk 
-                image='/assets/talks/mm17ro/maciejkalkowski.jpg' 
+                image={ImgMaciejKalkowski}
                 title="Magento 2 Server Optimisation" 
                 language="en"
                 speaker="Maciej Kalkowski" 
                 speakerCompany="Snowdog" 
             />
             <Talk 
-                image='/assets/talks/mm17ro/norberthes.jpg' 
+                image={ImgNorbertHes}
                 title="Magento 2 Server Optimisation" 
                 language="en"
                 speaker="Norbert Hes" 

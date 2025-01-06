@@ -4,6 +4,33 @@ import PageBanner from '../../components/PageBanner.astro';
 import SubNavigation from '../../components/Past/SubNavigation.astro';
 import Talk from '../../components/Past/Talk.astro';
 import Newsletter from '../../components/Newsletter.astro';
+
+import ImgBenMarks from '../../assets/talks/mm19ro/benmarks.png';
+import ImgJonathanRoeder from '../../assets/talks/mm19ro/jonathanroeder.png';
+import ImgOvidiuIonutEftimie from '../../assets/talks/mm19ro/ovidiuionuteftimie.png';
+
+import ImgFlorinToma from '../../assets/talks/mm19ro/florintoma.png';
+import ImgEugenPredescu from '../../assets/talks/mm19ro/eugenpredescu.png';
+import ImgIulianGhisoiu from '../../assets/talks/mm19ro/iulianghisoiu.png';
+import ImgClaudiuFarcas from '../../assets/talks/mm19ro/claudiufarcas.png';
+import ImgElenaDobre from '../../assets/talks/mm19ro/elenadobre.png';
+import ImgMonicaObogeanu from '../../assets/talks/mm19ro/monicaobogeanu.png';
+import ImgGeorgianRosu from '../../assets/talks/mm19ro/georgianrosu.png';
+import ImgRemusLucut from '../../assets/talks/mm19ro/remuslucut.png';
+
+import ImgAntonKrill from '../../assets/talks/mm19ro/antonkrill.png';
+import ImgSanderMangels from '../../assets/talks/mm19ro/sandermangels.png';
+import ImgOlenaTkacheva from '../../assets/talks/mm19ro/olenatkacheva.png';
+import ImgIgorMiniailo from '../../assets/talks/mm19ro/igorminiailo.png';
+import ImgAdrianBalcan from '../../assets/talks/mm19ro/adrianbalcan.png';
+import ImgPawelBilinskiMaciejSlawik from '../../assets/talks/mm19ro/pawelbilinskimaciejslawik.png';
+import ImgMariusStrajeru from '../../assets/talks/mm19ro/mariusstrajeru.png';
+import ImgAlinAlexandru from '../../assets/talks/mm19ro/alinalexandru.png';
+import ImgIrinaMargescu from '../../assets/talks/mm19ro/irinamargescu.png';
+import ImgMarshaNaidoo from '../../assets/talks/mm19ro/marshanaidoo.png';
+import ImgCatalinDumitras from '../../assets/talks/mm19ro/catalindumitras.png';
+import ImgVictorTodoran from '../../assets/talks/mm19ro/victortodoran.png';
+
 ---
 
 <Layout title="Meet Magento 2019">
@@ -11,18 +38,47 @@ import Newsletter from '../../components/Newsletter.astro';
 		<PageBanner title="Meet Magento 2019" />
         <SubNavigation selected="mm19ro" />
 
+		<div class="container flex items-center flex-wrap mx-auto pb-20 sm:pb-26 md:flex-nowrap md:gap-6">
+			<div class="w-full sm:w-1/2 flex-col pt-4 sm:order-first order-last">
+				<h5>2019 Edition</h5>
+				<h2 class="pb-3">Photos & After-Movie</h2>
+				<p class="text-l font-normal text-gray-600 pb-3">Meet Magento Romania 2019 was held on September 26-27 at Sheraton Bucharest.</p>
+				<p class="text-l font-normal text-gray-600 pb-8">Check out the photo albums on Facebook and tag yourself and watch the after-movie on YouTube.</p>
+				<div class="flex w-full">
+					<a
+						id="photos-fb-link"
+						class="flex-1 w-full max-w-48 bg-orange-600 button-m text-white rounded
+							py-4 px-4 text-center hover:bg-orange-700 focus:outline-none"
+						href="https://www.facebook.com/media/set/?set=a.2429023533799495&type=3"
+						target="_blank"
+					>
+						Facebook Album
+					</a>
+				</div>
+			</div>
+			<div class="w-full sm:w-1/2 flex-col pt-4">
+				<iframe 
+					width="560" 
+					height="315" 
+					src="https://www.youtube.com/embed/20WL3vFRxS8" 
+					title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
+					class="w-full lg:w-[560px]"
+				></iframe>
+			</div>
+		</div>
+
         <h2 class="container pb-4 sm:pb-8">Presentations</h2>
         <h4 class="container pb-4">Keynote</h4>
         <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-4 sm:pb-4 gap-6">
             <Talk 
-                image='/assets/talks/mm19ro/benmarks.png' 
+                image={ImgBenMarks}
                 title="Magento Product Updates" 
                 language="en"
                 speaker="Ben Marks" 
                 speakerCompany="Adobe" 
             />
             <Talk 
-                image='/assets/talks/mm19ro/jonathanroeder.png' 
+                image={ImgJonathanRoeder}
                 title="Magento's Data-Driven Future" 
                 language="en"
                 speaker="Jonathan Roeder" 
@@ -30,7 +86,7 @@ import Newsletter from '../../components/Newsletter.astro';
                 video="https://youtu.be/7WygyfBKZNw"
             />
             <Talk 
-                image='/assets/talks/mm19ro/ovidiuionuteftimie.jpg' 
+                image={ImgOvidiuIonutEftimie}
                 title="Aveți 5min să vorbim despre Dumnezeul nostru electronic?" 
                 language="ro"
                 speaker="Ovidiu Ionuț Eftimie" 
@@ -40,63 +96,63 @@ import Newsletter from '../../components/Newsletter.astro';
         <h4 class="container py-4">Business Track</h4>
         <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-4 sm:pb-4 gap-6">
             <Talk
-                image='/assets/talks/mm19ro/florintoma.png' 
+                image={ImgFlorinToma}
                 title="Extinde-ți afacerea online în afara granițelor" 
                 language="ro"
                 speaker="Florin Toma" 
                 speakerCompany="DHL" 
             />
             <Talk 
-                image='/assets/talks/mm19ro/eugenpredescu.jpg' 
+                image={ImgEugenPredescu}
                 title="Online Marketing - de la psihologie la deprindere" 
                 language="ro"
                 speaker="Eugen Predescu" 
                 speakerCompany="Canopy Digital" 
             />
             <Talk 
-                image='/assets/talks/mm19ro/iulianghisoiu.jpg' 
+                image={ImgIulianGhisoiu} 
                 title="7 secrete SEO la magazinele online Magento (de care probabil nu tii cont) " 
                 language="ro"
                 speaker="Iulian Ghișoiu" 
                 speakerCompany="TargetWeb" 
             />
             <Talk 
-                image='/assets/talks/mm19ro/claudiufarcas.jpg' 
+                image={ImgClaudiuFarcas}
                 title="Winning the customer through cross-channel digital marketing campaigns" 
                 language="ro"
                 speaker="Claudiu Farcas" 
                 speakerCompany="Arabesque Online" 
             />
             <Talk 
-                image='/assets/talks/mm19ro/iulianghisoiu.jpg' 
+                image={ImgIulianGhisoiu} 
                 title="Set-up your PPC campaigns for success" 
                 language="ro"
                 speaker="Iulian Ghișoiu" 
                 speakerCompany="Target Web" 
             />
             <Talk 
-                image='/assets/talks/mm19ro/elenadobre.png' 
+                image={ImgElenaDobre}
                 title="AI E-commerce Tenets" 
                 language="ro"
                 speaker="Elena Dobre" 
                 speakerCompany="Zarbi" 
             />
             <Talk 
-                image='/assets/talks/mm19ro/monicaobogeanu.jpg' 
+                image={ImgMonicaObogeanu}
                 title="Deschiderea unei corporații către startup-uri - câteva produse românești care susțin creșterea magazinelor online" 
                 language="ro"
                 speaker="Monica Obogeanu" 
                 speakerCompany="Orange" 
             />
             <Talk 
-                image='/assets/talks/mm19ro/georgianrosu.jpg' 
+                image={ImgGeorgianRosu}
                 title="eCommerce & ERP - Automatizarea fluxurilor de business ale unui magazin online, folosind sistemul integrat ERP" 
                 language="ro"
                 speaker="Georgian Rosu" 
                 speakerCompany="Pluriva" 
             />
             <Talk 
-                image='/assets/talks/mm19ro/remuslucut.jpg' 
+                image={ImgRemusLucut}
                 title="The SaaS era. Cum să-ți crești și să-ți optimizezi afacerea folosind instrumentele SaaS." 
                 language="ro"
                 speaker="Remus Lucuț" 
@@ -106,49 +162,49 @@ import Newsletter from '../../components/Newsletter.astro';
         <h4 class="container py-4">Technical Track</h4>
         <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-4 sm:pb-4 gap-6">
             <Talk 
-                image='/assets/talks/mm19ro/antonkrill.jpg' 
+                image={ImgAntonKrill}
                 title="Magento API Evolution" 
                 language="en"
                 speaker="Anton Krill" 
                 speakerCompany="Adobe" 
             />
             <Talk 
-                image='/assets/talks/mm19ro/sandermangels.jpg' 
+                image={ImgSanderMangels}
                 title="PWA, Separating features from solutions" 
                 language="en"
                 speaker="Sander Mangels" 
                 speakerCompany="VueStoreFront" 
             />
             <Talk 
-                image='/assets/talks/mm19ro/olenatkacheva.png' 
+                image={ImgOlenaTkacheva}
                 title="Setting Yourself Up For Success with Page Builder" 
                 language="en"
                 speaker="Olena Tkacheva" 
                 speakerCompany="Adobe" 
             />
             <Talk 
-                image='/assets/talks/mm19ro/igorminiailo.png' 
+                image={ImgIgorMiniailo}
                 title="The long way from Monolith to Service Isolated Architecture" 
                 language="en"
                 speaker="Igor Miniailo" 
                 speakerCompany="Adobe" 
             />
             <Talk 
-                image='/assets/talks/mm19ro/adrianbalcan.jpg' 
+                image={ImgAdrianBalcan}
                 title="Taking VSF from Local Env to K8S Production & Operations" 
                 language="en"
                 speaker="Adrian Balcan" 
                 speakerCompany="Blugento"
             />
             <Talk 
-                image='/assets/talks/mm19ro/pawelbilinskimaciejslawik.jpg' 
+                image={ImgPawelBilinskiMaciejSlawik}
                 title="Delivering Magento 2 for a leading Polish home &amp; deco eCommerce Home&amp;You in 4.5 months." 
                 language="en"
                 speaker="Paweł Biliński &amp; Maciej Sławik" 
                 speakerCompany="" 
             />
             <Talk 
-                image='/assets/talks/mm19ro/mariusstrajeru.jpg' 
+                image={ImgMariusStrajeru}
                 title="I'm importing so you don't have to" 
                 language="en"
                 speaker="Marius Străjeru" 
@@ -156,42 +212,42 @@ import Newsletter from '../../components/Newsletter.astro';
             />
 
             <Talk 
-                image='/assets/talks/mm19ro/antonkrill.jpg' 
+                image={ImgAntonKrill}
                 title="Magento Deep-Dive" 
                 language="en"
                 speaker="Anton Krill" 
                 speakerCompany="Adobe" 
             />
             <Talk 
-                image='/assets/talks/mm19ro/alinalexandru.jpg' 
+                image={ImgAlinAlexandru}
                 title="Magento performance improvements tips and tricks" 
                 language="en"
                 speaker="Alin Alexandru" 
                 speakerCompany="Innobyte" 
             />
             <Talk 
-                image='/assets/talks/mm19ro/irinamargescu.jpg' 
+                image={ImgIrinaMargescu}
                 title="Magento deployment into AWS" 
                 language="en"
                 speaker="Irina Mărgescu" 
                 speakerCompany="Dendrio" 
             />
             <Talk 
-                image='/assets/talks/mm19ro/marshanaidoo.jpg' 
+                image={ImgMarshaNaidoo}
                 title="Getting the most from Events?" 
                 language="en"
                 speaker="Marsha Naidoo" 
                 speakerCompany="Meet Magento New York" 
             />
             <Talk 
-                image='/assets/talks/mm19ro/catalindumitras.jpg' 
+                image={ImgCatalinDumitras}
                 title="Getting the best out of Magento with AWS" 
                 language="en"
                 speaker="Cătălin Dumitraș" 
                 speakerCompany="Pentalog" 
             />
             <Talk 
-                image='/assets/talks/mm19ro/victortodoran.jpg' 
+                image={ImgVictorTodoran}
                 title="Becoming a Magento 2 Certified Professional Developer" 
                 language="en"
                 speaker="Victor Todoran" 

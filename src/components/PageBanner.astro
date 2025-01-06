@@ -1,5 +1,5 @@
 ---
-import { Picture } from '@astrojs/image/components';
+import { Picture } from 'astro:assets';
 
 import heroMobile from '../assets/banners/banner-mobile.png';
 import heroTablet from '../assets/banners/banner-tablet.png';
@@ -10,37 +10,31 @@ export interface Props {
 }
 
 const { title } = Astro.props;
+// aspectRatio="2:1" fix="cover" widths={[360]}
+// aspectRatio="12:5" fix="cover"
+// aspectRatio="6:1" fix="cover"
 ---
 
 <div class="relative mb-12">
     <Picture
         src={heroMobile}
-        aspectRatio="2:1"
-        fix="cover"
-        widths={[360]}
-        sizes=""
-        formats={['png', 'webp']}
-        alt="Test image"
+        formats={['webp']}
+        densities={[1, 2]}
+        alt="Main banner"
         class={"w-full h-full object-cover sm:hidden"}
     />
     <Picture
         src={heroTablet}
-        aspectRatio="12:5"
-        fix="cover"
         widths={[768]}
-        sizes=""
-        formats={['png', 'webp']}
-        alt="Test image"
+        formats={['webp']}
+        alt="Main banner"
         class={"w-full h-full object-cover hidden sm:block lg:hidden"}
     />
     <Picture
         src={heroDesktop}
-        aspectRatio="6:1"
-        fix="cover"
         widths={[1920]}
-        sizes=""
-        formats={['png', 'webp']}
-        alt="Test image"
+        formats={['webp']}
+        alt="Main banner"
         class={"w-full h-full object-cover hidden lg:block"}
     />
     <div class="absolute right-0 bottom-0 left-0 container mx-auto py-4 px-6 flex flex-col justify-center lg:bottom-8 lg:py-0">

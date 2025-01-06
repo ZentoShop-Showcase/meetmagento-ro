@@ -1,13 +1,5 @@
 # Meet Magento on [Astro](https://astro.build)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/s/github/withastro/astro/tree/latest/examples/basics)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
-
-
 ## 🚀 Project Structure
 
 Inside of your Astro project, you'll see the following folders and files:
@@ -48,3 +40,56 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+## Deployment AWS
+
+Deployment is done automatically on push using the GitHub Actions workflow in `.github/workflows/build-deploy.yml`.
+
+First, set up 2 buckets (DEV and PROD) and 2 CloudFront distributions (DEV and PROD). Also set up the IAM user with the permissions described in the following section.
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Bucket1",
+            "Effect": "Allow",
+            "Action": "s3:ListBucket",
+            "Resource": "[DEV_BUCKET_ARN]*"
+        },
+        {
+            "Sid": "Bucket2",
+            "Effect": "Allow",
+            "Action": "s3:*",
+            "Resource": "[PROD_BUCKET_ARN]*"
+        },
+        {
+            "Sid": "InvalidationLive",
+            "Effect": "Allow",
+            "Action": [
+                "cloudfront:ListInvalidations",
+                "cloudfront:GetInvalidation",
+                "cloudfront:CreateInvalidation"
+            ],
+            "Resource": "[PROD_CF_ARN]"
+        },
+        {
+            "Sid": "InvalidationDev",
+            "Effect": "Allow",
+            "Action": [
+                "cloudfront:ListInvalidations",
+                "cloudfront:GetInvalidation",
+                "cloudfront:CreateInvalidation"
+            ],
+            "Resource": "[DEV_CF_ARN]"
+        }
+    ]
+}
+```
+
+Following parameters needs to be configured as Repository secrets:
+
+- AWS_ACCESS_KEY_ID - AWS access key ID for a IAM user with access as described in the following section
+- AWS_SECRET_ACCESS_KEY - AWS secret access key for the IAM user
+- S3_BUCKET - S3 bucket name where the build will be deployed
+- CF_DISTRIBUTION - CloudFront distribution ID for the production environment
+- CF_DISTRIBUTION_DEV - CloudFront distribution ID for the development environment

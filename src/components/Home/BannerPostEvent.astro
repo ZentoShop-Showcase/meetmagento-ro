@@ -1,0 +1,67 @@
+---
+import { Picture } from 'astro:assets';
+
+import heroMobile from '../../assets/banners/hero-mobile.png';
+import heroTablet from '../../assets/banners/hero-tablet.png';
+import heroDesktop from '../../assets/banners/hero-desktop.png';
+
+// export interface Props {
+// }
+
+// const {  } = Astro.props;
+// aspectRatio={'3:4'} fix="cover"
+// aspectRatio="1:1" fix="cover"
+// aspectRatio="5:2" fix="cover"
+---
+
+<div class="relative mb-12">
+    <Picture
+        src={heroMobile}
+        widths={[360]}
+        sizes=""
+        formats={['webp']}
+        alt="Meet Magento Romania 2024, 22 April"
+        class={"w-full h-full object-cover sm:hidden"}
+        loading={'eager'}
+    />
+    <Picture
+        src={heroTablet}
+        widths={[768]}
+        sizes=""
+        formats={['webp']}
+        alt="Meet Magento Romania 2024, 22 April"
+        class={"w-full h-full object-cover hidden sm:block lg:hidden"}
+        loading={'eager'}
+    />
+    <Picture
+        src={heroDesktop}
+        widths={[1920]}
+        sizes=""
+        formats={['webp']}
+        alt="Meet Magento Romania 2024, 22 April"
+        class={"w-full h-full object-cover hidden lg:block"}
+        loading={'eager'}
+    />
+    <div class="absolute right-0 bottom-0 left-0 container mx-auto py-4 px-6 flex flex-col justify-center
+      lg:bottom-32 lg:py-0">
+        <strong class="relative text-xl font-semibold text-white mb-3 pl-4 sm:mb-6 before:content
+          before:absolute before:top-0 before:bottom-0 before:left-0 before:w-2 before:bg-orange-600">
+            And it's a wrap!
+        </strong>
+        <h1 class="display-mobile-s sm:display-desktop-l text-white pb-3">Thank You!</h1>
+        <p class="text-xl text-white font-normal">
+            Thank you for being part of Meet Magento Romania 2024.
+        </p>
+        <p class="text-xl text-white font-normal">
+            New recordings published weekly.
+        </p>
+        <a
+            id='see-agenda'
+            href="/agenda"
+            class="w-full max-w-48 bg-white button-m text-orange-700 rounded
+              mt-5 py-4 px-4 text-center hover:bg-orange-100 focus:outline-none"
+        >
+            See the Recordings
+        </a>
+    </div>
+</div>

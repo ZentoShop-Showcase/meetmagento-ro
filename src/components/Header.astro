@@ -15,14 +15,14 @@
 
         <!-- Main Nav - Mobile -->
         <nav class="basis-1/2 flex items-center justify-end md:hidden">
-            <!-- <a
+            <a
                 id='nav-buy-ticket'
                 href="https://shop.meetmagento.ro/"
                 target="_blank"
                 class="hidden sm:block md:hidden w-full max-w-32 bg-orange-600 button-s text-white rounded
                   py-4 px-4 mr-4 hover:bg-orange-700 focus:outline-none">
                 Buy Tickets
-            </a> -->
+            </a>
             <button id="mobile-menu-open" class="w-6 h-6 bg-hamburger" aria-label="open menu" />
             <section
                 id="mobile-menu"
@@ -30,28 +30,38 @@
                 <div class="w-9/12 h-full bg-black drop-shadow-2xl ml-auto">
                     <button data-mobile-menu-close class="block w-6 h-6 bg-close bg-no-repeat bg-center p-6 mr-3 ml-auto" aria-label="close menu" />
                     <ul>
-                        <li class="text-right py-2 px-6">
-                            <a href="/agenda" data-mobile-menu-close class="inline-block button-s text-white hover:underline">
-                                Agenda
+                        <!-- <li class="text-right py-2 px-6">
+                            <a href="/call-for-papers" data-mobile-menu-close class="inline-block button-s text-white hover:underline">
+                                Call for Papers
                             </a>
                         </li>
                         <li class="text-right py-2 px-6">
+                            <a href="/call-for-sponsors" data-mobile-menu-close class="inline-block button-s text-white hover:underline">
+                                Call for Sponsors
+                            </a>
+                        </li> -->
+                        <li class="text-right py-2 px-6">
+                            <a href="/agenda" data-mobile-menu-close class="inline-block button-s text-white hover:underline">
+                                Agenda & Recordings
+                            </a>
+                        </li>
+                        <!-- <li class="text-right py-2 px-6">
                             <a href="/speakers" data-mobile-menu-close class="inline-block button-s text-white hover:underline">
                                 Speakers
                             </a>
-                        </li>
+                        </li> -->
                         <li class="text-right py-2 px-6">
                             <a href="/sponsors" data-mobile-menu-close class="inline-block button-s text-white hover:underline">
                                 Sponsors
                             </a>
                         </li>
-                        <li class="text-right py-2 px-6">
+                        <!-- <li class="text-right py-2 px-6">
                             <a href="/venue" data-mobile-menu-close class="inline-block button-s text-white hover:underline">
                                 Venue
                             </a>
-                        </li>
+                        </li> -->
                         <li class="text-right py-2 px-6">
-                            <a href="/past/mm21ro" data-mobile-menu-close class="inline-block button-s text-white hover:underline">
+                            <a href="/past/mm23ro" data-mobile-menu-close class="inline-block button-s text-white hover:underline">
                                 Past Events
                             </a>
                         </li>
@@ -78,11 +88,13 @@
 
         <!-- Main Nav - Desktop -->
         <nav class="hidden md:flex md:basis-10/12 justify-end items-center gap-3">
-            <a href="/agenda" class="button-s text-white hover:underline">Agenda</a>
-            <a href="/speakers" class="button-s text-white hover:underline">Speakers</a>
+            <!-- <a href="/call-for-papers" class="button-s text-white hover:underline">Call for Papers</a>
+            <a href="/call-for-sponsors" class="button-s text-white hover:underline">Call for Sponsors</a> -->
+            <a href="/agenda" class="button-s text-white hover:underline">Agenda & Recordings</a>
+            <!-- <a href="/speakers" class="button-s text-white hover:underline">Speakers</a> -->
             <a href="/sponsors" class="button-s text-white hover:underline">Sponsors</a>
-            <a href="/venue" class="button-s text-white hover:underline">Venue</a>
-            <a href="/past/mm21ro" class="button-s text-white hover:underline">Past Events</a>
+            <!-- <a href="/venue" class="button-s text-white hover:underline">Venue</a> -->
+            <a href="/past/mm23ro" class="button-s text-white hover:underline">Past Events</a>
             <a href="/contact" class="button-s text-white hover:underline">Contact</a>
             <!-- <a
                 id='nav-buy-ticket'
@@ -97,13 +109,13 @@
     </div>
 </header>
 
-<script>
+<script is:inline data-astro-rerun>
     // @ts-nocheck
     document.addEventListener('scroll', () => {
         const headerElem = document.querySelector('#header');
         const logoElem = document.querySelector('#logo');
 
-        if (window.pageYOffset > 200) {
+        if (window.scrollY > 200) {
             headerElem.classList.add('fixed', 'top-0', 'bg-black-opacity-50', 'py-2');
             headerElem.classList.remove('absolute', 'bg-gradient-to-b', 'from-black', 'sm:py-5', 'lg:py-3');
             logoElem.classList.add('h-12', 'lg:h-12');
@@ -116,21 +128,23 @@
         }
     });
 
-    document.querySelector('#mobile-menu-open').addEventListener('click', () => {
-        const menuElem = document.querySelector('#mobile-menu');
-        menuElem.classList.remove('hide-menu');
-        menuElem.classList.add('show-menu');
-        document.body.style.overflow = 'hidden';
-    });
-
-    const buttons = document.querySelectorAll('[data-mobile-menu-close]');
-
-    buttons.forEach((button) => {
-        button.addEventListener('click', () => {
+    document.addEventListener('astro:page-load', () => {
+        document.querySelector('#mobile-menu-open').addEventListener('click', () => {
             const menuElem = document.querySelector('#mobile-menu');
-            menuElem.classList.remove('show-menu');
-            menuElem.classList.add('hide-menu');
-            document.body.style.overflow = 'auto';
+            menuElem.classList.remove('hide-menu');
+            menuElem.classList.add('show-menu');
+            document.body.style.overflow = 'hidden';
+        });
+
+        const buttons = document.querySelectorAll('[data-mobile-menu-close]');
+
+        buttons.forEach((button) => {
+            button.addEventListener('click', () => {
+                const menuElem = document.querySelector('#mobile-menu');
+                menuElem.classList.remove('show-menu');
+                menuElem.classList.add('hide-menu');
+                document.body.style.overflow = 'auto';
+            });
         });
     });
 </script>

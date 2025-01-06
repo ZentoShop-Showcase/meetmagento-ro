@@ -1,5 +1,5 @@
 ---
-import { Picture } from '@astrojs/image/components';
+import { Picture } from 'astro:assets';
 
 import heroMobile from '../../assets/banners/hero-mobile.png';
 import heroTablet from '../../assets/banners/hero-tablet.png';
@@ -9,39 +9,37 @@ import heroDesktop from '../../assets/banners/hero-desktop.png';
 // }
 
 // const {  } = Astro.props;
+
+// aspectRatio={'3:4'} fix="cover"
+// aspectRatio="1:1" fix="cover"
+// aspectRatio="5:2" fix="cover"
 ---
 
 <div class="relative mb-12">
     <Picture
         src={heroMobile}
-        aspectRatio={'3:4'}
-        fix="cover"
         widths={[360]}
         sizes=""
-        formats={['webp', 'png']}
-        alt="Meet Magento Romania 2023, 8 May"
+        formats={['webp']}
+        alt="Meet Magento Romania 2024, 22 April"
         class={"w-full h-full object-cover sm:hidden"}
         loading={'eager'}
     />
     <Picture
         src={heroTablet}
-        aspectRatio="1:1"
-        fix="cover"
         widths={[768]}
         sizes=""
-        formats={['webp', 'png']}
-        alt="Meet Magento Romania 2023, 8 May"
+        formats={['webp']}
+        alt="Meet Magento Romania 2024, 22 April"
         class={"w-full h-full object-cover hidden sm:block lg:hidden"}
         loading={'eager'}
     />
     <Picture
         src={heroDesktop}
-        aspectRatio="5:2"
-        fix="cover"
         widths={[1920]}
         sizes=""
-        formats={['webp', 'png']}
-        alt="Meet Magento Romania 2023, 8 May"
+        formats={['webp']}
+        alt="Meet Magento Romania 2024, 22 April"
         class={"w-full h-full object-cover hidden lg:block"}
         loading={'eager'}
     />
@@ -51,9 +49,9 @@ import heroDesktop from '../../assets/banners/hero-desktop.png';
           before:absolute before:top-0 before:bottom-0 before:left-0 before:w-2 before:bg-orange-600">
             May 8th, Conference Day
         </strong>
-        <h1 class="display-mobile-s sm:display-desktop-l text-white pb-3">#MM23RO</h1>
+        <h1 class="display-mobile-s sm:display-desktop-l text-white pb-3">#MM24RO</h1>
         <p class="text-xl text-white font-normal">
-            Today it's conference day at Meet Magento Romania 2023. Enojoy!
+            Today it's conference day at Meet Magento Romania 2024. Enojoy!
         </p>
         <a
             id='see-agenda'

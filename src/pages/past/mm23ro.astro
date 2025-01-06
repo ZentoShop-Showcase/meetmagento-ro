@@ -1,0 +1,298 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import PageBanner from '../../components/PageBanner.astro';
+import SubNavigation from '../../components/Past/SubNavigation.astro';
+import Talk from '../../components/Past/Talk.astro';
+import Newsletter from '../../components/Newsletter.astro';
+import Sponsors from '../../components/Home/Sponsors.astro';
+
+import { SponsorsData } from '../../components/Sponsors/data-mm23ro';
+
+import ImgMathiasSchreiber from '../../assets/talks/mm23ro/mathiasschreiber.jpg';
+import ImgRayBogman from '../../assets/talks/mm23ro/raybogman.jpg';
+import ImgCosminCostea from '../../assets/talks/mm23ro/cosmincostea.jpg';
+import ImgRomanBalteanu from '../../assets/talks/mm23ro/romanbalteanu.jpg';
+import ImgVladMarincas from '../../assets/talks/mm23ro/vladmarincas.jpg';
+import ImgArturPajkert from '../../assets/talks/mm23ro/arthurpajkert.jpg';
+import ImgAlexandruBalaci from '../../assets/talks/mm23ro/alexandrubalaci.jpg';
+import ImgPaulApostu from '../../assets/talks/mm23ro/paulapostu.jpg';
+import ImgCiprianCazacu from '../../assets/talks/mm23ro/cipriancazacu.jpg';
+import ImgAttilaKiraly from '../../assets/talks/mm23ro/attilakiraly.jpg';
+import ImgSorinTrifu from '../../assets/talks/mm23ro/sorintrifu.jpg';
+import ImgMariusStrajeru from '../../assets/talks/mm23ro/mariusstrajeru.jpg';
+import ImgRazvanBradea from '../../assets/talks/mm23ro/razvanbradea.jpg';
+import ImgLukaszBajsarowicz from '../../assets/talks/mm23ro/lukaszbajsarowicz.jpg';
+import ImgCalinPetrar from '../../assets/talks/mm23ro/calinpetrar.jpg';
+import ImgIvanChepurnyi from '../../assets/talks/mm23ro/ivanchepurnyi.jpg';
+import ImgAlinAlexandru from '../../assets/talks/mm23ro/alinalexandru.jpg';
+import ImgZitec from '../../assets/talks/mm23ro/zitec.jpg';
+import ImgValentinSandu from '../../assets/talks/mm23ro/valentinsandu.jpg';
+import ImgSorinDumitrescu from '../../assets/talks/mm23ro/sorindumitrescu.jpg';
+
+---
+
+<Layout title="Meet Magento 2023">
+	<main>
+		<PageBanner title="Meet Magento 2023" />
+        <SubNavigation selected="mm23ro" />
+
+		<div class="container flex items-center flex-wrap mx-auto pb-20 sm:pb-26 md:flex-nowrap md:gap-6">
+			<div class="w-full sm:w-1/2 flex-col pt-4 sm:order-first order-last">
+				<h5>2023 Edition</h5>
+				<h2 class="pb-3">Photos & After-Movie</h2>
+				<p class="text-l font-normal text-gray-600 pb-3">Meet Magento Romania 2023 was held on May 8th at Grand Hotel Italia.</p>
+				<p class="text-l font-normal text-gray-600 pb-8">Check out the photo albums on Facebook and tag yourself or Google Photos and watch the after-movie on YouTube.</p>
+				<div class="flex w-full">
+					<a
+						id="photos-fb-link"
+						class="flex-1 w-full max-w-48 bg-orange-600 button-m text-white rounded
+							py-4 px-4 text-center hover:bg-orange-700 focus:outline-none"
+						href="https://www.facebook.com/media/set/?vanity=meetmagentoromania&set=a.217085661073756"
+						target="_blank"
+					>
+						Facebook Album
+					</a>
+					<a
+						id="photos-google-link"
+						class="flex-1 w-full max-w-48 bg-orange-600 button-m text-white rounded
+							py-4 px-4 mx-4 text-center hover:bg-orange-700 focus:outline-none"
+						href="https://photos.app.goo.gl/J11gArYPvuoEkni28"
+						target="_blank"
+					>
+						Google Photos
+					</a>
+				</div>
+			</div>
+			<div class="w-full sm:w-1/2 flex-col pt-4">
+				<iframe 
+					width="560" 
+					height="315" 
+					src="https://www.youtube.com/embed/Bq7IjHJ0PDk" 
+					title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
+					class="w-full lg:w-[560px]"
+				></iframe>
+			</div>
+		</div>
+
+        <h2 class="container pb-4 sm:pb-8">Presentations</h2>
+        <h4 class="container pb-4">Keynote</h4>
+        <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-4 sm:pb-4 gap-6">
+            <Talk 
+                image={ImgMathiasSchreiber}
+                title="Magento Association - What's next?" 
+                track="keynote"
+                language="en"
+                speaker="Mathias Schreiber" 
+                speakerCompany="Magento Association" 
+                video="https://youtu.be/QV1qIK4mgPo"
+            />
+        </div>
+        <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-4 sm:pb-4 gap-6">
+            <Talk 
+                image={ImgRayBogman}
+                title="Support, or not to Support ... that's the question!" 
+                track="keynote"
+                language="en"
+                speaker="Ray Bogman" 
+                speakerCompany="Adobe" 
+                video="https://youtu.be/qSuQmtL6ohI"
+            />
+        </div>
+        <h4 class="container py-4">Business Track</h4>
+        <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-4 sm:pb-4 gap-6">
+            <Talk
+                image={ImgCosminCostea}
+                title="Keep your customers loyal or keep losing money" 
+                track="business"
+                language="ro"
+                speaker="Cosmin Costea" 
+                speakerCompany="theMarketer" 
+                video="https://youtu.be/rDnz1tSEY1k"
+            />
+            <Talk 
+                image={ImgRomanBalteanu}
+                title="Harness the Power of AI" 
+                track="business"
+                language="ro"
+                speaker="Roman Bălțeanu" 
+                speakerCompany="Google" 
+                video="https://youtu.be/D5IeCm8baKI"
+            />
+            <Talk 
+                image={ImgVladMarincas}
+                title="Personalization in eCommerce: what we can learn from Google, Netflix, Amazon and Facebook" 
+                track="business"
+                language="ro"
+                speaker="Vlad Marincaș" 
+                speakerCompany="Aqurate" 
+                video="https://youtu.be/NM3QlMZdQys"
+            />
+            <Talk 
+                image={ImgArturPajkert}
+                title="Artificial intelligence in e-commerce. Are you standing or are you going?" 
+                track="business"
+                language="en"
+                speaker="Artur Pajkert" 
+                speakerCompany="cyber_Folks" 
+                video="https://youtu.be/RSBjXwPft2o"
+            />
+            <Talk 
+                image={ImgAlexandruBalaci}
+                title="The State of the Fintech" 
+                track="business"
+                language="ro"
+                speaker="Alexandru Balaci" 
+                speakerCompany="Mokka" 
+                video="https://youtu.be/Gb4xTbx87kI"
+            />
+            <Talk 
+                image={ImgPaulApostu}
+                title="Optimized Email Marketing Automation for Magento" 
+                track="business"
+                language="ro"
+                speaker="Paul Apostu" 
+                speakerCompany="eCommerce Today Agency" 
+                video="https://youtu.be/3S6EzLcl4AY"
+            />
+            <Talk 
+                image={ImgCiprianCazacu}
+                title="E-Commerce in contextul actual si cum ne putem adapta" 
+                track="business"
+                language="ro"
+                speaker="Ciprian Cazacu" 
+                speakerCompany="easySales" 
+                video="https://youtu.be/UGK0npEKJaA"
+            />
+            <Talk 
+                image={ImgAttilaKiraly}
+                title="2 Be or Not 2 Be: Importanța Strategiei de Marketing în Era Digitală"
+                language="ro"
+                track="business"
+                speaker="Attila Kiraly" 
+                speakerCompany="SEO 365" 
+                video="https://youtu.be/d7eswiqhhGU"
+            />
+            <Talk 
+                image={ImgSorinTrifu}
+                title="Noul rol al agentiilor de marketing in era AI / chatGPT" 
+                track="business"
+                language="ro"
+                speaker="Sorin Trifu" 
+                speakerCompany="HOLD Marketing" 
+                video="https://youtu.be/wn1Fx1iaQz0"
+            />
+        </div>
+        <h4 class="container py-4">Technical Track</h4>
+        <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-4 sm:pb-4 gap-6">
+            <Talk 
+                image={ImgMariusStrajeru}
+                title='Putting "custom" in custom options' 
+                language="en"
+                track="technical"
+                speaker="Marius Străjeru" 
+                speakerCompany="Arnia" 
+                video="https://youtu.be/NzcC4DHBDyA"
+            />
+            <Talk 
+                image={ImgRazvanBradea}
+                title='Deliver fast and scalable shopping experiences with Catalog Service for Adobe Commerce' 
+                language="en"
+                track="technical"
+                speaker="Răzvan Bradea" 
+                speakerCompany="Adobe" 
+                video="https://youtu.be/U0m2kjrpY08"
+            />
+            <Talk 
+                image={ImgLukaszBajsarowicz}
+                title="(Don't) Leave Me Alone! - Facing depression in the remote times."
+                language="en"
+                track="technical"
+                speaker="Łukasz Bajsarowicz" 
+                speakerCompany="SwiftOtter" 
+                video="https://youtu.be/-K5OE4Oxxm8"
+            />
+            <Talk 
+                image={ImgCalinPetrar}
+                title="Google nu știe nimic"
+                language="ro"
+                track="technical"
+                speaker="Călin Petrar" 
+                speakerCompany="Times New Roman" 
+                video="https://youtu.be/dlt4yng7snY"
+            />
+            <Talk 
+                image={ImgIvanChepurnyi}
+                title="Better indexation without performance penalty"
+                language="en"
+                track="technical"
+                speaker="Ivan Chepurnyi" 
+                video="https://youtu.be/wOM5M26TrDE"
+            />
+            <Talk 
+                image={ImgAlinAlexandru}
+                title="How to monitor the performance of a Magento instance"
+                language="ro"
+                track="technical"
+                speaker="Alin Alexandru" 
+                speakerCompany="Innobyte" 
+                video="https://youtu.be/ylKnEk4Lyw4"
+            />
+            <Talk 
+                image={ImgZitec}
+                title="Black Friday Scaling Success: A Magento 2 Case Study on Kubernetes"
+                language="ro"
+                track="technical"
+                speaker="George Mușat & Cristian Glăvan" 
+                speakerCompany="Zitec"
+                video="https://youtu.be/sh3Z10KkoWk"
+            />
+            <Talk 
+                image={ImgValentinSandu}
+                title="Bundle Price Reindex takes its time"
+                track="technical"
+                language="en"
+                speaker="Valentin Sandu" 
+                speakerCompany="R7 Digital Commerce" 
+                video="https://youtu.be/XD3DJ7Q9IEg"
+            />
+            <Talk 
+                image={ImgSorinDumitrescu}
+                title="Environments as a Service - Increase developer productivity and improve DX"
+                language="ro"
+                track="technical"
+                speaker="Sorin Dumitrescu" 
+                speakerCompany="Bunnyshell"
+                video="https://youtu.be/7SmZ8aEutnE"
+            />
+        </div>
+
+        <div class="container flex items-center flex-wrap mx-auto pt-12 pb-20 sm:pt-18 sm:pb-26 md:flex-nowrap md:gap-6">
+            <div class="w-full flex-col order-last pt-4 sm:w-1/2 sm:pt-0 sm:order-first">
+                <h5>Organised by</h5>
+                <h2 class="pb-3">Zento</h2>
+                <p class="text-l font-normal text-gray-600 pb-8">Zento is a Software-as-a-Service (SaaS) solution built on top of Magento 2 and offers fully managed eCommerce solutions with state-of-the-art Cloud hosting to medium and large merchants.</p>
+                <a
+                    id="zento-link"
+                    class="text-orange-600 no-underline hover:text-orange-700 hover:underline"
+                    target="_blank"
+                    href="https://www.zentoshop.com"
+                >
+                    Visit Zento
+                </a>
+            </div>
+            <div class="w-full bg-purple-50 flex-col pt-4 sm:w-1/2 sm:pt-0">
+                <img src="/assets/sponsors/zentoshop.svg" alt="Zento" class="w-1/2 mx-auto" />
+            </div>
+        </div>
+
+		<div class="container flex items-center flex-wrap mx-auto pb-20 sm:pb-2 md:flex-nowrap md:gap-6">
+			<div class="w-full">
+				<h5>2023 Edition</h5>
+				<h2 class="pb-3">Sponsored by</h2>
+			</div>
+		</div>
+		<Sponsors sponsors={SponsorsData}/>
+
+		<Newsletter />
+	</main>
+</Layout>
