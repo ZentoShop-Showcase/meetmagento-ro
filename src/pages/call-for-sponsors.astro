@@ -4,16 +4,22 @@ import PageBanner from '../components/PageBanner.astro';
 import Newsletter from '../components/Newsletter.astro';
 ---
 
-<Layout title="Call For Sponsors - MeetMagento 2024">
+<Layout title="Call For Sponsors - MeetMagento 2025">
 	<main>
 		<PageBanner title="Call for Sponsors" />
-		<div class="iframe-container relative w-full overflow-hidden mb-8">
+
+        <div class="container w-full text-l pt-3 pb-10 text-gray-600">
+            <h2 class="pb-2">Call for Sponsors is Closed</h2>
+			<p class="text-xl font-normal text-gray-600 pb-6">The form will be open as soon as we announce the new date.</p>
+        </div>
+		
+		<!-- <div class="iframe-container relative w-full overflow-hidden mb-8">
 			<iframe 
 				src="https://docs.google.com/forms/d/e/1FAIpQLSe2nhAZ4Jri1AAVOsRYKf4z5h9d529X9xcVfe3uESqSfMhZAg/viewform?embedded=true" 
 				width="640" height="896" frameborder="0" marginheight="0" marginwidth="0"
 				class="responsive-iframe mx-auto"
 			>Loading…</iframe>
-		</div>
+		</div> -->
 		<Newsletter />
 	</main>
 </Layout>
